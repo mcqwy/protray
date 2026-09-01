@@ -26,7 +26,6 @@
         const flagMap = { en: 'us', es: 'mx', th: 'th', vi: 'vn', zh: 'cn' };
         const langNames = { en: 'English', es: 'Español', th: 'ไทย', vi: 'Tiếng Việt', zh: '中文' };
 
-        // ====== 图片映射（已修改为 assets/images/ 目录） ======
         const imageMap = {
             '50': 'assets/images/tray-50.jpg',
             '72': 'assets/images/tray-72.jpg',
@@ -34,52 +33,108 @@
             '128': 'assets/images/tray-128.jpg'
         };
 
+        // ============================================================
+        // ====== 视频异步加载（opacity 过渡，无闪烁） ======
+        // ============================================================
+        function loadHeroVideo() {
+            const video = document.getElementById('heroVideo');
+            const placeholder = document.getElementById('videoPlaceholder');
+            if (!video) return;
+
+            const videoUrl = 'https://cloud.video.taobao.com/play/u/2214317181391/p/2/e/6/t/1/531712869626.mp4';
+
+            // 如果视频已经存在 src，直接播放
+            if (video.src) {
+                video.play();
+                return;
+            }
+
+            // 设置视频源
+            video.src = videoUrl;
+            video.load();
+
+            // 当视频可以播放时
+            video.addEventListener('canplay', function onCanPlay() {
+                video.removeEventListener('canplay', onCanPlay);
+                // 视频淡入
+                video.style.opacity = '1';
+                // 占位图淡出
+                if (placeholder) {
+                    placeholder.style.opacity = '0';
+                    placeholder.style.pointerEvents = 'none';
+                }
+                // 自动播放
+                video.play().catch(function() {});
+            });
+
+            // 如果视频已经缓存（readyState 足够）
+            if (video.readyState >= 3) {
+                video.style.opacity = '1';
+                if (placeholder) {
+                    placeholder.style.opacity = '0';
+                    placeholder.style.pointerEvents = 'none';
+                }
+                video.play().catch(function() {});
+            }
+
+            // 点击占位图：立即加载并播放
+            if (placeholder) {
+                placeholder.addEventListener('click', function() {
+                    if (!video.src) {
+                        video.src = videoUrl;
+                        video.load();
+                    }
+                    video.play().catch(function() {});
+                });
+            }
+        }
+
         // ---------- 翻译函数 ----------
         function setLanguage(lang) {
             if (!langData[lang]) return;
             currentLang = lang;
 
-            document.querySelectorAll('[data-i18n]').forEach(el => {
+            document.querySelectorAll('[data-i18n]').forEach(function(el) {
                 if (el.hasAttribute('data-i18n-option')) return;
-                const key = el.getAttribute('data-i18n');
-                const val = langData[lang][key];
+                var key = el.getAttribute('data-i18n');
+                var val = langData[lang][key];
                 if (val !== undefined && typeof val === 'string') {
                     el.textContent = val;
                 }
             });
 
-            document.querySelectorAll('[data-i18n-option]').forEach(el => {
-                const optionKey = el.getAttribute('data-i18n-option');
-                const value = el.getAttribute('data-value');
-                const optMap = langData[lang][optionKey];
+            document.querySelectorAll('[data-i18n-option]').forEach(function(el) {
+                var optionKey = el.getAttribute('data-i18n-option');
+                var value = el.getAttribute('data-value');
+                var optMap = langData[lang][optionKey];
                 if (optMap && optMap[value]) {
                     el.textContent = optMap[value];
                 }
             });
 
-            document.querySelectorAll('select[data-i18n-options]').forEach(select => {
-                const optionKey = select.getAttribute('data-i18n-options');
-                const optMap = langData[lang][optionKey];
+            document.querySelectorAll('select[data-i18n-options]').forEach(function(select) {
+                var optionKey = select.getAttribute('data-i18n-options');
+                var optMap = langData[lang][optionKey];
                 if (!optMap) return;
-                Array.from(select.options).forEach(opt => {
-                    const val = opt.value;
+                Array.from(select.options).forEach(function(opt) {
+                    var val = opt.value;
                     if (optMap[val] !== undefined) {
                         opt.textContent = optMap[val];
                     }
                 });
             });
 
-            const label = document.getElementById('currentLangLabel');
+            var label = document.getElementById('currentLangLabel');
             if (label) label.textContent = langNames[lang] || lang;
 
-            const flagImg = document.getElementById('currentFlag');
+            var flagImg = document.getElementById('currentFlag');
             if (flagImg) {
                 flagImg.src = 'https://flagcdn.com/w40/' + flagMap[lang] + '.png';
                 flagImg.alt = langNames[lang] || lang;
             }
 
-            document.querySelectorAll('.lang-option').forEach(opt => {
-                const ol = opt.getAttribute('data-lang');
+            document.querySelectorAll('.lang-option').forEach(function(opt) {
+                var ol = opt.getAttribute('data-lang');
                 if (ol === lang) {
                     opt.style.fontWeight = '600';
                     opt.style.background = '#e5f0e5';
@@ -94,47 +149,39 @@
 
         // ---------- 联动计算核心 ----------
         function calcPcsAndGross(weight, thickness, height) {
-            const pitchMap = { '0.4': 0.2, '0.8': 0.35, '1.2': 0.5 };
-            const pitch = pitchMap[thickness] || 0.35;
-            const pcs = Math.floor((height - 5) / pitch);
-            const gross = Math.round(((weight * pcs) + 1200) / 100) / 10;
-            return { pcs, gross };
+            var pitchMap = { '0.4': 0.2, '0.8': 0.35, '1.2': 0.5 };
+            var pitch = pitchMap[thickness] || 0.35;
+            var pcs = Math.floor((height - 5) / pitch);
+            var gross = Math.round(((weight * pcs) + 1200) / 100) / 10;
+            return { pcs: pcs, gross: gross };
         }
 
         function getSelectedValue(model, param) {
-            const activeBtn = document.querySelector(
-                '.btn-group[data-model="' + model + '"][data-param="' + param + '"] .btn-option.active'
-            );
+            var activeBtn = document.querySelector('.btn-group[data-model="' + model + '"][data-param="' + param + '"] .btn-option.active');
             if (activeBtn) {
                 return activeBtn.getAttribute('data-value');
             }
-            const first = document.querySelector(
-                '.btn-group[data-model="' + model + '"][data-param="' + param + '"] .btn-option'
-            );
+            var first = document.querySelector('.btn-group[data-model="' + model + '"][data-param="' + param + '"] .btn-option');
             return first ? first.getAttribute('data-value') : null;
         }
 
         function updateModel(model) {
-            const weightVal = getSelectedValue(model, 'weight');
-            const thicknessVal = getSelectedValue(model, 'thickness');
-            const heightVal = getSelectedValue(model, 'height');
-
+            var weightVal = getSelectedValue(model, 'weight');
+            var thicknessVal = getSelectedValue(model, 'thickness');
+            var heightVal = getSelectedValue(model, 'height');
             if (!weightVal || !thicknessVal || !heightVal) return;
-
-            const weight = parseFloat(weightVal);
-            const thickness = thicknessVal;
-            const height = parseFloat(heightVal);
-
-            const result = calcPcsAndGross(weight, thickness, height);
-            const pcsSpan = document.getElementById('pcs-' + model);
-            const grossSpan = document.getElementById('gross-' + model);
+            var weight = parseFloat(weightVal);
+            var thickness = thicknessVal;
+            var height = parseFloat(heightVal);
+            var result = calcPcsAndGross(weight, thickness, height);
+            var pcsSpan = document.getElementById('pcs-' + model);
+            var grossSpan = document.getElementById('gross-' + model);
             if (pcsSpan) pcsSpan.textContent = result.pcs;
             if (grossSpan) grossSpan.textContent = result.gross.toFixed(1);
         }
 
-        // ---------- 更新右侧图片 ----------
         function updateImage(model) {
-            const img = document.getElementById('productImage');
+            var img = document.getElementById('productImage');
             if (img && imageMap[model]) {
                 img.src = imageMap[model];
                 img.alt = 'ProTray ' + model + ' Cell Tray';
@@ -143,17 +190,17 @@
 
         // ---------- 绑定按钮事件 ----------
         function bindButtonEvents() {
-            document.querySelectorAll('.btn-option').forEach(btn => {
+            document.querySelectorAll('.btn-option').forEach(function(btn) {
                 btn.addEventListener('click', function() {
-                    const group = this.closest('.btn-group');
+                    var group = this.closest('.btn-group');
                     if (!group) return;
-                    group.querySelectorAll('.btn-option').forEach(b => {
+                    group.querySelectorAll('.btn-option').forEach(function(b) {
                         b.classList.remove('active', 'bg-green-600', 'text-white', 'border-green-600');
                         b.classList.add('bg-white', 'text-gray-700', 'border-gray-300');
                     });
                     this.classList.add('active', 'bg-green-600', 'text-white');
                     this.classList.remove('bg-white', 'text-gray-700', 'border-gray-300');
-                    const model = group.getAttribute('data-model');
+                    var model = group.getAttribute('data-model');
                     if (model) {
                         updateModel(model);
                     }
@@ -163,16 +210,16 @@
 
         // ---------- 初始化所有型号 ----------
         function initModels() {
-            const models = new Set();
-            document.querySelectorAll('.btn-group[data-model]').forEach(el => {
+            var models = new Set();
+            document.querySelectorAll('.btn-group[data-model]').forEach(function(el) {
                 models.add(el.getAttribute('data-model'));
             });
-            models.forEach(model => {
+            models.forEach(function(model) {
                 updateModel(model);
             });
-            const activeTab = document.querySelector('.tab-content.active');
+            var activeTab = document.querySelector('.tab-content.active');
             if (activeTab) {
-                const id = activeTab.id.replace('tab-', '');
+                var id = activeTab.id.replace('tab-', '');
                 updateImage(id);
             }
         }
@@ -180,8 +227,8 @@
         // ---------- UI 事件绑定 ----------
         function bindEvents() {
             // 语言切换
-            const toggle = document.getElementById('langToggle');
-            const dropdown = document.getElementById('langDropdown');
+            var toggle = document.getElementById('langToggle');
+            var dropdown = document.getElementById('langDropdown');
             if (toggle && dropdown) {
                 toggle.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -192,10 +239,10 @@
                     dropdown.classList.remove('active');
                 });
 
-                document.querySelectorAll('.lang-option').forEach(opt => {
+                document.querySelectorAll('.lang-option').forEach(function(opt) {
                     opt.addEventListener('click', function(e) {
                         e.preventDefault();
-                        const lang = this.getAttribute('data-lang');
+                        var lang = this.getAttribute('data-lang');
                         if (lang) {
                             setLanguage(lang);
                             dropdown.classList.remove('active');
@@ -205,20 +252,20 @@
             }
 
             // Tab切换 + 图片联动
-            const tabBtns = document.querySelectorAll('.tab-btn');
-            const tabContents = document.querySelectorAll('.tab-content');
-            tabBtns.forEach(btn => {
+            var tabBtns = document.querySelectorAll('.tab-btn');
+            var tabContents = document.querySelectorAll('.tab-content');
+            tabBtns.forEach(function(btn) {
                 btn.addEventListener('click', function() {
-                    const target = this.getAttribute('data-tab');
-                    tabBtns.forEach(b => {
+                    var target = this.getAttribute('data-tab');
+                    tabBtns.forEach(function(b) {
                         b.classList.remove('bg-green-600', 'text-white');
                         b.classList.add('bg-gray-200', 'text-gray-700');
                     });
                     this.classList.remove('bg-gray-200', 'text-gray-700');
                     this.classList.add('bg-green-600', 'text-white');
 
-                    tabContents.forEach(c => c.classList.remove('active'));
-                    const activeTab = document.getElementById('tab-' + target);
+                    tabContents.forEach(function(c) { c.classList.remove('active'); });
+                    var activeTab = document.getElementById('tab-' + target);
                     if (activeTab) {
                         activeTab.classList.add('active');
                         updateImage(target);
@@ -227,15 +274,15 @@
             });
 
             // Hero 黄色按钮平滑滚动
-            const reqSampleBtn = document.getElementById('reqSampleBtn');
+            var reqSampleBtn = document.getElementById('reqSampleBtn');
             if (reqSampleBtn) {
                 reqSampleBtn.addEventListener('click', function(e) {
                     e.preventDefault();
-                    const formSection = document.getElementById('contactFormSection');
+                    var formSection = document.getElementById('contactFormSection');
                     if (formSection) {
                         formSection.scrollIntoView({ behavior: 'smooth' });
                         setTimeout(function() {
-                            const productSelect = document.getElementById('productModelSelect');
+                            var productSelect = document.getElementById('productModelSelect');
                             if (productSelect) {
                                 productSelect.focus();
                                 productSelect.classList.add('ring-2', 'ring-green-500');
@@ -249,18 +296,17 @@
             }
 
             // 表单异步提交（FormCarry）
-            const form = document.getElementById('leadContactForm');
-            const successDiv = document.getElementById('formSuccessMessage');
+            var form = document.getElementById('leadContactForm');
+            var successDiv = document.getElementById('formSuccessMessage');
             if (form && successDiv) {
                 form.addEventListener('submit', function(e) {
                     e.preventDefault();
-
-                    const submitBtn = this.querySelector('button[type="submit"]');
-                    const originalText = submitBtn.textContent;
+                    var submitBtn = this.querySelector('button[type="submit"]');
+                    var originalText = submitBtn.textContent;
                     submitBtn.disabled = true;
                     submitBtn.textContent = (langData[currentLang]?.btnSubmit || 'Submit') + '...';
 
-                    const formData = new FormData(this);
+                    var formData = new FormData(this);
 
                     fetch(this.action, {
                         method: 'POST',
@@ -274,7 +320,7 @@
                                 form.classList.add('opacity-0');
                                 setTimeout(function() {
                                     form.classList.add('hidden');
-                                    const msg = langData[currentLang]?.formSuccessMessage ||
+                                    var msg = langData[currentLang]?.formSuccessMessage ||
                                         'Thank you! We will contact you within 24 hours.';
                                     successDiv.textContent = '✅ ' + msg;
                                     successDiv.classList.remove('hidden');
@@ -295,9 +341,9 @@
 
         // ---------- 检测 URL 参数控制销售代表板块 ----------
         function checkRepProgramVisibility() {
-            const repSection = document.getElementById('repProgramSection');
+            var repSection = document.getElementById('repProgramSection');
             if (!repSection) return;
-            const urlParams = new URLSearchParams(window.location.search);
+            var urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('rep')) {
                 repSection.style.display = 'block';
             } else {
@@ -311,6 +357,9 @@
         initModels();
         bindEvents();
         checkRepProgramVisibility();
+
+        // ====== 启动视频加载（延迟 100ms，避免阻塞首屏渲染） ======
+        setTimeout(loadHeroVideo, 100);
 
         // 暴露公共方法
         window.setLanguage = setLanguage;
