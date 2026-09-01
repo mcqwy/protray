@@ -9,24 +9,24 @@
     }
 
     function init() {
-        const langData = window.langData;
-        const supportedLangs = ['en', 'es', 'th', 'vi', 'zh'];
-        let currentLang = 'en';
+        var langData = window.langData;
+        var supportedLangs = ['en', 'es', 'th', 'vi', 'zh'];
+        var currentLang = 'en';
 
         try {
-            const saved = localStorage.getItem('proTrayLang');
-            if (saved && supportedLangs.includes(saved)) currentLang = saved;
+            var saved = localStorage.getItem('proTrayLang');
+            if (saved && supportedLangs.indexOf(saved) !== -1) currentLang = saved;
         } catch (_) {}
 
         if (!localStorage.getItem('proTrayLang')) {
-            const userLang = navigator.language.split('-')[0];
-            if (supportedLangs.includes(userLang)) currentLang = userLang;
+            var userLang = navigator.language.split('-')[0];
+            if (supportedLangs.indexOf(userLang) !== -1) currentLang = userLang;
         }
 
-        const flagMap = { en: 'us', es: 'mx', th: 'th', vi: 'vn', zh: 'cn' };
-        const langNames = { en: 'English', es: 'Español', th: 'ไทย', vi: 'Tiếng Việt', zh: '中文' };
+        var flagMap = { en: 'us', es: 'mx', th: 'th', vi: 'vn', zh: 'cn' };
+        var langNames = { en: 'English', es: 'Español', th: 'ไทย', vi: 'Tiếng Việt', zh: '中文' };
 
-        const imageMap = {
+        var imageMap = {
             '50': 'assets/images/tray-50.jpg',
             '72': 'assets/images/tray-72.jpg',
             '105': 'assets/images/tray-105.jpg',
@@ -34,50 +34,40 @@
         };
 
         // ============================================================
-        // ====== 视频异步加载（opacity 过渡，无闪烁） ======
+        // 视频异步加载（无闪烁）
         // ============================================================
         function loadHeroVideo() {
-            const video = document.getElementById('heroVideo');
-            const placeholder = document.getElementById('videoPlaceholder');
+            var video = document.getElementById('heroVideo');
+            var placeholder = document.getElementById('videoPlaceholder');
             if (!video) return;
 
-            const videoUrl = 'https://cloud.video.taobao.com/play/u/2214317181391/p/2/e/6/t/1/531712869626.mp4';
+            var videoUrl = 'https://cloud.video.taobao.com/play/u/2214317181391/p/2/e/6/t/1/531712869626.mp4';
 
-            // 如果视频已经存在 src，直接播放
             if (video.src) {
-                video.play();
+                video.play().catch(function() {});
                 return;
             }
 
-            // 设置视频源
             video.src = videoUrl;
             video.load();
 
-            // 当视频可以播放时
             video.addEventListener('canplay', function onCanPlay() {
                 video.removeEventListener('canplay', onCanPlay);
-                // 视频淡入
                 video.style.opacity = '1';
-                // 占位图淡出
                 if (placeholder) {
-                    placeholder.style.opacity = '0';
-                    placeholder.style.pointerEvents = 'none';
+                    placeholder.classList.add('hidden');
                 }
-                // 自动播放
                 video.play().catch(function() {});
             });
 
-            // 如果视频已经缓存（readyState 足够）
             if (video.readyState >= 3) {
                 video.style.opacity = '1';
                 if (placeholder) {
-                    placeholder.style.opacity = '0';
-                    placeholder.style.pointerEvents = 'none';
+                    placeholder.classList.add('hidden');
                 }
                 video.play().catch(function() {});
             }
 
-            // 点击占位图：立即加载并播放
             if (placeholder) {
                 placeholder.addEventListener('click', function() {
                     if (!video.src) {
@@ -358,10 +348,9 @@
         bindEvents();
         checkRepProgramVisibility();
 
-        // ====== 启动视频加载（延迟 100ms，避免阻塞首屏渲染） ======
+        // 延迟加载视频，避免阻塞首屏渲染
         setTimeout(loadHeroVideo, 100);
 
-        // 暴露公共方法
         window.setLanguage = setLanguage;
         window.updateModel = updateModel;
         window.updateImage = updateImage;
