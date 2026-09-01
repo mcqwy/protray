@@ -6,10 +6,16 @@
     <!-- ====== Google Search Console 验证 ====== -->
     <meta name="google-site-verification" content="FciYTy6rVndujVljzY2LvS7oreEc7Vx3_zwuI_x1UzM" />
     <title>ProTray - Premium Seedling Trays</title>
-    <script src="https://cdn.tailwindcss.com">
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ====== 外部 CSS（所有样式都在这里） ====== -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- ====== 第三方资源（异步加载） ====== -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 </head>
 <body class="bg-gray-50">
 
@@ -23,17 +29,17 @@
         <div class="relative shrink-0">
             <button id="langToggle" class="flex items-center bg-white border border-gray-300 rounded-lg px-3 py-2 shadow-sm hover:shadow-md text-sm">
                     <span class="mr-2">
-                        <img id="currentFlag" src="https://flagcdn.com/w40/us.png" alt="English" class="w-5 h-3.5 rounded">
+                        <img id="currentFlag" src="https://flagcdn.com/w40/us.png" alt="English" class="w-5 h-3.5 rounded" width="20" height="14">
                     </span>
                 <span id="currentLangLabel" data-i18n="currentLang" class="hidden sm:inline">English</span>
                 <i class="fas fa-chevron-down ml-2 text-gray-500 text-sm"></i>
             </button>
             <div id="langDropdown" class="lang-dropdown">
-                <a href="#" class="lang-option" data-lang="en"><img src="https://flagcdn.com/w40/us.png" alt="English"><span>English</span></a>
-                <a href="#" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w40/mx.png" alt="Español"><span>Español</span></a>
-                <a href="#" class="lang-option" data-lang="zh"><img src="https://flagcdn.com/w40/cn.png" alt="中文"><span>中文</span></a>
-                <a href="#" class="lang-option" data-lang="th"><img src="https://flagcdn.com/w40/th.png" alt="ไทย"><span>ไทย</span></a>
-                <a href="#" class="lang-option" data-lang="vi"><img src="https://flagcdn.com/w40/vn.png" alt="Tiếng Việt"><span>Tiếng Việt</span></a>
+                <a href="#" class="lang-option" data-lang="en"><img src="https://flagcdn.com/w40/us.png" alt="English" width="20" height="14"><span>English</span></a>
+                <a href="#" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w40/mx.png" alt="Español" width="20" height="14"><span>Español</span></a>
+                <a href="#" class="lang-option" data-lang="zh"><img src="https://flagcdn.com/w40/cn.png" alt="中文" width="20" height="14"><span>中文</span></a>
+                <a href="#" class="lang-option" data-lang="th"><img src="https://flagcdn.com/w40/th.png" alt="ไทย" width="20" height="14"><span>ไทย</span></a>
+                <a href="#" class="lang-option" data-lang="vi"><img src="https://flagcdn.com/w40/vn.png" alt="Tiếng Việt" width="20" height="14"><span>Tiếng Việt</span></a>
             </div>
         </div>
     </div>
@@ -54,19 +60,28 @@
                     Request Free Sample & Quote
                 </button>
                 <a href="https://wa.me/8615864555803?text=Hello%20ProTray,%20I'd%20like%20to%20speak%20with%20a%20sales%20manager%20about%20your%20seedling%20trays."
-                   class="bg-transparent border-2 border-white hover:bg-white hover:text-green-700 text-white font-bold py-3 px-6 rounded-lg text-sm sm:text-base transition inline-block"
+                   class="bg-transparent border-2 border-white hover:bg-white hover:text-green-700 text-white font-bold py-3 px-6 rounded-lg text-sm sm:text-base transition inline-block text-center"
                    target="_blank" rel="noopener noreferrer"
                    data-i18n="btnContactSales">
-                    💬 Contact Sales Manager
+                    📞 Contact Sales Manager
                 </a>
             </div>
         </div>
         <div class="w-full md:w-1/2">
-            <div class="video-container">
-                <video autoplay loop muted playsinline>
-                    <source src="https://cloud.video.taobao.com/play/u/2214317181391/p/2/e/6/t/1/531712869626.mp4" type="video/mp4">
+            <!-- ====== 视频：preload="none" + 占位图，视频 src 由 JS 动态注入 ====== -->
+            <div class="video-container" id="videoContainer">
+                <!-- 视频元素：先不设置 src，由 JS 异步加载 -->
+                <video id="heroVideo" preload="none" muted loop playsinline class="video-fade-in">
+                    <!-- src 由 JS 动态注入 -->
                 </video>
-                <div class="absolute bottom-4 right-4 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-lg text-xs sm:text-sm md:text-base">
+                <!-- 占位元素：视频加载前显示 -->
+                <div id="videoPlaceholder" class="video-placeholder">
+                    <div class="text-center">
+                        <i class="fas fa-play-circle"></i>
+                        <span class="text-gray-400 text-xs">加载中...</span>
+                    </div>
+                </div>
+                <div class="absolute bottom-4 right-4 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-lg text-xs sm:text-sm md:text-base z-10">
                     <span class="font-bold" data-i18n="zeroStressWhitening">零应力发白</span>
                 </div>
             </div>
@@ -315,7 +330,7 @@
 
                 <!-- 右侧图片 -->
                 <div class="relative rounded-lg overflow-hidden shadow-lg bg-gray-100 flex items-center justify-center" style="min-height: 250px;">
-                    <img id="productImage" src="assets/images/tray-50.jpg" alt="ProTray Seedling Tray" class="w-full h-auto object-cover">
+                    <img id="productImage" src="assets/images/tray-50.jpg" alt="ProTray Seedling Tray" class="w-full h-auto object-cover" loading="lazy" width="600" height="400">
                 </div>
             </div>
         </div>
@@ -366,15 +381,15 @@
                 <h3 class="text-lg sm:text-xl font-bold mb-6" data-i18n="certificatesTitle">Certifications</h3>
                 <div class="grid grid-cols-3 gap-3 sm:gap-4">
                     <div class="bg-gray-100 rounded-lg p-3 sm:p-4 text-center">
-                        <img src="https://via.placeholder.com/150x200?text=SGS" alt="SGS" class="mx-auto mb-2 w-full max-w-[80px] sm:max-w-[100px]">
+                        <img src="https://via.placeholder.com/150x200?text=SGS" alt="SGS" class="mx-auto mb-2 w-full max-w-[80px] sm:max-w-[100px]" loading="lazy" width="100" height="133">
                         <p class="font-semibold text-xs sm:text-sm" data-i18n="certSgs">SGS Certified</p>
                     </div>
                     <div class="bg-gray-100 rounded-lg p-3 sm:p-4 text-center">
-                        <img src="https://via.placeholder.com/150x200?text=RoHS" alt="RoHS" class="mx-auto mb-2 w-full max-w-[80px] sm:max-w-[100px]">
+                        <img src="https://via.placeholder.com/150x200?text=RoHS" alt="RoHS" class="mx-auto mb-2 w-full max-w-[80px] sm:max-w-[100px]" loading="lazy" width="100" height="133">
                         <p class="font-semibold text-xs sm:text-sm" data-i18n="certRohs">RoHS 2.0 Compliant</p>
                     </div>
                     <div class="bg-gray-100 rounded-lg p-3 sm:p-4 text-center">
-                        <img src="https://via.placeholder.com/150x200?text=REACH" alt="REACH" class="mx-auto mb-2 w-full max-w-[80px] sm:max-w-[100px]">
+                        <img src="https://via.placeholder.com/150x200?text=REACH" alt="REACH" class="mx-auto mb-2 w-full max-w-[80px] sm:max-w-[100px]" loading="lazy" width="100" height="133">
                         <p class="font-semibold text-xs sm:text-sm" data-i18n="certReach">REACH 200+ Tested</p>
                     </div>
                 </div>
@@ -481,10 +496,8 @@
 </a>
 
 <!-- ====== 加载 JS ====== -->
-<script src="js/i18n.js">
-</script>
-<script src="js/main.js">
-</script>
+<script src="js/i18n.js" defer></script>
+<script src="js/main.js" defer></script>
 
 </body>
 </html>
