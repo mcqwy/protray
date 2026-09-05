@@ -13,15 +13,17 @@
         var supportedLangs = ['en', 'es', 'th', 'vi', 'zh'];
         var currentLang = 'en';
 
+        // ====== 修改开始 ======
+        // 仅从 localStorage 读取用户上次选择，若没有则默认 'en'
+        // 移除自动检测浏览器语言逻辑，保证所有新访客看到英文
         try {
             var saved = localStorage.getItem('proTrayLang');
-            if (saved && supportedLangs.indexOf(saved) !== -1) currentLang = saved;
+            if (saved && supportedLangs.indexOf(saved) !== -1) {
+                currentLang = saved;
+            }
         } catch (_) {}
-
-        if (!localStorage.getItem('proTrayLang')) {
-            var userLang = navigator.language.split('-')[0];
-            if (supportedLangs.indexOf(userLang) !== -1) currentLang = userLang;
-        }
+        // 不再根据 navigator.language 自动切换
+        // ====== 修改结束 ======
 
         var flagMap = { en: 'us', es: 'mx', th: 'th', vi: 'vn', zh: 'cn' };
         var langNames = { en: 'English', es: 'Español', th: 'ไทย', vi: 'Tiếng Việt', zh: '中文' };
