@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <meta name="google-site-verification" content="FciYTy6rVndujVljzY2LvS7oreEc7Vx3_zwuI_x1UzM" />
     <title>ProTray - Commercial Seedling Trays for High-Speed Automation</title>
-
-    <!-- ====== SEO Meta 增强 ====== -->
     <meta name="description" content="ProTray offers commercial seedling trays made of modified rPET, designed for high-speed automated greenhouse lines. Factory direct, customizable, SGS certified. Request a free sample." />
     <meta name="keywords" content="seedling trays, commercial trays, automated greenhouse, rPET trays, plant propagation, greenhouse supplies, ProTray" />
-
-    <!-- ====== 所有资源同步加载，杜绝 FOUC ====== -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -45,11 +41,9 @@
 <section class="pt-20 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-green-700 to-green-900 text-white overflow-x-hidden">
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <div class="w-full md:w-1/2 text-center md:text-left">
-            <!-- ====== 修改点 1：Hero 标题 ====== -->
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight" data-i18n="heroTitle">
                 Commercial Seedling Trays Built for High-Speed Automation
             </h1>
-            <!-- ====== 修改点 2：Hero 副标题 ====== -->
             <p class="text-lg sm:text-xl mb-6 text-green-100" data-i18n="heroSubtitle">
                 Direct Factory Price • Modified rPET • Extreme Impact & Bend Resistance
             </p>
@@ -66,16 +60,13 @@
             </div>
         </div>
         <div class="w-full md:w-1/2">
-            <!-- ====== 视频容器（preload="none" + 占位图） ====== -->
             <div class="video-container" id="videoContainer">
                 <video id="heroVideo" preload="none" muted loop playsinline style="opacity:0; transition: opacity 0.8s ease; z-index:1; position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;">
-                    <!-- src 由 JS 动态注入 -->
                 </video>
                 <div id="videoPlaceholder" class="video-placeholder" style="z-index:2;">
                     <i class="fas fa-play-circle"></i>
                     <span>加载中...</span>
                 </div>
-                <!-- ====== 修改点 3：零应力发白 ====== -->
                 <div class="absolute bottom-4 right-4 bg-black bg-opacity-60 text-white px-3 py-1.5 rounded-lg text-xs sm:text-sm md:text-base z-10">
                     <span class="font-bold" data-i18n="zeroStressWhitening">Zero Stress Whitening</span>
                 </div>
@@ -86,12 +77,10 @@
 
 <section class="py-16 bg-white overflow-x-hidden">
     <div class="container mx-auto px-4">
-        <!-- ====== 修改点 4：规格标题 ====== -->
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800" data-i18n="specsTitle">Commercial Grade Seedling Tray Specifications</h2>
 
         <div class="bg-white rounded-lg shadow-lg p-4 sm:p-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                <!-- 左侧：Tab 导航 + 内容 -->
                 <div>
                     <div class="flex flex-wrap justify-center gap-1 sm:gap-2 mb-6">
                         <button class="tab-btn bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-t-lg font-semibold text-sm sm:text-base" data-tab="50">50 <span data-i18n="cells">Cells</span></button>
@@ -100,7 +89,6 @@
                         <button class="tab-btn bg-gray-200 text-gray-700 px-4 py-2 sm:px-6 sm:py-3 rounded-t-lg font-semibold text-sm sm:text-base" data-tab="128">128 <span data-i18n="cells">Cells</span></button>
                     </div>
 
-                    <!-- Tab 内容 -->
                     <div>
                         <!-- 50 Cells -->
                         <div id="tab-50" class="tab-content active">
@@ -131,28 +119,15 @@
                                         </td>
                                     </tr>
                                     <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="cartonSize">Carton Size (cm)</td>
-                                        <td class="py-2">
-                                            <div class="btn-group inline-flex flex-wrap" data-model="50" data-param="height">
-                                                <button class="btn-option active" data-value="45" data-i18n-option="heightOptions">45cm</button>
-                                                <button class="btn-option" data-value="32" data-i18n-option="heightOptions">32cm</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="pcsPerCarton">Pcs/CTN</td>
-                                        <td class="py-2 font-bold text-green-600" id="pcs-50">120</td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="grossWeight">Gross Weight</td>
-                                        <td class="py-2 font-bold text-green-600" id="gross-50">9.6</td>
+                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="packaging">Packaging</td>
+                                        <td class="py-2 text-sm text-gray-700" data-i18n="packagingOptions">Bundled (Standard) / Carton (Optional, extra cost)</td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-500">
                                 <p class="font-bold text-base sm:text-lg" data-i18n="moq">MOQ: 10,000 pcs</p>
-                                <p class="text-gray-700 text-sm sm:text-base" data-i18n="deliveryTerms">EXW/FCA Jining Logistics Hub, China</p>
+                                <p class="text-gray-700 text-sm sm:text-base" data-i18n="deliveryTerms">EXW Jining, China (Other terms on request)</p>
                             </div>
                             <div class="mt-4 p-3 bg-blue-50 border-l-4 border-blue-500 text-gray-800 font-bold rounded text-sm sm:text-base" data-i18n="customNotification"></div>
                         </div>
@@ -186,28 +161,15 @@
                                         </td>
                                     </tr>
                                     <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="cartonSize">Carton Size (cm)</td>
-                                        <td class="py-2">
-                                            <div class="btn-group inline-flex flex-wrap" data-model="72" data-param="height">
-                                                <button class="btn-option active" data-value="45" data-i18n-option="heightOptions">45cm</button>
-                                                <button class="btn-option" data-value="32" data-i18n-option="heightOptions">32cm</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="pcsPerCarton">Pcs/CTN</td>
-                                        <td class="py-2 font-bold text-green-600" id="pcs-72">105</td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="grossWeight">Gross Weight</td>
-                                        <td class="py-2 font-bold text-green-600" id="gross-72">8.6</td>
+                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="packaging">Packaging</td>
+                                        <td class="py-2 text-sm text-gray-700" data-i18n="packagingOptions">Bundled (Standard) / Carton (Optional, extra cost)</td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-500">
                                 <p class="font-bold text-base sm:text-lg" data-i18n="moq">MOQ: 10,000 pcs</p>
-                                <p class="text-gray-700 text-sm sm:text-base" data-i18n="deliveryTerms">EXW/FCA Jining Logistics Hub, China</p>
+                                <p class="text-gray-700 text-sm sm:text-base" data-i18n="deliveryTerms">EXW Jining, China (Other terms on request)</p>
                             </div>
                             <div class="mt-4 p-3 bg-blue-50 border-l-4 border-blue-500 text-gray-800 font-bold rounded text-sm sm:text-base" data-i18n="customNotification"></div>
                         </div>
@@ -241,28 +203,15 @@
                                         </td>
                                     </tr>
                                     <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="cartonSize">Carton Size (cm)</td>
-                                        <td class="py-2">
-                                            <div class="btn-group inline-flex flex-wrap" data-model="105" data-param="height">
-                                                <button class="btn-option" data-value="45" data-i18n-option="heightOptions">45cm</button>
-                                                <button class="btn-option active" data-value="32" data-i18n-option="heightOptions">32cm</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="pcsPerCarton">Pcs/CTN</td>
-                                        <td class="py-2 font-bold text-green-600" id="pcs-105">90</td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="grossWeight">Gross Weight</td>
-                                        <td class="py-2 font-bold text-green-600" id="gross-105">7.5</td>
+                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="packaging">Packaging</td>
+                                        <td class="py-2 text-sm text-gray-700" data-i18n="packagingOptions">Bundled (Standard) / Carton (Optional, extra cost)</td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-500">
                                 <p class="font-bold text-base sm:text-lg" data-i18n="moq">MOQ: 10,000 pcs</p>
-                                <p class="text-gray-700 text-sm sm:text-base" data-i18n="deliveryTerms">EXW/FCA Jining Logistics Hub, China</p>
+                                <p class="text-gray-700 text-sm sm:text-base" data-i18n="deliveryTerms">EXW Jining, China (Other terms on request)</p>
                             </div>
                             <div class="mt-4 p-3 bg-blue-50 border-l-4 border-blue-500 text-gray-800 font-bold rounded text-sm sm:text-base" data-i18n="customNotification"></div>
                         </div>
@@ -296,35 +245,21 @@
                                         </td>
                                     </tr>
                                     <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="cartonSize">Carton Size (cm)</td>
-                                        <td class="py-2">
-                                            <div class="btn-group inline-flex flex-wrap" data-model="128" data-param="height">
-                                                <button class="btn-option" data-value="45" data-i18n-option="heightOptions">45cm</button>
-                                                <button class="btn-option active" data-value="32" data-i18n-option="heightOptions">32cm</button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="pcsPerCarton">Pcs/CTN</td>
-                                        <td class="py-2 font-bold text-green-600" id="pcs-128">75</td>
-                                    </tr>
-                                    <tr class="border-b">
-                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="grossWeight">Gross Weight</td>
-                                        <td class="py-2 font-bold text-green-600" id="gross-128">6.5</td>
+                                        <td class="py-2 font-semibold whitespace-nowrap" data-i18n="packaging">Packaging</td>
+                                        <td class="py-2 text-sm text-gray-700" data-i18n="packagingOptions">Bundled (Standard) / Carton (Optional, extra cost)</td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                             <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-500">
                                 <p class="font-bold text-base sm:text-lg" data-i18n="moq">MOQ: 10,000 pcs</p>
-                                <p class="text-gray-700 text-sm sm:text-base" data-i18n="deliveryTerms">EXW/FCA Jining Logistics Hub, China</p>
+                                <p class="text-gray-700 text-sm sm:text-base" data-i18n="deliveryTerms">EXW Jining, China (Other terms on request)</p>
                             </div>
                             <div class="mt-4 p-3 bg-blue-50 border-l-4 border-blue-500 text-gray-800 font-bold rounded text-sm sm:text-base" data-i18n="customNotification"></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 右侧：产品图片（统一 ID，由 JS 控制切换） -->
                 <div class="relative rounded-lg overflow-hidden shadow-lg bg-gray-100 flex items-center justify-center" style="min-height: 250px;">
                     <img id="productImage" src="assets/images/tray-50.jpg" alt="ProTray Seedling Tray" class="w-full h-auto object-cover" loading="lazy" width="600" height="400">
                 </div>
@@ -338,14 +273,14 @@
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800" data-i18n="repProgramTitle">Global Sales Representative Program</h2>
         <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8 max-w-4xl mx-auto">
             <div class="text-center mb-8">
-                <p class="text-xl sm:text-2xl font-bold text-green-700 mb-4" data-i18n="repProgramSubtitle">Earn $280 per Ton Sold | $3,360 per 40' Container</p>
-                <p class="text-base sm:text-lg text-gray-700" data-i18n="repProgramDescription">We're recruiting independent sales representatives across US and global agricultural hubs. We offer the industry's top-tier commission rates - 4x higher than competitors!</p>
+                <p class="text-xl sm:text-2xl font-bold text-green-700 mb-4" data-i18n="repProgramSubtitle">Earn 8% Commission on EXW Product Value | Freight Excluded</p>
+                <p class="text-base sm:text-lg text-gray-700" data-i18n="repProgramDescription">We are recruiting sales representatives globally. We offer industry-leading commission rates.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8">
                 <div class="bg-green-50 p-4 sm:p-6 rounded-lg text-center">
                     <i class="fas fa-hand-holding-usd text-3xl sm:text-4xl text-green-600 mb-3"></i>
                     <h3 class="font-bold text-lg sm:text-xl mb-1" data-i18n="repCommission">Commission</h3>
-                    <p class="text-gray-700 text-sm sm:text-base" data-i18n="repCommissionDesc">$280 per ton</p>
+                    <p class="text-gray-700 text-sm sm:text-base" data-i18n="repCommissionDesc">8% of EXW product value</p>
                 </div>
                 <div class="bg-blue-50 p-4 sm:p-6 rounded-lg text-center">
                     <i class="fas fa-shipping-fast text-3xl sm:text-4xl text-blue-600 mb-3"></i>
@@ -387,11 +322,10 @@
                 </div>
             </div>
             <div>
-                <h3 class="text-lg sm:text-xl font-bold mb-6" data-i18n="paymentTitle">Payment & Shipping Terms</h3>
+                <h3 class="text-lg sm:text-xl font-bold mb-6" data-i18n="paymentTitle">Payment Terms</h3>
                 <div class="bg-gray-50 p-4 sm:p-6 rounded-lg">
                     <div class="mb-4"><h4 class="font-bold text-base sm:text-lg mb-1" data-i18n="deposit">Deposit</h4><p class="text-gray-700 text-sm sm:text-base" data-i18n="depositDesc">30% deposit to lock production slot</p></div>
-                    <div class="mb-4"><h4 class="font-bold text-base sm:text-lg mb-1" data-i18n="balance">Final Payment</h4><p class="text-gray-700 text-sm sm:text-base" data-i18n="balanceDesc">70% balance before container loading</p></div>
-                    <div><h4 class="font-bold text-base sm:text-lg mb-1" data-i18n="shipping">Shipping</h4><p class="text-gray-700 text-sm sm:text-base" data-i18n="shippingDesc">Buyer pays for freight and import duties</p></div>
+                    <div><h4 class="font-bold text-base sm:text-lg mb-1" data-i18n="balance">Final Payment</h4><p class="text-gray-700 text-sm sm:text-base" data-i18n="balanceDesc">70% balance before container loading</p></div>
                 </div>
             </div>
         </div>
