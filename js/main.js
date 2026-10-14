@@ -18,13 +18,13 @@
         var langNames = { en: 'English', es: 'Español', th: 'ไทย', vi: 'Tiếng Việt', zh: '中文' };
         var imageMap = { '50': 'assets/images/tray-50.jpg', '72': 'assets/images/tray-72.jpg', '105': 'assets/images/tray-105.jpg', '128': 'assets/images/tray-128.jpg' };
 
-        // ========== 视频加载逻辑（恢复） ==========
+        // ========== 视频加载逻辑 ==========
         function loadHeroVideo() {
             var video = document.getElementById('heroVideo');
             var placeholder = document.getElementById('videoPlaceholder');
             if (!video) return;
 
-            // 注意：淘宝 CDN 在海外加载很慢，建议上线后换成 YouTube 嵌入或 Cloudflare Stream
+            // 注意：上线后建议换成 YouTube 嵌入或 Cloudflare Stream
             var videoUrl = 'https://cloud.video.taobao.com/play/u/2214317181391/p/2/e/6/t/1/531712869626.mp4';
 
             if (video.src) { video.play().catch(function() {}); return; }
@@ -38,14 +38,6 @@
                 if (placeholder) { placeholder.classList.add('hidden'); }
                 video.play().catch(function() {});
             });
-
-            // 兜底：如果本地 file:// 协议导致视频无法加载，仍然显示占位图，不报错
-            setTimeout(function() {
-                if (video.readyState < 3 && placeholder) {
-                    placeholder.querySelector('span').textContent = 'Video preview unavailable locally';
-                    video.style.display = 'none';
-                }
-            }, 3000);
         }
 
         function setLanguage(lang) {
@@ -144,8 +136,12 @@
                     var activeTab = document.getElementById('tab-' + target);
                     if (activeTab) { activeTab.classList.add('active'); }
 
+                    // 切换右侧图片，并动态生成精准的 alt 描述
                     var img = document.getElementById('productImage');
-                    if (img && imageMap[target]) { img.src = imageMap[target]; }
+                    if (img && imageMap[target]) {
+                        img.src = imageMap[target];
+                        img.alt = target + " cells heavy duty plastic seedling tray wholesale";
+                    }
                 });
             });
 
@@ -210,7 +206,7 @@
                         })
                         .catch(function(error) {
                             console.error('Form submission error:', error);
-                            // 本地 file:// 测试时，fetch 可能失败，这里展示一个友好的提示，方便你检查 UI
+                            // 本地 file:// 测试时，fetch 可能失败，这里展示一个友好的提示
                             form.classList.add('opacity-0');
                             setTimeout(function() {
                                 form.classList.add('hidden');

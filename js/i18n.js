@@ -23,8 +23,8 @@
             packaging: "Packaging Options",
             packagingOptions: "Bundled or Carton Packaging",
             moq: "MOQ: 10,000 pieces",
-            deliveryTerms: "EXW Jining, China (Other Incoterms available upon request)",
-            customNotification: "💡 Customization & OEM Support: We offer custom manufacturing for specific cell counts and material formulations. Carton packaging is available at an additional cost. Please contact our Sales Manager directly.",
+            deliveryTerms: "EXW Jining, China (FOB/DDP logistics support available upon request)",
+            customNotification: "💡 Custom Tooling & Agricultural OEM Support: We offer custom manufacturing for specific cell counts and material formulations. Carton packaging is available at an additional cost. Please contact our Sales Manager directly.",
             faqTitle: "Frequently Asked Questions",
             faq1Q: "Are your seedling trays compatible with both manual and automated seeding lines?",
             faq1A: "Yes. Our trays are manufactured with standard dimensions, making them compatible with both manual seeding and high-speed automated greenhouse seeding lines.",
@@ -37,7 +37,9 @@
             qaItem1: "Flexural strength and drop testing for every production batch.",
             qaItem2: "Strict thickness and weight tolerances.",
             qaItem3: "Zero stress whitening inspection on automated lines.",
-            paymentTitle: "Payment Terms",
+            paymentTitle: "Payment & Shipping Terms",
+            shippingTitle: "EXW/FOB/DDP Support",
+            shippingDesc: "Base quotation is EXW Jining, China. We can also arrange FOB or DDP logistics services upon request.",
             deposit: "Down Payment",
             depositDesc: "30% deposit to secure production slot",
             balance: "Balance Payment",
@@ -46,7 +48,7 @@
             name: "Name",
             company: "Company",
             email: "Email",
-            phone: "Phone / WhatsApp",
+            phone: "Phone / WhatsApp (With Country Code)",
             country: "Country/Region",
             product: "Product Interest",
             quantity: "Estimated Quantity (pieces)",
@@ -80,16 +82,8 @@
                 "128": "128 Cell Tray (PT-128R)",
                 "custom": "Custom Requirements"
             },
-            weightOptions: {
-                "35": "35g",
-                "70": "70g",
-                "90": "90g"
-            },
-            thicknessOptions: {
-                "0.4": "0.4mm",
-                "0.8": "0.8mm",
-                "1.2": "1.2mm"
-            }
+            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
+            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
         },
         zh: {
             brandName: "ProTray",
@@ -113,8 +107,8 @@
             packaging: "包装方式",
             packagingOptions: "简包或纸箱",
             moq: "起订量: 10,000 件",
-            deliveryTerms: "EXW 中国济宁（其他贸易方式请咨询）",
-            customNotification: "💡 提示：除了以上型号，还支持定制化生产。如需纸箱包装，需额外计算包装费。请直接与我们的销售经理联系。",
+            deliveryTerms: "EXW 中国济宁（可根据要求提供 FOB/DDP 物流支持）",
+            customNotification: "💡 农业定制开模与OEM支持：我们提供特定穴数和材料配方的定制生产。如需纸箱包装，需额外计算包装费。请直接与我们的销售经理联系。",
             faqTitle: "常见问题解答",
             faq1Q: "你们的育苗盘兼容手动和自动播种线吗？",
             faq1A: "是的。我们的托盘按标准尺寸制造，兼容人工播种和高速自动温室播种线。",
@@ -127,7 +121,9 @@
             qaItem1: "每批次进行抗弯强度和跌落测试。",
             qaItem2: "严格的厚度和重量公差。",
             qaItem3: "自动化生产线上的零应力发白检测。",
-            paymentTitle: "付款条款",
+            paymentTitle: "付款与运输条款",
+            shippingTitle: "EXW/FOB/DDP 支持",
+            shippingDesc: "基础报价为 EXW 中国济宁。我们可以根据要求安排 FOB 或 DDP 物流服务。",
             deposit: "定金",
             depositDesc: "支付30%定金锁定生产档期",
             balance: "尾款",
@@ -136,7 +132,7 @@
             name: "姓名",
             company: "公司名称",
             email: "电子邮箱",
-            phone: "电话/WhatsApp",
+            phone: "电话 / WhatsApp（请包含国家区号）",
             country: "国家/地区",
             product: "感兴趣的产品",
             quantity: "预计采购量 (件)",
@@ -170,16 +166,8 @@
                 "128": "128 穴托盘 (PT-128R)",
                 "custom": "定制需求"
             },
-            weightOptions: {
-                "35": "35g",
-                "70": "70g",
-                "90": "90g"
-            },
-            thicknessOptions: {
-                "0.4": "0.4mm",
-                "0.8": "0.8mm",
-                "1.2": "1.2mm"
-            }
+            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
+            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
         },
         es: {
             brandName: "ProTray",
@@ -203,8 +191,8 @@
             packaging: "Opciones de Embalaje",
             packagingOptions: "Empaquetado o Caja",
             moq: "MOQ: 10,000 piezas",
-            deliveryTerms: "EXW Jining, China (Otros Incoterms disponibles a petición)",
-            customNotification: "💡 Personalización y soporte OEM: Ofrecemos fabricación personalizada para recuentos de celdas específicos y formulaciones de materiales. El embalaje en caja está disponible con costo adicional. Comuníquese directamente con nuestro Gerente de Ventas.",
+            deliveryTerms: "EXW Jining, China (Soporte logístico FOB/DDP disponible bajo petición)",
+            customNotification: "💡 Herramental Personalizado y Soporte OEM Agrícola: Ofrecemos fabricación personalizada para recuentos de celdas específicos y formulaciones de materiales. El embalaje en caja está disponible con costo adicional. Comuníquese directamente con nuestro Gerente de Ventas.",
             faqTitle: "Preguntas Frecuentes",
             faq1Q: "¿Son sus bandejas compatibles con líneas de siembra manuales y automatizadas?",
             faq1A: "Sí. Nuestras bandejas están fabricadas con dimensiones estándar, lo que las hace compatibles tanto con siembra manual como con líneas de siembra automatizadas de alta velocidad.",
@@ -217,7 +205,9 @@
             qaItem1: "Pruebas de resistencia a la flexión y caída para cada lote de producción.",
             qaItem2: "Estrictas tolerancias de grosor y peso.",
             qaItem3: "Inspección de decoloración por estrés en líneas automatizadas.",
-            paymentTitle: "Términos de Pago",
+            paymentTitle: "Términos de Pago y Envío",
+            shippingTitle: "Soporte EXW/FOB/DDP",
+            shippingDesc: "La cotización base es EXW Jining, China. También podemos organizar servicios logísticos FOB o DDP bajo petición.",
             deposit: "Pago Inicial",
             depositDesc: "30% de depósito para reservar espacio de producción",
             balance: "Pago Final",
@@ -226,7 +216,7 @@
             name: "Nombre",
             company: "Empresa",
             email: "Correo Electrónico",
-            phone: "Teléfono / WhatsApp",
+            phone: "Teléfono / WhatsApp (Con código de país)",
             country: "País/Región",
             product: "Producto de Interés",
             quantity: "Cantidad Estimada (piezas)",
@@ -260,16 +250,8 @@
                 "128": "Bandeja 128 celdas (PT-128R)",
                 "custom": "Requerimientos personalizados"
             },
-            weightOptions: {
-                "35": "35g",
-                "70": "70g",
-                "90": "90g"
-            },
-            thicknessOptions: {
-                "0.4": "0.4mm",
-                "0.8": "0.8mm",
-                "1.2": "1.2mm"
-            }
+            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
+            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
         },
         th: {
             brandName: "ProTray",
@@ -293,8 +275,8 @@
             packaging: "ตัวเลือกบรรจุภัณฑ์",
             packagingOptions: "มัดรวมหรือบรรจุกล่อง",
             moq: "จำนวนขั้นต่ำ: 10,000 ชิ้น",
-            deliveryTerms: "EXW จีน (สอบถาม Incoterms อื่น ๆ ได้)",
-            customNotification: "💡 การปรับแต่งและการสนับสนุน OEM: เรามีการผลิตตามสั่งสำหรับจำนวนช่องและสูตรวัสดุเฉพาะ บรรจุภัณฑ์กล่องมีค่าใช้จ่ายเพิ่มเติม โปรดติดต่อผู้จัดการฝ่ายขายของเราโดยตรง",
+            deliveryTerms: "EXW จีน (สนับสนุนโลจิสติกส์ FOB/DDP ตามคำขอ)",
+            customNotification: "💡 บริการขึ้นแม่พิมพ์แบบกำหนดเองและ OEM เกษตรกรรม: เรามีการผลิตตามสั่งสำหรับจำนวนช่องและสูตรวัสดุเฉพาะ บรรจุภัณฑ์กล่องมีค่าใช้จ่ายเพิ่มเติม โปรดติดต่อผู้จัดการฝ่ายขายของเราโดยตรง",
             faqTitle: "คำถามที่พบบ่อย",
             faq1Q: "ถาดเพาะกล้าของคุณเข้ากันได้กับสายการเพาะแบบใช้แรงงานคนและแบบอัตโนมัติหรือไม่?",
             faq1A: "ได้ ถาดของเราผลิตขึ้นตามขนาดมาตรฐาน ทำให้เข้ากันได้ทั้งการเพาะแบบใช้แรงงานคนและสายการเพาะกล้าอัตโนมัติความเร็วสูง",
@@ -307,7 +289,9 @@
             qaItem1: "การทดสอบความต้านทานการดัดงอและการตกหล่นสำหรับทุกล็อตการผลิต",
             qaItem2: "ความคลาดเคลื่อนของความหนาและน้ำหนักที่เข้มงวด",
             qaItem3: "การตรวจสอบรอยขาวจากความเครียดบนสายการผลิตอัตโนมัติ",
-            paymentTitle: "เงื่อนไขการชำระเงิน",
+            paymentTitle: "เงื่อนไขการชำระเงินและการจัดส่ง",
+            shippingTitle: "สนับสนุน EXW/FOB/DDP",
+            shippingDesc: "ราคาเสนอพื้นฐานคือ EXW จีน นอกจากนี้เรายังสามารถจัดบริการโลจิสติกส์ FOB หรือ DDP ได้ตามคำขอ",
             deposit: "เงินดาวน์",
             depositDesc: "มัดจำ 30% เพื่อยึดช่องว่างการผลิต",
             balance: "ยอดคงเหลือ",
@@ -316,7 +300,7 @@
             name: "ชื่อ",
             company: "บริษัท",
             email: "อีเมล",
-            phone: "โทรศัพท์ / WhatsApp",
+            phone: "โทรศัพท์ / WhatsApp (พร้อมรหัสประเทศ)",
             country: "ประเทศ/ภูมิภาค",
             product: "ผลิตภัณฑ์ที่สนใจ",
             quantity: "ปริมาณประมาณ (ชิ้น)",
@@ -350,16 +334,8 @@
                 "128": "ถาด 128 ช่อง (PT-128R)",
                 "custom": "ความต้องการพิเศษ"
             },
-            weightOptions: {
-                "35": "35g",
-                "70": "70g",
-                "90": "90g"
-            },
-            thicknessOptions: {
-                "0.4": "0.4mm",
-                "0.8": "0.8mm",
-                "1.2": "1.2mm"
-            }
+            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
+            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
         },
         vi: {
             brandName: "ProTray",
@@ -383,8 +359,8 @@
             packaging: "Tùy Chọn Đóng Gói",
             packagingOptions: "Bó hoặc Đóng Thùng",
             moq: "MOQ: 10,000 chiếc",
-            deliveryTerms: "EXW Jining, Trung Quốc (Các Incoterms khác theo yêu cầu)",
-            customNotification: "💡 Tùy chỉnh và Hỗ trợ OEM: Chúng tôi cung cấp sản xuất theo yêu cầu cho số ô cụ thể và công thức vật liệu. Đóng gói thùng có phụ phí. Vui lòng liên hệ trực tiếp với Quản lý Kinh doanh của chúng tôi.",
+            deliveryTerms: "EXW Jining, Trung Quốc (Hỗ trợ logistics FOB/DDP theo yêu cầu)",
+            customNotification: "💡 Gia Công Khuôn Tùy Chỉnh & Hỗ Trợ OEM Nông Nghiệp: Chúng tôi cung cấp sản xuất theo yêu cầu cho số ô cụ thể và công thức vật liệu. Đóng gói thùng có phụ phí. Vui lòng liên hệ trực tiếp với Quản lý Kinh doanh của chúng tôi.",
             faqTitle: "Câu hỏi thường gặp",
             faq1Q: "Khay cây giống của bạn có tương thích với cả dây chuyền gieo hạt thủ công và tự động không?",
             faq1A: "Có. Khay của chúng tôi được sản xuất với kích thước tiêu chuẩn, tương thích với cả gieo hạt thủ công và dây chuyền gieo hạt nhà kính tự động tốc độ cao.",
@@ -397,7 +373,9 @@
             qaItem1: "Kiểm tra độ bền uốn và thả rơi cho mỗi lô sản xuất.",
             qaItem2: "Dung sai độ dày và trọng lượng nghiêm ngặt.",
             qaItem3: "Kiểm tra vết trắng do ứng suất trên dây chuyền tự động.",
-            paymentTitle: "Điều Khoản Thanh Toán",
+            paymentTitle: "Điều Khoản Thanh Toán & Vận Chuyển",
+            shippingTitle: "Hỗ trợ EXW/FOB/DDP",
+            shippingDesc: "Báo giá cơ bản là EXW Jining, Trung Quốc. Chúng tôi cũng có thể sắp xếp dịch vụ logistics FOB hoặc DDP theo yêu cầu.",
             deposit: "Thanh Toán Trước",
             depositDesc: "Đặt cọc 30% để giữ chỗ sản xuất",
             balance: "Thanh Toán Còn Lại",
@@ -406,7 +384,7 @@
             name: "Người liên hệ",
             company: "Công Ty",
             email: "Email",
-            phone: "Điện Thoại / WhatsApp",
+            phone: "Điện Thoại / WhatsApp (Kèm mã quốc gia)",
             country: "Quốc Gia/Khu Vực",
             product: "Sản Phẩm Quan Tâm",
             quantity: "Lượng Ước Tính (chiếc)",
@@ -440,16 +418,8 @@
                 "128": "Khay 128 ô (PT-128R)",
                 "custom": "Yêu cầu tùy chỉnh"
             },
-            weightOptions: {
-                "35": "35g",
-                "70": "70g",
-                "90": "90g"
-            },
-            thicknessOptions: {
-                "0.4": "0.4mm",
-                "0.8": "0.8mm",
-                "1.2": "1.2mm"
-            }
+            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
+            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
         }
     };
 
