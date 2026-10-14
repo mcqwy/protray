@@ -12,20 +12,25 @@
 </head>
 <body class="bg-gray-50">
 
-<!-- ====== 导航栏（硬编码） ====== -->
+<!-- ====== 导航栏（与首页完全一致，包含图标 + 上下两行文字 + 获取报价） ====== -->
 <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full top-0 z-50 transition-all">
-    <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center">
+    <div class="container mx-auto max-w-[90rem] px-4 md:px-8 py-3 flex flex-col md:flex-row justify-between items-center">
         <!-- 左侧 Logo -->
         <a href="index.html" class="flex items-center shrink-0 group mb-2 md:mb-0">
-            <img src="assets/images/logo.png" alt="ProTray" class="h-12 w-auto" onerror="this.style.display='none'; document.getElementById('navBrandText').style.display='inline-block';">
-            <span id="navBrandText" class="text-xl font-bold text-gray-800 group-hover:text-green-600 transition-colors" style="display:none;">ProTray</span>
+            <img src="assets/images/logo.png" alt="ProTray Agricultural Seedling Trays Logo" class="h-10 w-10 object-contain mr-3">
+            <div class="flex flex-col justify-center">
+                <span class="text-xl md:text-2xl font-bold text-gray-800 group-hover:text-green-600 transition-colors leading-tight">ProTray</span>
+                <span class="text-[10px] md:text-xs text-green-600 tracking-widest font-semibold mt-0.5 whitespace-nowrap">AGRICULTURAL SEEDLING TRAYS</span>
+            </div>
         </a>
 
         <!-- 右侧导航 -->
         <div class="flex flex-wrap justify-center md:justify-end items-center gap-3 sm:gap-4 mt-2 md:mt-0">
             <a href="index.html" class="text-gray-600 hover:text-green-600 font-medium text-sm sm:text-base transition-colors" data-i18n="navHome">Home</a>
             <a href="about.html" class="text-green-600 font-bold font-medium text-sm sm:text-base transition-colors" data-i18n="navAbout">About Us</a>
-            <button id="navQuoteBtn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 sm:px-5 rounded-lg text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5" data-i18n="btnNavQuote">Get a Quote</button>
+
+            <!-- 【新增】获取报价按钮：跳回首页表单 -->
+            <a href="index.html#contactFormSection" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 sm:px-5 rounded-lg text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5" data-i18n="btnNavQuote">Get a Quote</a>
 
             <!-- 语言切换 -->
             <div class="relative shrink-0">
@@ -56,7 +61,7 @@
 
 <!-- ====== 公司简介与工厂实拍图 ====== -->
 <section class="py-16 bg-white">
-    <div class="container mx-auto px-4 max-w-5xl">
+    <div class="container mx-auto max-w-[90rem] px-4 md:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
             <div>
                 <h2 class="text-2xl font-bold text-gray-800 mb-6" data-i18n="aboutCompanyTitle">Source Factory & Industry Integration</h2>
@@ -88,14 +93,18 @@
     </div>
 </section>
 
-<!-- ====== Footer ====== -->
+<!-- ====== Footer（与首页完全一致，包含图标 + 文字） ====== -->
 <footer class="bg-gray-800 text-white py-10 mt-12">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto max-w-[90rem] px-4 md:px-8">
         <div class="flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
                 <div class="flex items-center justify-center md:justify-start">
-                    <img src="assets/images/logo.png" alt="ProTray" class="h-8 w-auto mr-2 brightness-0 invert" onerror="this.style.display='none'; document.getElementById('footBrandText').style.display='inline-block';">
-                    <span id="footBrandText" class="text-xl font-bold" style="display:none;">ProTray</span>
+                    <!-- 底部图标保留绿色，文字适配深色背景 -->
+                    <img src="assets/images/logo.png" alt="ProTray Agricultural Seedling Trays Logo" class="h-10 w-10 object-contain mr-3">
+                    <div class="flex flex-col text-left justify-center">
+                        <span class="text-xl font-bold text-white leading-tight">ProTray</span>
+                        <span class="text-[10px] text-green-400 tracking-widest font-semibold mt-0.5 whitespace-nowrap">AGRICULTURAL SEEDLING TRAYS</span>
+                    </div>
                 </div>
                 <p class="mt-3 text-gray-400 text-sm" data-i18n="footerAddress">Jining Logistics Hub, Shandong Province, China</p>
             </div>
