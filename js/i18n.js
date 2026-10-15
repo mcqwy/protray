@@ -2,7 +2,7 @@
 (function() {
     const langData = {
         en: {
-            brandName: "ProTray",
+            brandName: "ProTrays",
             currentLang: "English",
             navHome: "Home",
             navAbout: "About Us",
@@ -58,10 +58,10 @@
             footerAddress: "Jining Logistics Hub, Shandong Province, China",
             whatsappBubble: "Get a Free Sample & Quote!",
             formSuccessMessage: "Thank you! Our team will contact you within 24 hours.",
-            aboutHeroTitle: "About ProTray",
+            aboutHeroTitle: "About ProTrays",
             aboutHeroSubtitle: "Your Trusted Source Factory for Agricultural Seedling Trays",
             aboutCompanyTitle: "Source Factory & Industry Integration",
-            aboutCompanyText1: "Located in Jining, Shandong Province, China, ProTray is a professional manufacturer dedicated to producing high-quality agricultural seedling trays. We specialize in rPET trays, offering reliable solutions for greenhouse and nursery operations.",
+            aboutCompanyText1: "Located in Jining, Shandong Province, China, ProTrays is a professional manufacturer dedicated to producing high-quality agricultural seedling trays. We specialize in rPET trays, offering reliable solutions for greenhouse and nursery operations.",
             aboutCompanyText2: "By managing our production lines directly and maintaining strict quality control systems, we ensure every tray meets your expectations. We leverage local supply chain advantages to provide source factory pricing, fast lead times, and exceptional customer support.",
             countryOptions: {
                 "": "Select your country/region",
@@ -101,7 +101,7 @@
             }
         },
         zh: {
-            brandName: "ProTray",
+            brandName: "ProTrays",
             currentLang: "中文",
             navHome: "首页",
             navAbout: "关于我们",
@@ -157,10 +157,10 @@
             footerAddress: "中国山东省济宁物流中心",
             whatsappBubble: "获取免费样品和报价！",
             formSuccessMessage: "感谢您的申请！我们将在24小时内与您取得联系。",
-            aboutHeroTitle: "关于 ProTray",
+            aboutHeroTitle: "关于 ProTrays",
             aboutHeroSubtitle: "您值得信赖的农业育苗盘源头工厂",
             aboutCompanyTitle: "源头工厂与产业整合",
-            aboutCompanyText1: "ProTray 位于中国山东省济宁市，是一家专业制造高质量农业育苗盘的制造商。我们专注于 rPET 托盘，为温室和苗圃运营提供可靠的解决方案。",
+            aboutCompanyText1: "ProTrays 位于中国山东省济宁市，是一家专业制造高质量农业育苗盘的制造商。我们专注于 rPET 托盘，为温室和苗圃运营提供可靠的解决方案。",
             aboutCompanyText2: "通过直接管理生产线并维持严格的品控体系，我们确保每一个托盘都符合您的期望。我们利用本地供应链优势，提供源头工厂价格、快速交货期和卓越的客户支持。",
             countryOptions: {
                 "": "选择您的国家/地区",
@@ -200,7 +200,7 @@
             }
         },
         es: {
-            brandName: "ProTray",
+            brandName: "ProTrays",
             currentLang: "Español",
             navHome: "Inicio",
             navAbout: "Sobre Nosotros",
@@ -256,10 +256,10 @@
             footerAddress: "Centro Logístico de Jining, Provincia de Shandong, China",
             whatsappBubble: "¡Obtenga una muestra y cotización gratis!",
             formSuccessMessage: "¡Gracias! Nuestro equipo se pondrá en contacto en 24 horas.",
-            aboutHeroTitle: "Sobre ProTray",
+            aboutHeroTitle: "Sobre ProTrays",
             aboutHeroSubtitle: "Su fábrica de origen de confianza para bandejas agrícolas",
             aboutCompanyTitle: "Fábrica de Origen e Integración Industrial",
-            aboutCompanyText1: "Ubicada en Jining, Provincia de Shandong, China, ProTray es un fabricante profesional dedicado a producir bandejas agrícolas de alta calidad. Nos especializamos en bandejas de rPET, ofreciendo soluciones confiables para invernaderos y viveros.",
+            aboutCompanyText1: "Ubicada en Jining, Provincia de Shandong, China, ProTrays es un fabricante profesional dedicado a producir bandejas agrícolas de alta calidad. Nos especializamos en bandejas de rPET, ofreciendo soluciones confiables para invernaderos y viveros.",
             aboutCompanyText2: "Al gestionar directamente nuestras líneas de producción y mantener estrictos sistemas de control de calidad, aseguramos que cada bandeja cumpla con sus expectativas. Aprovechamos las ventajas de la cadena de suministro local para ofrecer precios de fábrica de origen, plazos de entrega rápidos y soporte al cliente excepcional.",
             countryOptions: {
                 "": "Seleccione su país/región",
@@ -299,7 +299,7 @@
             }
         },
         th: {
-            brandName: "ProTray",
+            brandName: "ProTrays",
             currentLang: "ไทย",
             navHome: "หน้าแรก",
             navAbout: "เกี่ยวกับเรา",
@@ -355,10 +355,10 @@
             footerAddress: "ศูนย์การจัดส่งจินนิง, มณฑลชานตง, จีน",
             whatsappBubble: "รับตัวอย่างฟรีและราคา!",
             formSuccessMessage: "ขอบคุณ! ทีมงานของเราจะติดต่อคุณภายใน 24 ชั่วโมง",
-            aboutHeroTitle: "เกี่ยวกับ ProTray",
+            aboutHeroTitle: "เกี่ยวกับ ProTrays",
             aboutHeroSubtitle: "โรงงานต้นทางที่คุณไว้วางใจสำหรับถาดเพาะกล้าเกษตร",
             aboutCompanyTitle: "โรงงานต้นทางและการบูรณาการอุตสาหกรรม",
-            aboutCompanyText1: "ProTray ตั้งอยู่ที่เมืองจินนิง มณฑลชานตง ประเทศจีน เป็นผู้ผลิตมืออาชีพที่ทุ่มเทในการผลิตถาดเพาะกล้าเกษตรคุณภาพสูง เรามีความเชี่ยวชาญในถาด rPET นำเสนอโซลูชันที่เชื่อถือได้สำหรับโรงเรือนและเรือนเพาะชำ",
+            aboutCompanyText1: "ProTrays ตั้งอยู่ที่เมืองจินนิง มณฑลชานตง ประเทศจีน เป็นผู้ผลิตมืออาชีพที่ทุ่มเทในการผลิตถาดเพาะกล้าเกษตรคุณภาพสูง เรามีความเชี่ยวชาญในถาด rPET นำเสนอโซลูชันที่เชื่อถือได้สำหรับโรงเรือนและเรือนเพาะชำ",
             aboutCompanyText2: "ด้วยการจัดการสายการผลิตของเราโดยตรงและรักษาระบบควบคุมคุณภาพที่เข้มงวด เราจึงมั่นใจได้ว่าทุกถาดตรงตามความคาดหวังของคุณ เราใช้ประโยชน์จากข้อได้เปรียบของห่วงโซ่อุปทานในท้องถิ่นเพื่อมอบราคาโรงงานต้นทาง ระยะเวลาจัดส่งที่รวดเร็ว และการสนับสนุนลูกค้าที่ยอดเยี่ยม",
             countryOptions: {
                 "": "เลือกประเทศ/ภูมิภาคของคุณ",
@@ -398,7 +398,7 @@
             }
         },
         vi: {
-            brandName: "ProTray",
+            brandName: "ProTrays",
             currentLang: "Tiếng Việt",
             navHome: "Trang chủ",
             navAbout: "Về chúng tôi",
@@ -454,10 +454,10 @@
             footerAddress: "Trung Tâm Logistics Jining, Tỉnh Sơn Đông, Trung Quốc",
             whatsappBubble: "Nhận mẫu miễn phí & báo giá!",
             formSuccessMessage: "Cảm ơn! Đội ngũ của chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ.",
-            aboutHeroTitle: "Về ProTray",
+            aboutHeroTitle: "Về ProTrays",
             aboutHeroSubtitle: "Nhà máy nguồn đáng tin cậy của bạn cho khay cây giống nông nghiệp",
             aboutCompanyTitle: "Nhà Máy Nguồn & Tích Hợp Công Nghiệp",
-            aboutCompanyText1: "Tọa lạc tại Tế Ninh, tỉnh Sơn Đông, Trung Quốc, ProTray là một nhà sản xuất chuyên nghiệp chuyên sản xuất khay cây giống nông nghiệp chất lượng cao. Chúng tôi chuyên về khay rPET, cung cấp giải pháp đáng tin cậy cho nhà kính và vườn ươm.",
+            aboutCompanyText1: "Tọa lạc tại Tế Ninh, tỉnh Sơn Đông, Trung Quốc, ProTrays là một nhà sản xuất chuyên nghiệp chuyên sản xuất khay cây giống nông nghiệp chất lượng cao. Chúng tôi chuyên về khay rPET, cung cấp giải pháp đáng tin cậy cho nhà kính và vườn ươm.",
             aboutCompanyText2: "Bằng cách quản lý trực tiếp dây chuyền sản xuất của chúng tôi và duy trì hệ thống kiểm soát chất lượng nghiêm ngặt, chúng tôi đảm bảo mọi khay đều đáp ứng mong đợi của bạn. Chúng tôi tận dụng lợi thế chuỗi cung ứng địa phương để cung cấp giá nhà máy nguồn, thời gian giao hàng nhanh và hỗ trợ khách hàng đặc biệt.",
             countryOptions: {
                 "": "Chọn quốc gia/khu vực",
