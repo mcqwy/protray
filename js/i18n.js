@@ -13,25 +13,26 @@
             btnGetQuote: "Request Free Sample & Quote",
             btnContactSales: "📞 Talk to a Sales Manager",
             specsTitle: "Commercial Grade Agricultural Seedling Tray Specifications",
-            cells: "Cells",
+            cells: "Holes",
             modelNo: "Model Number",
-            cellCount: "Cell Count",
+            cellCount: "Hole Count",
+            dimensions: "Dimensions",
             material: "Material Composition",
-            weight: "Tray Weight",
+            weight: "Weight per Tray",
             thickness: "Material Thickness",
-            height: "Standard Height",
+            cellDepth: "Cell Depth",
             packaging: "Packaging Options",
             packagingOptions: "Bundled or Carton Packaging",
             moq: "MOQ: 10,000 pieces",
             deliveryTerms: "EXW Jining, China (FOB/DDP logistics support available upon request)",
-            customNotification: "💡 Custom Tooling & Agricultural OEM Support: We offer custom manufacturing for specific cell counts and material formulations. Carton packaging is available at an additional cost. Please contact our Sales Manager directly.",
+            customNotification: "💡 Custom Tooling & Agricultural OEM Support: We offer custom manufacturing for specific hole counts and material formulations. Carton packaging is available at an additional cost. Please contact our Sales Manager directly.",
             faqTitle: "Frequently Asked Questions",
             faq1Q: "Are your seedling trays compatible with both manual and automated seeding lines?",
             faq1A: "Yes. Our trays are manufactured with standard dimensions, making them compatible with both manual seeding and high-speed automated greenhouse seeding lines.",
             faq2Q: "What is your minimum order quantity (MOQ)?",
             faq2A: "Our standard MOQ is 10,000 pieces per model. For trial orders or samples, please contact our sales manager directly.",
-            faq3Q: "Do you support custom cell counts and sizes?",
-            faq3A: "Yes. We offer comprehensive OEM & ODM services. Custom cell counts, sizes, and packaging are available upon request.",
+            faq3Q: "Do you support custom hole counts and sizes?",
+            faq3A: "Yes. We offer comprehensive OEM & ODM services. Custom hole counts, sizes, and packaging are available upon request.",
             trustTitle: "Quality Assurance & Testing",
             qaTitle: "In-House Quality Control",
             qaItem1: "Flexural strength and drop testing for every production batch.",
@@ -76,14 +77,28 @@
             },
             productOptions: {
                 "": "Select product model",
-                "50": "50 Cell Tray (PT-50R)",
-                "72": "72 Cell Tray (PT-72R)",
-                "105": "105 Cell Tray (PT-105R)",
-                "128": "128 Cell Tray (PT-128R)",
+                "32": "32 Holes Tray (PT-32R)",
+                "40": "40 Holes Tray (PT-40R)",
+                "50": "50 Holes Tray (PT-50R)",
+                "72": "72 Holes Tray (PT-72R)",
+                "98": "98 Holes Tray (PT-98R)",
+                "105": "105 Holes Tray (PT-105R)",
+                "128": "128 Holes Tray (PT-128R)",
                 "custom": "Custom Requirements"
             },
-            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
-            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
+            weightOptions: {
+                "60": "60g",
+                "70": "70g",
+                "80": "80g",
+                "90": "90g",
+                "100": "100g"
+            },
+            thicknessOptions: {
+                "0.4": "0.4mm",
+                "0.5": "0.5mm",
+                "0.6": "0.6mm",
+                "0.7": "0.7mm"
+            }
         },
         zh: {
             brandName: "ProTray",
@@ -97,25 +112,26 @@
             btnGetQuote: "申请免费样品和报价",
             btnContactSales: "📞 联系销售经理",
             specsTitle: "商用级农业育苗盘规格参数",
-            cells: "穴",
+            cells: "孔",
             modelNo: "型号",
-            cellCount: "穴数",
+            cellCount: "孔数",
+            dimensions: "尺寸",
             material: "材质构成",
             weight: "单盘重量",
             thickness: "板材厚度",
-            height: "标准高度",
+            cellDepth: "孔深",
             packaging: "包装方式",
             packagingOptions: "简包或纸箱",
             moq: "起订量: 10,000 件",
             deliveryTerms: "EXW 中国济宁（可根据要求提供 FOB/DDP 物流支持）",
-            customNotification: "💡 农业定制开模与OEM支持：我们提供特定穴数和材料配方的定制生产。如需纸箱包装，需额外计算包装费。请直接与我们的销售经理联系。",
+            customNotification: "💡 农业定制开模与OEM支持：我们提供特定孔数和材料配方的定制生产。如需纸箱包装，需额外计算包装费。请直接与我们的销售经理联系。",
             faqTitle: "常见问题解答",
             faq1Q: "你们的育苗盘兼容手动和自动播种线吗？",
             faq1A: "是的。我们的托盘按标准尺寸制造，兼容人工播种和高速自动温室播种线。",
             faq2Q: "起订量是多少？",
             faq2A: "标准起订量是10,000件。试单或样品请直接联系销售经理。",
-            faq3Q: "支持定制穴数和尺寸吗？",
-            faq3A: "是的。我们提供全套OEM/ODM服务，可按需定制穴数、尺寸和包装。",
+            faq3Q: "支持定制孔数和尺寸吗？",
+            faq3A: "是的。我们提供全套OEM/ODM服务，可按需定制孔数、尺寸和包装。",
             trustTitle: "质量保证与测试",
             qaTitle: "内部品控",
             qaItem1: "每批次进行抗弯强度和跌落测试。",
@@ -160,14 +176,28 @@
             },
             productOptions: {
                 "": "选择产品型号",
-                "50": "50 穴托盘 (PT-50R)",
-                "72": "72 穴托盘 (PT-72R)",
-                "105": "105 穴托盘 (PT-105R)",
-                "128": "128 穴托盘 (PT-128R)",
+                "32": "32孔托盘 (PT-32R)",
+                "40": "40孔托盘 (PT-40R)",
+                "50": "50孔托盘 (PT-50R)",
+                "72": "72孔托盘 (PT-72R)",
+                "98": "98孔托盘 (PT-98R)",
+                "105": "105孔托盘 (PT-105R)",
+                "128": "128孔托盘 (PT-128R)",
                 "custom": "定制需求"
             },
-            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
-            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
+            weightOptions: {
+                "60": "60g",
+                "70": "70g",
+                "80": "80g",
+                "90": "90g",
+                "100": "100g"
+            },
+            thicknessOptions: {
+                "0.4": "0.4mm",
+                "0.5": "0.5mm",
+                "0.6": "0.6mm",
+                "0.7": "0.7mm"
+            }
         },
         es: {
             brandName: "ProTray",
@@ -184,10 +214,11 @@
             cells: "Celdas",
             modelNo: "Número de Modelo",
             cellCount: "Número de Celdas",
+            dimensions: "Dimensiones",
             material: "Composición del Material",
             weight: "Peso de la Bandeja",
             thickness: "Grosor del Material",
-            height: "Altura Estándar",
+            cellDepth: "Profundidad de Celda",
             packaging: "Opciones de Embalaje",
             packagingOptions: "Empaquetado o Caja",
             moq: "MOQ: 10,000 piezas",
@@ -244,14 +275,28 @@
             },
             productOptions: {
                 "": "Seleccione el modelo",
+                "32": "Bandeja 32 celdas (PT-32R)",
+                "40": "Bandeja 40 celdas (PT-40R)",
                 "50": "Bandeja 50 celdas (PT-50R)",
                 "72": "Bandeja 72 celdas (PT-72R)",
+                "98": "Bandeja 98 celdas (PT-98R)",
                 "105": "Bandeja 105 celdas (PT-105R)",
                 "128": "Bandeja 128 celdas (PT-128R)",
                 "custom": "Requerimientos personalizados"
             },
-            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
-            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
+            weightOptions: {
+                "60": "60g",
+                "70": "70g",
+                "80": "80g",
+                "90": "90g",
+                "100": "100g"
+            },
+            thicknessOptions: {
+                "0.4": "0.4mm",
+                "0.5": "0.5mm",
+                "0.6": "0.6mm",
+                "0.7": "0.7mm"
+            }
         },
         th: {
             brandName: "ProTray",
@@ -268,10 +313,11 @@
             cells: "ช่อง",
             modelNo: "รุ่น",
             cellCount: "จำนวนช่อง",
+            dimensions: "ขนาด",
             material: "ส่วนประกอบวัสดุ",
             weight: "น้ำหนักถาด",
             thickness: "ความหนาวัสดุ",
-            height: "ความสูงมาตรฐาน",
+            cellDepth: "ความลึกของหลุม",
             packaging: "ตัวเลือกบรรจุภัณฑ์",
             packagingOptions: "มัดรวมหรือบรรจุกล่อง",
             moq: "จำนวนขั้นต่ำ: 10,000 ชิ้น",
@@ -328,14 +374,28 @@
             },
             productOptions: {
                 "": "เลือกโมเดลสินค้า",
+                "32": "ถาด 32 ช่อง (PT-32R)",
+                "40": "ถาด 40 ช่อง (PT-40R)",
                 "50": "ถาด 50 ช่อง (PT-50R)",
                 "72": "ถาด 72 ช่อง (PT-72R)",
+                "98": "ถาด 98 ช่อง (PT-98R)",
                 "105": "ถาด 105 ช่อง (PT-105R)",
                 "128": "ถาด 128 ช่อง (PT-128R)",
                 "custom": "ความต้องการพิเศษ"
             },
-            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
-            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
+            weightOptions: {
+                "60": "60g",
+                "70": "70g",
+                "80": "80g",
+                "90": "90g",
+                "100": "100g"
+            },
+            thicknessOptions: {
+                "0.4": "0.4mm",
+                "0.5": "0.5mm",
+                "0.6": "0.6mm",
+                "0.7": "0.7mm"
+            }
         },
         vi: {
             brandName: "ProTray",
@@ -352,10 +412,11 @@
             cells: "Ô",
             modelNo: "Mã Số Model",
             cellCount: "Số Ô",
+            dimensions: "Kích Thước",
             material: "Thành Phần Vật Liệu",
             weight: "Trọng Lượng Khay",
             thickness: "Độ Dày Vật Liệu",
-            height: "Chiều Cao Tiêu Chuẩn",
+            cellDepth: "Độ Sâu Ô",
             packaging: "Tùy Chọn Đóng Gói",
             packagingOptions: "Bó hoặc Đóng Thùng",
             moq: "MOQ: 10,000 chiếc",
@@ -412,14 +473,28 @@
             },
             productOptions: {
                 "": "Chọn mẫu sản phẩm",
+                "32": "Khay 32 ô (PT-32R)",
+                "40": "Khay 40 ô (PT-40R)",
                 "50": "Khay 50 ô (PT-50R)",
                 "72": "Khay 72 ô (PT-72R)",
+                "98": "Khay 98 ô (PT-98R)",
                 "105": "Khay 105 ô (PT-105R)",
                 "128": "Khay 128 ô (PT-128R)",
                 "custom": "Yêu cầu tùy chỉnh"
             },
-            weightOptions: { "35": "35g", "70": "70g", "90": "90g" },
-            thicknessOptions: { "0.4": "0.4mm", "0.8": "0.8mm", "1.2": "1.2mm" }
+            weightOptions: {
+                "60": "60g",
+                "70": "70g",
+                "80": "80g",
+                "90": "90g",
+                "100": "100g"
+            },
+            thicknessOptions: {
+                "0.4": "0.4mm",
+                "0.5": "0.5mm",
+                "0.6": "0.6mm",
+                "0.7": "0.7mm"
+            }
         }
     };
 

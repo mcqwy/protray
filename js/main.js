@@ -16,21 +16,27 @@
 
         var flagMap = { en: 'us', es: 'mx', th: 'th', vi: 'vn', zh: 'cn' };
         var langNames = { en: 'English', es: 'Español', th: 'ไทย', vi: 'Tiếng Việt', zh: '中文' };
-        var imageMap = { '50': 'assets/images/tray-50.jpg', '72': 'assets/images/tray-72.jpg', '105': 'assets/images/tray-105.jpg', '128': 'assets/images/tray-128.jpg' };
+
+        // 注意：目前 32、40、98 孔暂无真实图片，暂时复用 50 和 72 的图片，等你拍好新图后替换 assets/images/ 里的文件即可，不用改代码
+        var imageMap = {
+            '32': 'assets/images/tray-50.jpg',
+            '40': 'assets/images/tray-50.jpg',
+            '50': 'assets/images/tray-50.jpg',
+            '72': 'assets/images/tray-72.jpg',
+            '98': 'assets/images/tray-72.jpg',
+            '105': 'assets/images/tray-105.jpg',
+            '128': 'assets/images/tray-128.jpg'
+        };
 
         // ========== 视频加载逻辑 ==========
         function loadHeroVideo() {
             var video = document.getElementById('heroVideo');
             var placeholder = document.getElementById('videoPlaceholder');
             if (!video) return;
-
-            // 注意：上线后建议换成 YouTube 嵌入或 Cloudflare Stream
             var videoUrl = 'https://cloud.video.taobao.com/play/u/2214317181391/p/2/e/6/t/1/531712869626.mp4';
 
             if (video.src) { video.play().catch(function() {}); return; }
-
-            video.src = videoUrl;
-            video.load();
+            video.src = videoUrl; video.load();
 
             video.addEventListener('canplay', function onCanPlay() {
                 video.removeEventListener('canplay', onCanPlay);
@@ -98,28 +104,11 @@
                 opt.addEventListener('click', function(e) {
                     e.preventDefault();
                     var lang = this.getAttribute('data-lang');
-                    if (lang) {
-                        setLanguage(lang);
-                        if (dropdown) dropdown.classList.remove('active');
-                    }
+                    if (lang) { setLanguage(lang); if (dropdown) dropdown.classList.remove('active'); }
                 });
             });
 
-            // 重量/厚度按钮点击
-            document.querySelectorAll('.btn-option').forEach(function(btn) {
-                btn.addEventListener('click', function() {
-                    var group = this.closest('.btn-group');
-                    if (!group) return;
-                    group.querySelectorAll('.btn-option').forEach(function(b) {
-                        b.classList.remove('active', 'bg-green-600', 'text-white');
-                        b.classList.add('bg-white', 'text-gray-700');
-                    });
-                    this.classList.add('active', 'bg-green-600', 'text-white');
-                    this.classList.remove('bg-white', 'text-gray-700');
-                });
-            });
-
-            // Tab 切换（50/72/105/128 Cells）
+            // Tab 切换（32/40/50/72/98/105/128 Holes）
             var tabBtns = document.querySelectorAll('.tab-btn');
             var tabContents = document.querySelectorAll('.tab-content');
             tabBtns.forEach(function(btn) {
@@ -136,11 +125,11 @@
                     var activeTab = document.getElementById('tab-' + target);
                     if (activeTab) { activeTab.classList.add('active'); }
 
-                    // 切换右侧图片，并动态生成精准的 alt 描述
+                    // 切换图片，并动态生成精准的 alt 描述
                     var img = document.getElementById('productImage');
                     if (img && imageMap[target]) {
                         img.src = imageMap[target];
-                        img.alt = target + " cells heavy duty plastic seedling tray wholesale";
+                        img.alt = target + " holes commercial grade plastic seedling tray wholesale";
                     }
                 });
             });
@@ -206,7 +195,6 @@
                         })
                         .catch(function(error) {
                             console.error('Form submission error:', error);
-                            // 本地 file:// 测试时，fetch 可能失败，这里展示一个友好的提示
                             form.classList.add('opacity-0');
                             setTimeout(function() {
                                 form.classList.add('hidden');
