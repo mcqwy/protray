@@ -9,6 +9,95 @@
     <meta name="description" content="ProTray offers wholesale commercial plug trays and agricultural seedling trays made of modified rPET. Designed for high-speed automated greenhouse lines. Factory direct, SGS certified. Request a free sample." />
     <meta name="keywords" content="wholesale plug trays, commercial seedling trays, agricultural propagation, automated greenhouse, rPET trays, plant propagation, ProTray" />
 
+    <!-- ====== Google Analytics 4 (GA4) ====== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W7G7ZQY7Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6W7G7ZQY7Z');
+    </script>
+
+    <!-- ====== 微软 Clarity ====== -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "yxpj0e4iqt");
+    </script>
+
+    <!-- ====== 结构化数据（SEO 核心） ====== -->
+    <!-- 1. 公司/品牌信息 -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "ProTray",
+            "url": "https://mcqwy.github.io/protray",
+            "logo": "https://mcqwy.github.io/protray/assets/images/logo.png",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "email": "你的邮箱@xxx.com",
+                "url": "https://wa.me/8615864555803",
+                "areaServed": "Worldwide",
+                "availableLanguage": ["English", "Spanish", "Thai", "Vietnamese", "Chinese"]
+            }
+        }
+    </script>
+
+    <!-- 2. 产品规格信息 -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Commercial Agricultural Seedling Tray",
+            "image": [
+                "https://mcqwy.github.io/protray/assets/images/tray-32.jpg",
+                "https://mcqwy.github.io/protray/assets/images/tray-50.jpg",
+                "https://mcqwy.github.io/protray/assets/images/tray-128.jpg"
+            ],
+            "description": "High-speed automation compatible agricultural seedling trays. Made from Modified Heavy-Duty rPET. Available in 32, 40, 50, 72, 98, 105, and 128 holes.",
+            "brand": { "@type": "Brand", "name": "ProTray" },
+            "material": "Modified Heavy-Duty rPET"
+        }
+    </script>
+
+    <!-- 3. FAQ 常见问题 -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Are your seedling trays compatible with both manual and automated seeding lines?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Our trays are manufactured with standard dimensions, making them compatible with both manual seeding and high-speed automated greenhouse seeding lines."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is your minimum order quantity (MOQ)?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our standard MOQ is 10,000 pieces per model. For trial orders or samples, please contact our sales manager directly."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you support custom hole counts and sizes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. We offer comprehensive OEM & ODM services. Custom hole counts, sizes, and packaging are available upon request."
+                    }
+                }
+            ]
+        }
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -48,7 +137,7 @@
 </nav>
 
 <!-- ====== Hero 首屏 ====== -->
-<section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-green-700 to-green-900 text-white overflow-x-hidden">
+<section class="pt-36 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-green-700 to-green-900 text-white overflow-x-hidden">
     <div class="container mx-auto max-w-[90rem] px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <div class="w-full md:w-1/2 text-center md:text-left">
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight" data-i18n="heroTitle">
@@ -70,7 +159,9 @@
         </div>
         <div class="w-full md:w-1/2">
             <div class="video-container" id="videoContainer">
-                <video id="heroVideo" preload="none" muted loop playsinline poster="assets/images/video-poster.jpg" style="opacity:0; transition: opacity 0.8s ease; z-index:1; position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;">
+<!--                <video id="heroVideo" preload="none" muted loop playsinline poster="assets/images/video-poster.jpg" style="opacity:0; transition: opacity 0.8s ease; z-index:1; position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;">-->
+<!--                </video>-->
+                <video id="heroVideo" preload="none" muted loop playsinline style="opacity:0; transition: opacity 0.8s ease; z-index:1; position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover;">
                 </video>
                 <div id="videoPlaceholder" class="video-placeholder" style="z-index:2;">
                     <i class="fas fa-play-circle"></i>
@@ -114,7 +205,7 @@
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="material">Material Composition</td><td class="py-3 text-gray-800">Modified Heavy-Duty rPET</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="weight">Weight per Tray</td><td class="py-3 text-gray-800">60g / 70g / 80g / 90g / 100g</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="thickness">Material Thickness</td><td class="py-3 text-gray-800">0.4mm / 0.5mm / 0.6mm / 0.7mm</td></tr>
-                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">5.0 cm</td></tr>
+                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">4.0 cm - 5.5 cm</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="packaging">Packaging Options</td><td class="py-3 text-gray-800" data-i18n="packagingOptions">Bundled or Carton Packaging</td></tr>
                                     </tbody>
                                 </table>
@@ -139,7 +230,7 @@
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="material">Material Composition</td><td class="py-3 text-gray-800">Modified Heavy-Duty rPET</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="weight">Weight per Tray</td><td class="py-3 text-gray-800">60g / 70g / 80g / 90g / 100g</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="thickness">Material Thickness</td><td class="py-3 text-gray-800">0.4mm / 0.5mm / 0.6mm / 0.7mm</td></tr>
-                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">5.0 cm</td></tr>
+                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">4.0 cm - 5.5 cm</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="packaging">Packaging Options</td><td class="py-3 text-gray-800" data-i18n="packagingOptions">Bundled or Carton Packaging</td></tr>
                                     </tbody>
                                 </table>
@@ -164,7 +255,7 @@
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="material">Material Composition</td><td class="py-3 text-gray-800">Modified Heavy-Duty rPET</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="weight">Weight per Tray</td><td class="py-3 text-gray-800">60g / 70g / 80g / 90g / 100g</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="thickness">Material Thickness</td><td class="py-3 text-gray-800">0.4mm / 0.5mm / 0.6mm / 0.7mm</td></tr>
-                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">5.0 cm</td></tr>
+                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">4.0 cm - 5.5 cm</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="packaging">Packaging Options</td><td class="py-3 text-gray-800" data-i18n="packagingOptions">Bundled or Carton Packaging</td></tr>
                                     </tbody>
                                 </table>
@@ -189,7 +280,7 @@
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="material">Material Composition</td><td class="py-3 text-gray-800">Modified Heavy-Duty rPET</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="weight">Weight per Tray</td><td class="py-3 text-gray-800">60g / 70g / 80g / 90g / 100g</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="thickness">Material Thickness</td><td class="py-3 text-gray-800">0.4mm / 0.5mm / 0.6mm / 0.7mm</td></tr>
-                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">5.0 cm</td></tr>
+                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">4.0 cm - 5.5 cm</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="packaging">Packaging Options</td><td class="py-3 text-gray-800" data-i18n="packagingOptions">Bundled or Carton Packaging</td></tr>
                                     </tbody>
                                 </table>
@@ -214,7 +305,7 @@
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="material">Material Composition</td><td class="py-3 text-gray-800">Modified Heavy-Duty rPET</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="weight">Weight per Tray</td><td class="py-3 text-gray-800">60g / 70g / 80g / 90g / 100g</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="thickness">Material Thickness</td><td class="py-3 text-gray-800">0.4mm / 0.5mm / 0.6mm / 0.7mm</td></tr>
-                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">5.0 cm</td></tr>
+                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">4.0 cm - 5.5 cm</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="packaging">Packaging Options</td><td class="py-3 text-gray-800" data-i18n="packagingOptions">Bundled or Carton Packaging</td></tr>
                                     </tbody>
                                 </table>
@@ -239,7 +330,7 @@
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="material">Material Composition</td><td class="py-3 text-gray-800">Modified Heavy-Duty rPET</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="weight">Weight per Tray</td><td class="py-3 text-gray-800">60g / 70g / 80g / 90g / 100g</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="thickness">Material Thickness</td><td class="py-3 text-gray-800">0.4mm / 0.5mm / 0.6mm / 0.7mm</td></tr>
-                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">5.0 cm</td></tr>
+                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">4.0 cm - 5.5 cm</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="packaging">Packaging Options</td><td class="py-3 text-gray-800" data-i18n="packagingOptions">Bundled or Carton Packaging</td></tr>
                                     </tbody>
                                 </table>
@@ -264,7 +355,7 @@
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="material">Material Composition</td><td class="py-3 text-gray-800">Modified Heavy-Duty rPET</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="weight">Weight per Tray</td><td class="py-3 text-gray-800">60g / 70g / 80g / 90g / 100g</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="thickness">Material Thickness</td><td class="py-3 text-gray-800">0.4mm / 0.5mm / 0.6mm / 0.7mm</td></tr>
-                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">5.0 cm</td></tr>
+                                    <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="cellDepth">Cell Depth</td><td class="py-3 text-gray-800">4.0 cm - 5.5 cm</td></tr>
                                     <tr class="border-b border-gray-100"><td class="py-3 font-semibold text-gray-600" data-i18n="packaging">Packaging Options</td><td class="py-3 text-gray-800" data-i18n="packagingOptions">Bundled or Carton Packaging</td></tr>
                                     </tbody>
                                 </table>

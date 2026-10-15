@@ -6,13 +6,54 @@
     <title>About Us | ProTray Agricultural Seedling Trays</title>
     <meta name="description" content="ProTray is a source factory dedicated to providing high-quality agricultural seedling trays. Source factory pricing, OEM supported." />
 
+    <!-- ====== Google Analytics 4 (GA4) ====== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W7G7ZQY7Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6W7G7ZQY7Z');
+    </script>
+
+    <!-- ====== 微软 Clarity ====== -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "yxpj0e4iqt");
+    </script>
+
+    <!-- ====== 结构化数据 AboutPage ====== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About ProTray",
+            "description": "ProTray is a source factory dedicated to providing high-quality agricultural seedling trays. Source factory pricing, OEM supported.",
+            "url": "https://mcqwy.github.io/protray/about.html",
+            "mainEntity": {
+                "@type": "Organization",
+                "name": "ProTray",
+                "url": "https://mcqwy.github.io/protray",
+                "logo": "https://mcqwy.github.io/protray/assets/images/logo.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "sales",
+                    "email": "qq925637711@gmail.com",
+                    "url": "https://wa.me/8615864555803"
+                }
+            }
+        }
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50">
 
-<!-- ====== 导航栏（与首页完全一致，包含图标 + 上下两行文字 + 获取报价） ====== -->
+<!-- ====== 导航栏（已补全“获取报价”按钮） ====== -->
 <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full top-0 z-50 transition-all">
     <div class="container mx-auto max-w-[90rem] px-4 md:px-8 py-3 flex flex-col md:flex-row justify-between items-center">
         <!-- 左侧 Logo -->
@@ -28,6 +69,9 @@
         <div class="flex flex-wrap justify-center md:justify-end items-center gap-3 sm:gap-4 mt-2 md:mt-0">
             <a href="index.html" class="text-gray-600 hover:text-green-600 font-medium text-sm sm:text-base transition-colors" data-i18n="navHome">Home</a>
             <a href="about.html" class="text-green-600 font-bold font-medium text-sm sm:text-base transition-colors" data-i18n="navAbout">About Us</a>
+
+            <!-- 【新增】获取报价按钮：跳回首页表单 -->
+            <a href="index.html#contactFormSection" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 sm:px-5 rounded-lg text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5" data-i18n="btnNavQuote">Get a Quote</a>
 
             <!-- 语言切换 -->
             <div class="relative shrink-0">
@@ -49,7 +93,7 @@
 </nav>
 
 <!-- ====== Hero 区域 ====== -->
-<section class="pt-28 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-green-700 to-green-900 text-white">
+<section class="pt-36 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-green-700 to-green-900 text-white">
     <div class="container mx-auto px-4 text-center">
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" data-i18n="aboutHeroTitle">About ProTray</h1>
         <p class="text-lg sm:text-xl text-green-100 max-w-2xl mx-auto" data-i18n="aboutHeroSubtitle">Your Trusted Source Factory for Agricultural Seedling Trays</p>
@@ -71,32 +115,31 @@
             </div>
             <!-- 工厂实拍图占位 -->
             <div class="rounded-xl overflow-hidden shadow-lg bg-gray-100">
-                <img src="assets/images/factory-line.jpg" alt="ProTray Factory Production Line" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/800x600?text=Factory+Line'">
+                <img src="assets/images/factory-line.jpg" alt="ProTray automated seedling tray production line" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/800x600?text=Factory+Line'">
             </div>
         </div>
 
         <!-- 更多工厂照片 -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div class="rounded-lg overflow-hidden shadow-sm bg-gray-100">
-                <img src="assets/images/factory-warehouse.jpg" alt="ProTray Warehouse" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Warehouse'">
+                <img src="assets/images/factory-warehouse.jpg" alt="ProTray seedling tray warehouse stock" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Warehouse'">
             </div>
             <div class="rounded-lg overflow-hidden shadow-sm bg-gray-100">
-                <img src="assets/images/factory-qc.jpg" alt="ProTray Quality Control" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Quality+Control'">
+                <img src="assets/images/factory-qc.jpg" alt="ProTray seedling tray quality control inspection" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Quality+Control'">
             </div>
             <div class="rounded-lg overflow-hidden shadow-sm bg-gray-100">
-                <img src="assets/images/factory-loading.jpg" alt="ProTray Loading Container" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Loading'">
+                <img src="assets/images/factory-loading.png" alt="ProTray seedling tray container loading" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Loading'">
             </div>
         </div>
     </div>
 </section>
 
-<!-- ====== Footer（与首页完全一致，包含图标 + 文字） ====== -->
+<!-- ====== Footer（与首页完全一致） ====== -->
 <footer class="bg-gray-800 text-white py-10 mt-12">
     <div class="container mx-auto max-w-[90rem] px-4 md:px-8">
         <div class="flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
                 <div class="flex items-center justify-center md:justify-start">
-                    <!-- 底部图标保留绿色，文字适配深色背景 -->
                     <img src="assets/images/logo.png" alt="ProTray Agricultural Seedling Trays Logo" class="h-10 w-10 object-contain mr-3">
                     <div class="flex flex-col text-left justify-center">
                         <span class="text-xl font-bold text-white leading-tight">ProTray</span>
