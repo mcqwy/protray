@@ -63,6 +63,12 @@
       "q3": "Do you support custom hole counts and sizes?",
       "a3": "Yes. We offer comprehensive OEM / ODM services. Custom hole counts, sizes, and packaging are available upon request."
     },
+    "testimonials": {
+      "title": "What Our Customers Say",
+      "verifiedLabel": "Verified Buyer",
+      "averageLabel": "Average Rating",
+      "reviewCountLabel": "reviews"
+    },
     "trust": {
       "title": "Quality Assurance & Testing",
       "qaTitle": "In-House Quality Control",
@@ -184,6 +190,12 @@
       "a2": "标准起订量是 5,000 件。试单或样品请直接联系销售经理。",
       "q3": "支持定制孔数和尺寸吗？",
       "a3": "是的。我们提供全套 OEM / ODM 服务，可按需定制孔数、尺寸和包装。"
+    },
+    "testimonials": {
+      "title": "客户评价",
+      "verifiedLabel": "已验证买家",
+      "averageLabel": "平均评分",
+      "reviewCountLabel": "条评价"
     },
     "trust": {
       "title": "质量保证与检测",
@@ -307,6 +319,12 @@
       "q3": "¿Admiten número de celdas y tamaños personalizados?",
       "a3": "Sí. Ofrecemos servicios completos de OEM / ODM. El número de celdas, tamaños y embalajes personalizados están disponibles a pedido."
     },
+    "testimonials": {
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "verifiedLabel": "Comprador Verificado",
+      "averageLabel": "Calificación Promedio",
+      "reviewCountLabel": "reseñas"
+    },
     "trust": {
       "title": "Garantía de Calidad y Pruebas",
       "qaTitle": "Control de Calidad Interno",
@@ -429,6 +447,12 @@
       "q3": "คุณรองรับจำนวนช่องและขนาดที่กำหนดเองหรือไม่?",
       "a3": "ได้ เรามีบริการ OEM / ODM ครบวงจร สามารถกำหนดจำนวนช่อง ขนาด และบรรจุภัณฑ์ได้ตามต้องการ"
     },
+    "testimonials": {
+      "title": "ลูกค้าของเราพูดว่าอย่างไร",
+      "verifiedLabel": "ผู้ซื้อที่ยืนยันแล้ว",
+      "averageLabel": "คะแนนเฉลี่ย",
+      "reviewCountLabel": "รีวิว"
+    },
     "trust": {
       "title": "การประกันคุณภาพและการทดสอบ",
       "qaTitle": "การควบคุมคุณภาพภายใน",
@@ -550,6 +574,12 @@
       "a2": "MOQ tiêu chuẩn là 5,000 chiếc mỗi mẫu. Đối với đơn hàng thử nghiệm hoặc mẫu, vui lòng liên hệ quản lý kinh doanh.",
       "q3": "Bạn có hỗ trợ số ô và kích thước tùy chỉnh không?",
       "a3": "Có. Chúng tôi cung cấp dịch vụ OEM / ODM toàn diện. Số ô, kích thước và bao bì tùy chỉnh có sẵn theo yêu cầu."
+    },
+    "testimonials": {
+      "title": "Khách Hàng Nói Gì Về Chúng Tôi",
+      "verifiedLabel": "Người Mua Đã Xác Minh",
+      "averageLabel": "Điểm Trung Bình",
+      "reviewCountLabel": "đánh giá"
     },
     "trust": {
       "title": "Đảm Bảo Chất Lượng & Kiểm Tra",
