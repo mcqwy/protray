@@ -1,0 +1,293 @@
+[
+  {
+    "slug": "rpet-tray",
+    "shortName": "rPET",
+    "material": "Heavy-Duty rPET",
+    "translations": {
+      "en": {
+        "title": "rPET Seedling Trays | Commercial Heavy-Duty Grade | ProTrays",
+        "description": "Recycled rPET commercial seedling trays engineered for high-speed automated greenhouse seeding lines. Superior flexural strength and high toughness. Factory direct.",
+        "heroTitle": "rPET Seedling Trays — Recycled, Durable and Reliable",
+        "heroSubtitle": "Recycled PET Material · High Impact Resistance · High Toughness",
+        "whyChooseTitle": "Why Choose rPET Seedling Trays?",
+        "advantages": [
+          { "title": "Eco-Friendly Recycled Material", "desc": "Made from 100% recycled PET, meeting EU and North American sustainability requirements for agricultural plastics." },
+          { "title": "Superior Flexural Strength", "desc": "Engineered for high-speed automated seeding lines. Withstands repeated bending and mechanical handling without cracking." },
+          { "title": "Optimized for High-Speed Automation", "desc": "High dimensional accuracy, compatible with mainstream seeding machines, stable performance at high speeds." },
+          { "title": "Durable for Multiple Seasons", "desc": "Durable enough to be washed and reused across multiple seasons in commercial greenhouses, significantly reducing cost per seedling." }
+        ],
+        "faq": [
+          { "q": "Is rPET as durable as virgin PET?", "a": "Yes. Our rPET formulation uses special additives to restore impact resistance to virgin PET levels. All seedling trays undergo drop testing and flexural strength testing before shipment." },
+          { "q": "Does rPET contain any hazardous substances?", "a": "No. Our rPET seedling trays are free of BPA, phthalates, and heavy metals, complying with RoHS and REACH regulations for agricultural use." },
+          { "q": "What is the minimum order quantity for rPET seedling trays?", "a": "Our standard MOQ is 5,000 pieces per model. For trial orders or custom samples, please contact our sales manager directly." }
+        ]
+      },
+      "zh": {
+        "title": "rPET 育苗盘 | 商用耐用级 | ProTrays",
+        "description": "采用再生 rPET 材料制成的商用育苗盘，专为高速自动化温室播种线设计。弯曲强度优异，高韧性。工厂直供。",
+        "heroTitle": "rPET 育苗盘 — 再生材料，耐用可靠",
+        "heroSubtitle": "再生 PET 材质 · 抗冲击性强 · 高韧性",
+        "whyChooseTitle": "为什么选择 rPET 育苗盘？",
+        "advantages": [
+          { "title": "环保再生材料", "desc": "采用 100% 再生 PET 制造，符合欧盟和北美对农业塑料的可持续要求。" },
+          { "title": "弯曲强度优异", "desc": "专为高速自动化播种线设计，可反复弯曲、承受机械操作而不开裂。" },
+          { "title": "适配高速自动化线", "desc": "尺寸精度高，与主流播种机匹配良好，高速运行时稳定性好。" },
+          { "title": "耐用多季", "desc": "耐用性足够，商业温室清洗后可连续使用多个季度，显著降低单株苗成本。" }
+        ],
+        "faq": [
+          { "q": "rPET 和原生 PET 一样耐用吗？", "a": "是的。我们的 rPET 配方添加了专用助剂，将抗冲击性能恢复到原生 PET 水平。所有育苗盘出厂前均经过跌落测试和弯曲强度测试。" },
+          { "q": "rPET 含有有害物质吗？", "a": "不含。我们的 rPET 育苗盘不含 BPA、邻苯二甲酸酯和重金属，符合农业用途的 RoHS 和 REACH 法规。" },
+          { "q": "rPET 育苗盘的起订量是多少？", "a": "标准起订量为每款 5,000 件。试单或定制样品请直接联系销售经理。" }
+        ]
+      },
+      "es": {
+        "title": "Charolas rPET para Plántulas | Grado Comercial Resistente | ProTrays",
+        "description": "Charolas rPET recicladas para plántulas comerciales, diseñadas para líneas de siembra automatizadas de alta velocidad. Resistencia a la flexión superior y alta tenacidad. Directo de fábrica.",
+        "heroTitle": "Charolas rPET para Plántulas — Recicladas, Duraderas y Confiables",
+        "heroSubtitle": "Material PET Reciclado · Alta Resistencia al Impacto · Alta Tenacidad",
+        "whyChooseTitle": "¿Por Qué Elegir Charolas rPET?",
+        "advantages": [
+          { "title": "Material Reciclado Ecológico", "desc": "Fabricado con 100% PET reciclado, cumpliendo con los requisitos de sostenibilidad de la UE y Norteamérica para plásticos agrícolas." },
+          { "title": "Resistencia a la Flexión Superior", "desc": "Diseñado para líneas de siembra automatizadas de alta velocidad. Soporta flexión repetida y manejo mecánico sin agrietarse." },
+          { "title": "Optimizado para Automatización de Alta Velocidad", "desc": "Alta precisión dimensional, compatible con sembradoras convencionales, rendimiento estable a altas velocidades." },
+          { "title": "Durable por Múltiples Temporadas", "desc": "Suficientemente durable para ser lavada y reutilizada durante múltiples temporadas en invernaderos comerciales, reduciendo significativamente el costo por plántula." }
+        ],
+        "faq": [
+          { "q": "¿Es el rPET tan duradero como el PET virgen?", "a": "Sí. Nuestra formulación de rPET utiliza aditivos especiales que restauran la resistencia al impacto a niveles de PET virgen. Todas las charolas pasan pruebas de caída y de resistencia a la flexión antes de su envío." },
+          { "q": "¿Contiene el rPET sustancias peligrosas?", "a": "No. Nuestras charolas de rPET están libres de BPA, ftalatos y metales pesados, cumpliendo con las regulaciones RoHS y REACH para uso agrícola." },
+          { "q": "¿Cuál es la cantidad mínima de pedido para charolas rPET?", "a": "Nuestro MOQ estándar es de 5,000 piezas por modelo. Para pedidos de prueba o muestras personalizadas, contacte directamente a nuestro gerente de ventas." }
+        ]
+      },
+      "th": {
+        "title": "ถาดเพาะกล้า rPET | เกรดพาณิชย์ทนทาน | ProTrays",
+        "description": "ถาดเพาะกล้า rPET รีไซเคิลสำหรับงานพาณิชย์ ออกแบบสำหรับสายการเพาะอัตโนมัติความเร็วสูง ความแข็งแรงดัดโค้งยอดเยี่ยมและความเหนียวสูง ราคาโรงงานโดยตรง",
+        "heroTitle": "ถาดเพาะกล้า rPET — รีไซเคิล ทนทาน และเชื่อถือได้",
+        "heroSubtitle": "วัสดุ PET รีไซเคิล · ทนทานต่อแรงกระแทกสูง · ความเหนียวสูง",
+        "whyChooseTitle": "ทำไมต้องเลือกถาดเพาะกล้า rPET?",
+        "advantages": [
+          { "title": "วัสดุรีไซเคิลเป็นมิตรกับสิ่งแวดล้อม", "desc": "ผลิตจาก PET รีไซเคิล 100% ผ่านข้อกำหนดด้านความยั่งยืนของสหภาพยุโรปและอเมริกาเหนือสำหรับพลาสติกเกษตร" },
+          { "title": "ความแข็งแรงดัดโค้งยอดเยี่ยม", "desc": "ออกแบบสำหรับสายการเพาะอัตโนมัติความเร็วสูง ทนต่อการดัดงอซ้ำและแรงทางกลโดยไม่แตกร้าว" },
+          { "title": "เหมาะสมสำหรับระบบอัตโนมัติความเร็วสูง", "desc": "ความแม่นยำขนาดสูง เข้ากันได้กับเครื่องเพาะหลัก ให้ประสิทธิภาพที่เสถียรที่ความเร็วสูง" },
+          { "title": "ทนทานหลายฤดูกาล", "desc": "ทนทานพอที่จะล้างและใช้ซ้ำได้หลายฤดูกาลในโรงเรือนเชิงพาณิชย์ ลดต้นทุนต่อต้นกล้าอย่างมีนัยสำคัญ" }
+        ],
+        "faq": [
+          { "q": "rPET ทนทานเท่า PET บริสุทธิ์หรือไม่?", "a": "ใช่ สูตร rPET ของเราใช้สารเติมแต่งพิเศษเพื่อฟื้นฟูความต้านทานแรงกระแทกให้เท่ากับระดับ PET บริสุทธิ์ ถาดทั้งหมดผ่านการทดสอบการตกหล่นและความแข็งแรงดัดโค้งก่อนจัดส่ง" },
+          { "q": "rPET มีสารอันตรายหรือไม่?", "a": "ไม่มี ถาด rPET ของเราปลอดจาก BPA พาทาเลต และโลหะหนัก สอดคล้องกับข้อกำหนด RoHS และ REACH สำหรับการใช้งานเกษตร" },
+          { "q": "MOQ สำหรับถาดเพาะกล้า rPET คือเท่าไร?", "a": "MOQ มาตรฐานคือ 5,000 ชิ้นต่อรุ่น สำหรับคำสั่งซื้อทดลองหรือตัวอย่าง โปรดติดต่อผู้จัดการฝ่ายขาย" }
+        ]
+      },
+      "vi": {
+        "title": "Khay Cây Giống rPET | Cấp Thương Mại Bền | ProTrays",
+        "description": "Khay cây giống rPET tái chế thương mại cho dây chuyền gieo hạt nhà kính tự động tốc độ cao. Độ bền uốn vượt trội và độ dai cao. Giá nhà máy trực tiếp.",
+        "heroTitle": "Khay Cây Giống rPET — Tái Chế, Bền và Đáng Tin Cậy",
+        "heroSubtitle": "Vật Liệu PET Tái Chế · Khả Năng Chống Va Đập Cao · Độ Dai Cao",
+        "whyChooseTitle": "Tại sao chọn Khay Cây Giống rPET?",
+        "advantages": [
+          { "title": "Vật liệu tái chế thân thiện môi trường", "desc": "Sản xuất từ 100% PET tái chế, đáp ứng yêu cầu bền vững của EU và Bắc Mỹ cho nhựa nông nghiệp." },
+          { "title": "Độ bền uốn vượt trội", "desc": "Thiết kế cho dây chuyền gieo hạt tự động tốc độ cao. Chịu uốn lặp lại và xử lý cơ học mà không nứt." },
+          { "title": "Tối ưu cho tự động hóa tốc độ cao", "desc": "Độ chính xác kích thước cao, tương thích với máy gieo hạt phổ biến, hiệu suất ổn định ở tốc độ cao." },
+          { "title": "Bền qua nhiều mùa", "desc": "Đủ bền để rửa và tái sử dụng qua nhiều mùa trong nhà kính thương mại, giảm đáng kể chi phí mỗi cây giống." }
+        ],
+        "faq": [
+          { "q": "rPET có bền như PET nguyên sinh không?", "a": "Có. Công thức rPET của chúng tôi sử dụng phụ gia đặc biệt để khôi phục khả năng chống va đập ngang bằng PET nguyên sinh. Tất cả khay đều qua kiểm tra thả rơi và độ bền uốn trước khi xuất xưởng." },
+          { "q": "rPET có chứa chất độc hại không?", "a": "Không. Khay rPET của chúng tôi không chứa BPA, phthalate và kim loại nặng, tuân thủ quy định RoHS và REACH cho sử dụng nông nghiệp." },
+          { "q": "MOQ cho khay cây giống rPET là bao nhiêu?", "a": "MOQ tiêu chuẩn là 5,000 chiếc mỗi mẫu. Đối với đơn hàng thử nghiệm hoặc mẫu tùy chỉnh, vui lòng liên hệ trực tiếp quản lý kinh doanh." }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "pet-tray",
+    "shortName": "PET",
+    "material": "Virgin PET",
+    "translations": {
+      "en": {
+        "title": "PET Seedling Trays | Commercial Cost-Effective Grade | ProTrays",
+        "description": "Virgin PET commercial seedling trays for greenhouse propagation. Clear option available, cost-effective, available in 32-128 holes. Factory direct.",
+        "heroTitle": "PET Seedling Trays — Cost-Effective Commercial Grade",
+        "heroSubtitle": "Virgin PET Material · Clear Option Available · Factory Direct",
+        "whyChooseTitle": "Why Choose PET Seedling Trays?",
+        "advantages": [
+          { "title": "Cost-Effective for Volume Buyers", "desc": "Virgin PET offers excellent value, ideal for high-volume growers focused on cost control." },
+          { "title": "Clear Option Available", "desc": "Transparent PET allows observation of root development and moisture levels without disturbing the seedling." },
+          { "title": "Excellent Mechanical Strength", "desc": "PET provides good rigidity and impact resistance for both manual and automated seeding operations." },
+          { "title": "100% Recyclable", "desc": "Fully recyclable material, accepted by most agricultural plastic recycling programs in North America and Europe." }
+        ],
+        "faq": [
+          { "q": "Is PET tray available in transparent color?", "a": "Yes. Our PET trays can be produced in transparent or colored options. Minimum order quantity for custom color is 50,000 pieces." },
+          { "q": "What is the price difference between PET and rPET?", "a": "PET trays are typically 10-15% cheaper than rPET trays due to lower raw material costs. Contact our sales manager for a detailed quotation." },
+          { "q": "Do you support custom PET tray dimensions?", "a": "Yes. We offer ODM services for custom dimensions, hole counts and weights. MOQ for custom molds is 100,000 pieces." }
+        ]
+      },
+      "zh": {
+        "title": "PET 育苗盘 | 商用高性价比 | ProTrays",
+        "description": "采用原生 PET 材料的商用育苗盘，适用于温室育苗。可选透明款，性价比高，提供 32 - 128 孔多种规格。工厂直供。",
+        "heroTitle": "PET 育苗盘 — 高性价比商用级",
+        "heroSubtitle": "原生 PET 材质 · 可选透明款 · 工厂直供",
+        "whyChooseTitle": "为什么选择 PET 育苗盘？",
+        "advantages": [
+          { "title": "大批量采购性价比高", "desc": "原生 PET 性价比极高，非常适合注重成本控制的大批量种植户。" },
+          { "title": "可选透明款", "desc": "透明 PET 便于在不扰动幼苗的情况下观察根系发育和湿度状况。" },
+          { "title": "机械强度优异", "desc": "PET 刚性和抗冲击性良好，适用于人工和自动化播种操作。" },
+          { "title": "100% 可回收", "desc": "完全可回收，符合北美和欧洲大多数农业塑料回收项目的要求。" }
+        ],
+        "faq": [
+          { "q": "PET 育苗盘有透明款吗？", "a": "有。我们的 PET 育苗盘可生产为透明或着色两种。定制颜色起订量为 50,000 件。" },
+          { "q": "PET 和 rPET 的价格差异是多少？", "a": "由于原材料成本较低，PET 育苗盘通常比 rPET 育苗盘便宜 10 - 15%。请联系销售经理获取详细报价。" },
+          { "q": "支持定制 PET 育苗盘尺寸吗？", "a": "支持。我们提供定制尺寸、孔数和重量的 ODM 服务。定制模具起订量为 100,000 件。" }
+        ]
+      },
+      "es": {
+        "title": "Charolas PET para Plántulas | Grado Comercial Económico | ProTrays",
+        "description": "Charolas PET vírgenes para plántulas comerciales en invernadero. Opción transparente disponible, económico, 32-128 celdas. Directo de fábrica.",
+        "heroTitle": "Charolas PET para Plántulas — Grado Comercial Económico",
+        "heroSubtitle": "Material PET Virgen · Opción Transparente · Directo de Fábrica",
+        "whyChooseTitle": "¿Por Qué Elegir Charolas PET?",
+        "advantages": [
+          { "title": "Económico para Compras por Volumen", "desc": "El PET virgen ofrece una excelente relación costo-beneficio, ideal para cultivadores de gran volumen enfocados en controlar costos." },
+          { "title": "Opción Transparente Disponible", "desc": "El PET transparente permite observar el desarrollo radicular y los niveles de humedad sin molestar a la plántula." },
+          { "title": "Excelente Resistencia Mecánica", "desc": "El PET proporciona buena rigidez y resistencia al impacto para operaciones de siembra manual y automatizada." },
+          { "title": "100% Reciclable", "desc": "Material totalmente reciclable, aceptado por la mayoría de los programas de reciclaje de plásticos agrícolas en Norteamérica y Europa." }
+        ],
+        "faq": [
+          { "q": "¿Está disponible en color transparente?", "a": "Sí. Nuestras charolas PET se pueden producir en opciones transparentes o de color. MOQ para color personalizado: 50,000 piezas." },
+          { "q": "¿Cuál es la diferencia de precio entre PET y rPET?", "a": "Las charolas PET son típicamente 10-15% más económicas que las charolas rPET debido al menor costo de materia prima. Contacte a nuestro gerente de ventas para una cotización detallada." },
+          { "q": "¿Admiten dimensiones personalizadas?", "a": "Sí. Ofrecemos servicios ODM para dimensiones, número de celdas y pesos personalizados. MOQ para moldes personalizados: 100,000 piezas." }
+        ]
+      },
+      "th": {
+        "title": "ถาดเพาะกล้า PET | เกรดพาณิชย์คุ้มค่า | ProTrays",
+        "description": "ถาดเพาะกล้า PET บริสุทธิ์สำหรับการเพาะในโรงเรือน มีแบบใส คุ้มค่า 32-128 ช่อง ราคาโรงงานโดยตรง",
+        "heroTitle": "ถาดเพาะกล้า PET — เกรดพาณิชย์คุ้มค่า",
+        "heroSubtitle": "วัสดุ PET บริสุทธิ์ · มีแบบใส · ราคาโรงงานโดยตรง",
+        "whyChooseTitle": "ทำไมต้องเลือกถาดเพาะกล้า PET?",
+        "advantages": [
+          { "title": "คุ้มค่าสำหรับผู้ซื้อปริมาณมาก", "desc": "PET บริสุทธิ์ให้ความคุ้มค่าที่ยอดเยี่ยม เหมาะสำหรับผู้ปลูกปริมาณมากที่ให้ความสำคัญกับการควบคุมต้นทุน" },
+          { "title": "มีแบบใสให้เลือก", "desc": "PET โปร่งใสช่วยให้สังเกตการพัฒนาของรากและระดับความชื้นได้โดยไม่รบกวนต้นกล้า" },
+          { "title": "ความแข็งแรงเชิงกลยอดเยี่ยม", "desc": "PET ให้ความแข็งแกร่งและทนต่อแรงกระแทกที่ดีสำหรับการเพาะทั้งแบบใช้มือและอัตโนมัติ" },
+          { "title": "รีไซเคิลได้ 100%", "desc": "วัสดุรีไซเคิลได้ทั้งหมด ได้รับการยอมรับจากโครงการรีไซเคิลพลาสติกเกษตรส่วนใหญ่ในอเมริกาเหนือและยุโรป" }
+        ],
+        "faq": [
+          { "q": "ถาด PET มีแบบใสหรือไม่?", "a": "มี ถาด PET ของเราสามารถผลิตเป็นแบบใสหรือแบบมีสีได้ MOQ สำหรับสีกำหนดเอง: 50,000 ชิ้น" },
+          { "q": "ความแตกต่างราคา PET และ rPET?", "a": "ถาด PET มักถูกกว่าถาด rPET ประมาณ 10-15% เนื่องจากต้นทุนวัตถุดิบต่ำกว่า ติดต่อผู้จัดการฝ่ายขายเพื่อขอใบเสนอราคาโดยละเอียด" },
+          { "q": "รองรับขนาดกำหนดเองหรือไม่?", "a": "รองรับ บริการ ODM สำหรับขนาด จำนวนช่อง และน้ำหนัก MOQ สำหรับแม่พิมพ์กำหนดเอง: 100,000 ชิ้น" }
+        ]
+      },
+      "vi": {
+        "title": "Khay Cây Giống PET | Cấp Thương Mại Tiết Kiệm | ProTrays",
+        "description": "Khay cây giống PET nguyên sinh cho nhà kính thương mại. Có tùy chọn trong suốt, tiết kiệm, 32-128 ô. Giá nhà máy trực tiếp.",
+        "heroTitle": "Khay Cây Giống PET — Cấp Thương Mại Tiết Kiệm",
+        "heroSubtitle": "Vật Liệu PET Nguyên Sinh · Tùy Chọn Trong Suốt · Giá Nhà Máy Trực Tiếp",
+        "whyChooseTitle": "Tại sao chọn Khay Cây Giống PET?",
+        "advantages": [
+          { "title": "Tiết kiệm cho người mua số lượng lớn", "desc": "PET nguyên sinh mang lại giá trị tuyệt vời, lý tưởng cho người trồng số lượng lớn tập trung vào kiểm soát chi phí." },
+          { "title": "Có tùy chọn trong suốt", "desc": "PET trong suốt cho phép quan sát sự phát triển của rễ và độ ẩm mà không làm phiền cây giống." },
+          { "title": "Độ bền cơ học xuất sắc", "desc": "PET cung cấp độ cứng và khả năng chống va đập tốt cho cả gieo hạt thủ công và tự động." },
+          { "title": "Tái chế 100%", "desc": "Vật liệu tái chế hoàn toàn, được chấp nhận bởi hầu hết các chương trình tái chế nhựa nông nghiệp ở Bắc Mỹ và Châu Âu." }
+        ],
+        "faq": [
+          { "q": "Khay PET có tùy chọn trong suốt không?", "a": "Có. Khay PET của chúng tôi có thể sản xuất dạng trong suốt hoặc có màu. MOQ cho màu tùy chỉnh: 50,000 chiếc." },
+          { "q": "Sự khác biệt giá giữa PET và rPET?", "a": "Khay PET thường rẻ hơn khay rPET 10-15% do chi phí nguyên liệu thấp hơn. Liên hệ quản lý kinh doanh để được báo giá chi tiết." },
+          { "q": "Có hỗ trợ kích thước tùy chỉnh không?", "a": "Có. Chúng tôi cung cấp dịch vụ ODM cho kích thước, số ô và trọng lượng tùy chỉnh. MOQ cho khuôn tùy chỉnh: 100,000 chiếc." }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "pvc-tray",
+    "shortName": "PVC",
+    "material": "PVC",
+    "translations": {
+      "en": {
+        "title": "PVC Seedling Trays | Budget Commercial Grade | ProTrays",
+        "description": "PVC commercial seedling trays for budget-conscious growers. Soft, flexible, lightweight, available in 32-128 holes. Factory direct.",
+        "heroTitle": "PVC Seedling Trays — Budget-Friendly Commercial Grade",
+        "heroSubtitle": "Soft and Flexible · Lightweight · Ideal for Manual Seeding",
+        "whyChooseTitle": "Why Choose PVC Seedling Trays?",
+        "advantages": [
+          { "title": "Lowest Cost Per Unit", "desc": "PVC offers the most economical option for growers focused on minimizing upfront cost per tray." },
+          { "title": "Soft and Flexible", "desc": "Unlike rigid rPET, PVC trays flex under pressure, making them ideal for manual seeding and hand transplanting." },
+          { "title": "Lightweight Design", "desc": "PVC trays are noticeably lighter, reducing shipping weight and handling fatigue." },
+          { "title": "Good for Short-Term Use", "desc": "Perfect for single-season seedling production, or for growers testing new crops without heavy investment." }
+        ],
+        "faq": [
+          { "q": "How many times can PVC trays be reused?", "a": "PVC trays are designed primarily for 1-2 seasons of use. For long-term reusable trays, we recommend rPET or PET material." },
+          { "q": "Is PVC suitable for automated seeding lines?", "a": "PVC trays work on automated lines, but their soft material may deform at high machine speeds. For high-speed automation we recommend rPET trays." },
+          { "q": "What is the minimum order for PVC trays?", "a": "Standard MOQ is 5,000 pieces per model. Larger volume orders can unlock additional price discounts." }
+        ]
+      },
+      "zh": {
+        "title": "PVC 育苗盘 | 经济型 | ProTrays",
+        "description": "采用 PVC 材料的经济型商用育苗盘，适合预算有限的种植户。柔软灵活、重量轻，提供 32 - 128 孔多种规格。工厂直供。",
+        "heroTitle": "PVC 育苗盘 — 经济型商用级",
+        "heroSubtitle": "柔软灵活 · 重量轻 · 适合人工播种",
+        "whyChooseTitle": "为什么选择 PVC 育苗盘？",
+        "advantages": [
+          { "title": "单件成本最低", "desc": "PVC 为注重降低单盘采购成本的种植户提供了最经济的选择。" },
+          { "title": "柔软灵活", "desc": "与刚性 rPET 不同，PVC 育苗盘受压时会弯曲，非常适合人工播种和手工移栽。" },
+          { "title": "轻量化设计", "desc": "PVC 育苗盘明显更轻，能降低运输重量、减轻操作疲劳。" },
+          { "title": "适合短期使用", "desc": "非常适合单季育苗，或供种植户低成本试验新作物。" }
+        ],
+        "faq": [
+          { "q": "PVC 育苗盘可以重复使用多少次？", "a": "PVC 育苗盘主要设计为使用 1 - 2 季。如需长期重复使用，我们推荐 rPET 或 PET 材质。" },
+          { "q": "PVC 适用于自动播种线吗？", "a": "PVC 育苗盘可用于自动线，但柔软的材质在高速机器上可能变形。对于高速自动化，我们推荐 rPET 育苗盘。" },
+          { "q": "PVC 育苗盘的起订量是多少？", "a": "标准起订量为每款 5,000 件。更大批量订单可获得额外价格折扣。" }
+        ]
+      },
+      "es": {
+        "title": "Charolas PVC para Plántulas | Grado Comercial Económico | ProTrays",
+        "description": "Charolas PVC económicas para plántulas comerciales, para cultivadores con presupuesto ajustado. Suaves, flexibles, ligeras, 32-128 celdas. Directo de fábrica.",
+        "heroTitle": "Charolas PVC para Plántulas — Grado Comercial Económico",
+        "heroSubtitle": "Suave y Flexible · Ligero · Ideal para Siembra Manual",
+        "whyChooseTitle": "¿Por Qué Elegir Charolas PVC?",
+        "advantages": [
+          { "title": "Costo Más Bajo por Unidad", "desc": "PVC ofrece la opción más económica para cultivadores enfocados en minimizar el costo inicial por charola." },
+          { "title": "Suave y Flexible", "desc": "A diferencia del rPET rígido, las charolas PVC se flexionan bajo presión, ideales para siembra manual y trasplante a mano." },
+          { "title": "Diseño Ligero", "desc": "Las charolas PVC son notablemente más ligeras, reduciendo el peso de envío y la fatiga de manejo." },
+          { "title": "Buena para Uso a Corto Plazo", "desc": "Perfectas para producción de una temporada, o para cultivadores que prueban nuevos cultivos sin gran inversión." }
+        ],
+        "faq": [
+          { "q": "¿Cuántas veces se pueden reutilizar?", "a": "Las charolas PVC están diseñadas principalmente para 1-2 temporadas de uso. Para uso a largo plazo, recomendamos rPET o PET." },
+          { "q": "¿Es el PVC adecuado para líneas automatizadas?", "a": "Las charolas PVC funcionan en líneas automatizadas, pero su material suave puede deformarse a altas velocidades. Para alta automatización recomendamos charolas rPET." },
+          { "q": "¿Cuál es el pedido mínimo?", "a": "MOQ estándar: 5,000 piezas por modelo. Pedidos por volumen obtienen descuentos adicionales." }
+        ]
+      },
+      "th": {
+        "title": "ถาดเพาะกล้า PVC | เกรดพาณิชย์ประหยัด | ProTrays",
+        "description": "ถาด PVC ประหยัดสำหรับผู้ปลูกที่มีงบจำกัด นุ่ม ยืดหยุ่น น้ำหนักเบา 32-128 ช่อง ราคาโรงงานโดยตรง",
+        "heroTitle": "ถาดเพาะกล้า PVC — เกรดพาณิชย์ประหยัด",
+        "heroSubtitle": "นุ่มและยืดหยุ่น · น้ำหนักเบา · เหมาะสำหรับการเพาะด้วยมือ",
+        "whyChooseTitle": "ทำไมต้องเลือกถาดเพาะกล้า PVC?",
+        "advantages": [
+          { "title": "ต้นทุนต่อหน่วยต่ำสุด", "desc": "PVC ให้ตัวเลือกที่ประหยัดที่สุดสำหรับผู้ปลูกที่ต้องการลดต้นทุนเริ่มต้นต่อถาด" },
+          { "title": "นุ่มและยืดหยุ่น", "desc": "ต่างจาก rPET ที่แข็ง ถาด PVC จะงอภายใต้แรงกด เหมาะสำหรับการเพาะด้วยมือและการย้ายกล้าด้วยมือ" },
+          { "title": "ดีไซน์น้ำหนักเบา", "desc": "ถาด PVC เบาอย่างเห็นได้ชัด ลดน้ำหนักการจัดส่งและความเหนื่อยล้าในการจัดการ" },
+          { "title": "เหมาะสำหรับการใช้ระยะสั้น", "desc": "เหมาะสำหรับการผลิตกล้าในฤดูกาลเดียว หรือสำหรับผู้ปลูกที่ทดสอบพืชใหม่โดยไม่ต้องลงทุนมาก" }
+        ],
+        "faq": [
+          { "q": "ใช้ซ้ำได้กี่ครั้ง?", "a": "ถาด PVC ออกแบบมาสำหรับ 1-2 ฤดูกาล สำหรับระยะยาวเราแนะนำ rPET หรือ PET" },
+          { "q": "PVC เหมาะกับสายอัตโนมัติหรือไม่?", "a": "ถาด PVC ใช้ได้กับสายอัตโนมัติ แต่วัสดุนุ่มอาจเสียรูปที่ความเร็วสูง สำหรับระบบอัตโนมัติความเร็วสูงเราแนะนำถาด rPET" },
+          { "q": "MOQ สำหรับถาด PVC?", "a": "MOQ มาตรฐาน: 5,000 ชิ้นต่อรุ่น ปริมาณมากรับส่วนลดเพิ่มเติม" }
+        ]
+      },
+      "vi": {
+        "title": "Khay Cây Giống PVC | Cấp Thương Mại Tiết Kiệm | ProTrays",
+        "description": "Khay PVC tiết kiệm cho người trồng ngân sách hạn chế. Mềm, dẻo, nhẹ, 32-128 ô. Giá nhà máy trực tiếp.",
+        "heroTitle": "Khay Cây Giống PVC — Cấp Thương Mại Tiết Kiệm",
+        "heroSubtitle": "Mềm và Dẻo · Nhẹ · Lý Tưởng cho Gieo Hạt Thủ Công",
+        "whyChooseTitle": "Tại sao chọn Khay Cây Giống PVC?",
+        "advantages": [
+          { "title": "Chi phí mỗi đơn vị thấp nhất", "desc": "PVC mang lại lựa chọn kinh tế nhất cho người trồng tập trung giảm chi phí ban đầu mỗi khay." },
+          { "title": "Mềm và Dẻo", "desc": "Khác với rPET cứng, khay PVC uốn cong dưới áp lực, lý tưởng cho gieo hạt thủ công và cấy cây bằng tay." },
+          { "title": "Thiết kế nhẹ", "desc": "Khay PVC nhẹ hơn rõ rệt, giảm trọng lượng vận chuyển và mệt mỏi khi xử lý." },
+          { "title": "Tốt cho sử dụng ngắn hạn", "desc": "Hoàn hảo cho sản xuất cây giống một mùa, hoặc cho người trồng thử nghiệm cây trồng mới mà không cần đầu tư lớn." }
+        ],
+        "faq": [
+          { "q": "Tái sử dụng được bao nhiêu lần?", "a": "Khay PVC được thiết kế chủ yếu cho 1-2 mùa sử dụng. Đối với tái sử dụng lâu dài, chúng tôi khuyến nghị vật liệu rPET hoặc PET." },
+          { "q": "PVC có phù hợp với dây chuyền tự động không?", "a": "Khay PVC hoạt động trên dây chuyền tự động, nhưng vật liệu mềm có thể biến dạng ở tốc độ cao. Đối với tự động hóa tốc độ cao, chúng tôi khuyến nghị khay rPET." },
+          { "q": "MOQ cho khay PVC?", "a": "MOQ tiêu chuẩn: 5,000 chiếc mỗi mẫu. Đơn hàng số lượng lớn có thể được giảm giá thêm." }
+        ]
+      }
+    }
+  }
+]

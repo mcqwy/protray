@@ -1,0 +1,11 @@
+---
+import MaterialPage from '../../components/MaterialPage.astro';
+import materials from '../../data/materials.json';
+
+export function getStaticPaths() {
+  return materials.map((m) => ({ params: { material: m.slug }, props: { material: m } }));
+}
+
+const { material } = Astro.props;
+---
+<MaterialPage lang='es' basePath='/protray/es' material={material} />

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mcqwy.github.io/protray/sitemap-index.xml

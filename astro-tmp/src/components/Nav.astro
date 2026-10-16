@@ -1,0 +1,60 @@
+---
+const { lang, currentPath } = Astro.props;
+const ui = (await import('../data/ui-translations.json')).default;
+const t = ui[lang];
+
+const langOptions = [
+  { code: 'en', label: 'English', flag: 'us', url: currentPath ? `/protray/${currentPath}/` : `/protray/` },
+  { code: 'zh', label: '中文', flag: 'cn', url: currentPath ? `/protray/zh/${currentPath}/` : `/protray/zh/` },
+  { code: 'es', label: 'Español', flag: 'mx', url: currentPath ? `/protray/es/${currentPath}/` : `/protray/es/` },
+  { code: 'th', label: 'ไทย', flag: 'th', url: currentPath ? `/protray/th/${currentPath}/` : `/protray/th/` },
+  { code: 'vi', label: 'Tiếng Việt', flag: 'vn', url: currentPath ? `/protray/vi/${currentPath}/` : `/protray/vi/` }
+];
+const current = langOptions.find(x => x.code === lang);
+
+const isHome = !currentPath || currentPath === '';
+const isAbout = currentPath === 'about';
+
+const homeUrl = lang === 'en' ? '/protray/' : `/protray/${lang}/`;
+const aboutUrl = lang === 'en' ? '/protray/about/' : `/protray/${lang}/about/`;
+
+const homeClass = isHome
+  ? 'text-green-600 font-bold text-sm sm:text-base transition-colors'
+  : 'text-gray-600 hover:text-green-600 font-medium text-sm sm:text-base transition-colors';
+const aboutClass = isAbout
+  ? 'text-green-600 font-bold text-sm sm:text-base transition-colors'
+  : 'text-gray-600 hover:text-green-600 font-medium text-sm sm:text-base transition-colors';
+---
+
+<nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full top-0 z-50">
+  <div class="max-w-[90rem] mx-auto px-4 md:px-8 py-3 flex flex-col md:flex-row justify-between items-center">
+    <a href={homeUrl} class="flex items-center shrink-0 group mb-2 md:mb-0">
+      <img src="/protray/assets/images/logo.png" alt="ProTrays Logo" class="h-10 w-10 object-contain mr-3">
+      <div class="flex flex-col justify-center">
+        <span class="text-xl md:text-2xl font-bold text-gray-800 group-hover:text-green-600 transition-colors leading-tight">ProTrays</span>
+        <span class="text-[10px] md:text-xs text-green-600 tracking-widest font-semibold mt-0.5 whitespace-nowrap">AGRICULTURAL SEEDLING TRAYS</span>
+      </div>
+    </a>
+
+    <div class="flex flex-wrap justify-center md:justify-end items-center gap-3 sm:gap-4 mt-2 md:mt-0">
+      <a href={homeUrl} class={homeClass}>{t.nav.home}</a>
+      <a href={aboutUrl} class={aboutClass}>{t.nav.about}</a>
+
+      <div class="relative shrink-0">
+        <button id="langToggle" class="flex items-center bg-white border border-gray-300 rounded-lg px-4 py-2 shadow-sm hover:shadow-md text-base transition">
+          <span class="mr-2"><img src={`https://flagcdn.com/w40/${current.flag}.png`} alt={current.label} class="w-5 h-4 rounded" width="20" height="16"></span>
+          <span class="hidden sm:inline">{current.label}</span>
+          <i class="fas fa-chevron-down ml-1 text-gray-500 text-sm"></i>
+        </button>
+        <div id="langDropdown" class="lang-dropdown">
+          {langOptions.map(l => (
+            <a href={l.url} class="lang-option">
+              <img src={`https://flagcdn.com/w40/${l.flag}.png`} alt={l.label} width="20" height="14">
+              <span>{l.label}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

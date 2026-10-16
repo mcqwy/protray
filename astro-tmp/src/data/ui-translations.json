@@ -1,0 +1,607 @@
+{
+  "en": {
+    "meta": {
+      "title": "ProTrays | Wholesale Plug Trays & Commercial Seedling Trays for Greenhouses",
+      "description": "Wholesale commercial plug trays and agricultural seedling trays in rPET, PET, and PVC. Built for high-speed automated greenhouse lines. Factory direct from Jining, China. Request a free sample.",
+      "keywords": "wholesale plug trays, commercial seedling trays, agricultural propagation trays, plug trays, seedling trays, rPET trays, PET trays, PVC trays, greenhouse trays, automated seeding"
+    },
+    "nav": { "home": "Home", "about": "About Us" },
+    "hero": {
+      "title": "Commercial Agricultural Seedling Trays",
+      "subtitle": "Factory Direct · rPET / PET / PVC · Built for High-Speed Automation",
+      "cta": "Request Free Sample & Quote",
+      "salesCta": "📞 Talk to a Sales Manager"
+    },
+    "materials": {
+      "title": "Available Materials",
+      "rpetTitle": "rPET Seedling Trays",
+      "rpetDesc": "Recycled material. Eco-friendly and durable, reusable multiple times.",
+      "petTitle": "PET Seedling Trays",
+      "petDesc": "Virgin material. Cost-effective, clear option available.",
+      "pvcTitle": "PVC Seedling Trays",
+      "pvcDesc": "Budget-friendly. Soft and flexible, ideal for manual seeding.",
+      "learnMore": "Learn More →"
+    },
+    "specs": {
+      "title": "Seedling Tray Specifications",
+      "cells": "Holes",
+      "modelNo": "Model Number",
+      "cellCount": "Hole Count",
+      "dimensions": "Dimensions",
+      "material": "Material",
+      "weight": "Weight per Tray",
+      "thickness": "Material Thickness",
+      "cellDepth": "Cell Depth",
+      "packaging": "Packaging Options",
+      "packagingOptions": "Bundled or Carton Packaging",
+      "moq": "MOQ: 5,000 pieces",
+      "deliveryTerms": "EXW Jining, China (FOB / DDP logistics available upon request)",
+      "customNotification": "💡 Custom Tooling & Agricultural OEM: Custom hole counts and material formulations available. Carton packaging at additional cost. Contact our Sales Manager for details.",
+      "quickSpecsTitle": "Quick Specifications",
+      "summaryPrefix": "Full Series",
+      "viewFullSpecs": "View Detailed Specifications",
+      "viewAllSeries": "View All Series Details →"
+    },
+    "whyUs": {
+      "title": "Why Choose ProTrays?",
+      "card1Title": "Direct Source Factory",
+      "card1Desc": "Our own production base in Jining, Shandong. Full control from raw material to finished tray — no middlemen, no markups.",
+      "card2Title": "Years of Focus on Seedling Trays",
+      "card2Desc": "Dedicated to agricultural propagation trays for years. Products exported to North America, South America, and Southeast Asia.",
+      "card3Title": "Stable Capacity, Reliable Lead Time",
+      "card3Desc": "Consistent monthly capacity. Standard models ship in 2-3 weeks. Long-term bulk supply supported.",
+      "card4Title": "OEM / ODM Customization",
+      "card4Desc": "Custom hole counts, dimensions, material formulations, and packaging. Trial orders welcome."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "Are your seedling trays compatible with manual and automated seeding lines?",
+      "a1": "Yes. Our seedling trays are manufactured with standard dimensions, compatible with both manual and automated seeding.",
+      "q2": "What is your minimum order quantity (MOQ)?",
+      "a2": "Our standard MOQ is 5,000 pieces per model. For trial orders or samples, please contact our sales manager directly.",
+      "q3": "Do you support custom hole counts and sizes?",
+      "a3": "Yes. We offer comprehensive OEM / ODM services. Custom hole counts, sizes, and packaging are available upon request."
+    },
+    "trust": {
+      "title": "Quality Assurance & Testing",
+      "qaTitle": "In-House Quality Control",
+      "qaItem1": "Flexural strength and drop testing for every production batch.",
+      "qaItem2": "Strict thickness and weight tolerances.",
+      "qaItem3": "Incoming raw material inspection to control quality at the source.",
+      "paymentTitle": "Payment & Shipping Terms",
+      "shippingTitle": "EXW / FOB / DDP Support",
+      "shippingDesc": "Base quotation is EXW Jining, China. FOB or DDP logistics services can be arranged upon request.",
+      "deposit": "Down Payment",
+      "depositDesc": "30% deposit to confirm order",
+      "balance": "Balance Payment",
+      "balanceDesc": "70% balance before shipment"
+    },
+    "form": {
+      "title": "Request a Free Sample & Get a Quote",
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone / WhatsApp (With Country Code)",
+      "country": "Country/Region",
+      "product": "Product Interest",
+      "quantity": "Estimated Quantity (pieces)",
+      "message": "Additional Message",
+      "submit": "Submit Request",
+      "countryOptions": [
+        { "value": "", "label": "Select your country/region" },
+        { "value": "us", "label": "United States" },
+        { "value": "mx", "label": "Mexico" },
+        { "value": "ca", "label": "Canada" },
+        { "value": "th", "label": "Thailand" },
+        { "value": "vn", "label": "Vietnam" },
+        { "value": "br", "label": "Brazil" },
+        { "value": "au", "label": "Australia" },
+        { "value": "in", "label": "India" },
+        { "value": "other", "label": "Other" }
+      ],
+      "productOptions": [
+        { "value": "", "label": "Select product model" },
+        { "value": "50", "label": "50-Hole Seedling Tray (PT-50R)" },
+        { "value": "72", "label": "72-Hole Seedling Tray (PT-72R)" },
+        { "value": "105", "label": "105-Hole Seedling Tray (PT-105R)" },
+        { "value": "128", "label": "128-Hole Seedling Tray (PT-128R)" },
+        { "value": "custom", "label": "Custom Requirements" }
+      ]
+    },
+    "about": {
+      "metaTitle": "About ProTrays | Source Factory for Agricultural Seedling Trays",
+      "metaDescription": "ProTrays is a source factory in Jining, Shandong, dedicated to producing high-quality agricultural seedling trays. Serving greenhouses and nurseries worldwide.",
+      "heroTitle": "About ProTrays",
+      "heroSubtitle": "Your Trusted Source Factory for Agricultural Seedling Trays",
+      "companyTitle": "Source Factory & Local Supply Chain",
+      "companyText1": "Located in Jining, Shandong Province, China, ProTrays specializes in manufacturing high-quality agricultural seedling trays, with a focus on rPET material, providing reliable propagation solutions for greenhouses and nurseries.",
+      "companyText2": "We directly manage our production lines and enforce strict quality control to ensure every tray meets standards. Leveraging local supply chain advantages, we offer source factory pricing, fast lead times, and professional customer service."
+    },
+    "footer": { "address": "Jining, Shandong Province, China" },
+    "whatsapp": { "bubble": "Get a Free Sample & Quote!" }
+  },
+  "zh": {
+    "meta": {
+      "title": "ProTrays | 商用农业育苗盘批发 - rPET/PET/PVC 育苗盘厂家",
+      "description": "专业生产商用农业育苗盘，提供 rPET、PET、PVC 三种材质，适配高速自动化温室播种线。山东济宁源头工厂，支持定制与 OEM。免费申请样品。",
+      "keywords": "育苗盘, 商用育苗盘, 农业育苗盘, 穴盘批发, rPET育苗盘, PET育苗盘, PVC育苗盘, 温室育苗盘, 自动化播种, 育苗盘厂家"
+    },
+    "nav": { "home": "首页", "about": "关于我们" },
+    "hero": {
+      "title": "商用农业育苗盘",
+      "subtitle": "工厂直供 · rPET / PET / PVC · 适配高速自动化",
+      "cta": "免费申请样品和报价",
+      "salesCta": "📞 联系销售经理"
+    },
+    "materials": {
+      "title": "可选材质",
+      "rpetTitle": "rPET 育苗盘",
+      "rpetDesc": "再生材料，环保耐用，可多次复用。",
+      "petTitle": "PET 育苗盘",
+      "petDesc": "原生材料，性价比高，可选透明款。",
+      "pvcTitle": "PVC 育苗盘",
+      "pvcDesc": "经济实惠，柔软灵活，适合人工播种。",
+      "learnMore": "了解更多 →"
+    },
+    "specs": {
+      "title": "育苗盘规格参数",
+      "cells": "孔",
+      "modelNo": "型号",
+      "cellCount": "孔数",
+      "dimensions": "尺寸",
+      "material": "材质",
+      "weight": "单盘重量",
+      "thickness": "板材厚度",
+      "cellDepth": "孔深",
+      "packaging": "包装方式",
+      "packagingOptions": "简包或纸箱",
+      "moq": "起订量：5,000 件",
+      "deliveryTerms": "EXW 中国济宁（可按需安排 FOB / DDP 物流）",
+      "customNotification": "💡 支持开模定制与农业 OEM：可按需定制孔数与材料配方。纸箱包装需额外计费。详情请联系销售经理。",
+      "quickSpecsTitle": "规格速览",
+      "summaryPrefix": "全系列规格",
+      "viewFullSpecs": "查看详细规格参数",
+      "viewAllSeries": "查看全系列详情 →"
+    },
+    "whyUs": {
+      "title": "为什么选择 ProTrays？",
+      "card1Title": "源头工厂，无中间商",
+      "card1Desc": "山东济宁自有生产基地，从原料到成品全流程管控，直接对接工厂，省去贸易商加价。",
+      "card2Title": "专注育苗盘制造多年",
+      "card2Desc": "深耕农业育苗盘行业多年，产品出口北美、南美、东南亚等国家和地区。",
+      "card3Title": "产能稳定，交期可控",
+      "card3Desc": "稳定的月产能，常规型号 2-3 周交货，支持大批量长期供货。",
+      "card4Title": "支持 OEM / ODM 定制",
+      "card4Desc": "可按需定制孔数、尺寸、材料配方和包装，小批量试单也可安排。"
+    },
+    "faq": {
+      "title": "常见问题解答",
+      "q1": "你们的育苗盘兼容手动和自动播种线吗？",
+      "a1": "是的。我们的育苗盘按标准尺寸制造，兼容人工 / 自动播种。",
+      "q2": "起订量是多少？",
+      "a2": "标准起订量是 5,000 件。试单或样品请直接联系销售经理。",
+      "q3": "支持定制孔数和尺寸吗？",
+      "a3": "是的。我们提供全套 OEM / ODM 服务，可按需定制孔数、尺寸和包装。"
+    },
+    "trust": {
+      "title": "质量保证与检测",
+      "qaTitle": "内部品控",
+      "qaItem1": "每批次进行弯曲强度和跌落测试。",
+      "qaItem2": "严格的厚度和重量公差。",
+      "qaItem3": "原材料进厂检测，把控源头品质。",
+      "paymentTitle": "付款与运输条款",
+      "shippingTitle": "支持 EXW / FOB / DDP",
+      "shippingDesc": "基础报价为 EXW 中国济宁，可按需安排 FOB 或 DDP 物流服务。",
+      "deposit": "定金",
+      "depositDesc": "支付 30% 定金，确定订单",
+      "balance": "尾款",
+      "balanceDesc": "70% 尾款，发货前支付"
+    },
+    "form": {
+      "title": "申请免费样品并获取报价",
+      "name": "姓名",
+      "company": "公司名称",
+      "email": "电子邮箱",
+      "phone": "电话 / WhatsApp（请包含国家区号）",
+      "country": "国家 / 地区",
+      "product": "感兴趣的产品",
+      "quantity": "预计采购量（件）",
+      "message": "附加留言",
+      "submit": "提交申请",
+      "countryOptions": [
+        { "value": "", "label": "选择您的国家 / 地区" },
+        { "value": "us", "label": "美国" },
+        { "value": "mx", "label": "墨西哥" },
+        { "value": "ca", "label": "加拿大" },
+        { "value": "th", "label": "泰国" },
+        { "value": "vn", "label": "越南" },
+        { "value": "br", "label": "巴西" },
+        { "value": "au", "label": "澳大利亚" },
+        { "value": "in", "label": "印度" },
+        { "value": "other", "label": "其他" }
+      ],
+      "productOptions": [
+        { "value": "", "label": "选择产品型号" },
+        { "value": "50", "label": "50 孔育苗盘（PT-50R）" },
+        { "value": "72", "label": "72 孔育苗盘（PT-72R）" },
+        { "value": "105", "label": "105 孔育苗盘（PT-105R）" },
+        { "value": "128", "label": "128 孔育苗盘（PT-128R）" },
+        { "value": "custom", "label": "定制需求" }
+      ]
+    },
+    "about": {
+      "metaTitle": "关于 ProTrays | 农业育苗盘源头工厂",
+      "metaDescription": "ProTrays 位于中国山东济宁，专注生产高品质农业育苗盘。为全球温室和苗圃客户提供可靠的育苗解决方案，主推 rPET 材质。",
+      "heroTitle": "关于 ProTrays",
+      "heroSubtitle": "您值得信赖的农业育苗盘源头工厂",
+      "companyTitle": "源头工厂与本地供应链",
+      "companyText1": "ProTrays 位于中国山东省济宁市，专注生产高品质农业育苗盘，主推 rPET 材质，为温室和苗圃提供可靠的育苗解决方案。",
+      "companyText2": "我们直接管理生产线，执行严格的品控体系，确保每一片育苗盘都符合标准。依托本地供应链优势，我们提供源头工厂价格、快速交期和专业客户服务。"
+    },
+    "footer": { "address": "中国山东省济宁市" },
+    "whatsapp": { "bubble": "获取免费样品和报价！" }
+  },
+  "es": {
+    "meta": {
+      "title": "ProTrays | Charolas Comerciales para Plántulas - Mayoreo y Fábrica",
+      "description": "Charolas comerciales para plántulas en rPET, PET y PVC. Optimizadas para líneas de siembra automatizadas de alta velocidad. Directo de fábrica desde Jining, China. Solicite muestra gratis.",
+      "keywords": "charolas para plántulas, charolas de germinación, bandejas para plántulas, charolas agrícolas, mayoreo, invernadero, propagación"
+    },
+    "nav": { "home": "Inicio", "about": "Sobre Nosotros" },
+    "hero": {
+      "title": "Charolas Agrícolas Comerciales para Plántulas",
+      "subtitle": "Directo de Fábrica · rPET / PET / PVC · Optimizado para Automatización de Alta Velocidad",
+      "cta": "Solicitar Muestra Gratuita y Cotización",
+      "salesCta": "📞 Contactar con el Gerente de Ventas"
+    },
+    "materials": {
+      "title": "Materiales Disponibles",
+      "rpetTitle": "Charolas rPET para Plántulas",
+      "rpetDesc": "Material reciclado. Ecológico y duradero, reutilizable múltiples veces.",
+      "petTitle": "Charolas PET para Plántulas",
+      "petDesc": "Material virgen. Económico, opción transparente disponible.",
+      "pvcTitle": "Charolas PVC para Plántulas",
+      "pvcDesc": "Económico. Suave y flexible, ideal para siembra manual.",
+      "learnMore": "Saber más →"
+    },
+    "specs": {
+      "title": "Especificaciones de Charolas para Plántulas",
+      "cells": "Celdas",
+      "modelNo": "Número de Modelo",
+      "cellCount": "Número de Celdas",
+      "dimensions": "Dimensiones",
+      "material": "Material",
+      "weight": "Peso por Charola",
+      "thickness": "Grosor del Material",
+      "cellDepth": "Profundidad de Celda",
+      "packaging": "Opciones de Embalaje",
+      "packagingOptions": "Empaquetado o Caja",
+      "moq": "MOQ: 5,000 piezas",
+      "deliveryTerms": "EXW Jining, China (logística FOB / DDP disponible bajo petición)",
+      "customNotification": "💡 Herramental Personalizado y OEM Agrícola: Número de celdas y formulaciones de material personalizados disponibles. Embalaje en caja con costo adicional. Contacte a nuestro Gerente de Ventas para más detalles.",
+      "quickSpecsTitle": "Especificaciones Rápidas",
+      "summaryPrefix": "Serie Completa",
+      "viewFullSpecs": "Ver Especificaciones Detalladas",
+      "viewAllSeries": "Ver Todos los Detalles de la Serie →"
+    },
+    "whyUs": {
+      "title": "¿Por Qué Elegir ProTrays?",
+      "card1Title": "Fábrica de Origen Directa",
+      "card1Desc": "Nuestra propia base de producción en Jining, Shandong. Control total desde la materia prima hasta la charola terminada, sin intermediarios.",
+      "card2Title": "Años Dedicados a Charolas para Plántulas",
+      "card2Desc": "Dedicados a charolas de propagación agrícola durante años. Productos exportados a Norteamérica, Sudamérica y Sudeste Asiático.",
+      "card3Title": "Capacidad Estable, Plazo Fiable",
+      "card3Desc": "Capacidad mensual consistente. Modelos estándar se envían en 2-3 semanas. Suministro continuo a largo plazo.",
+      "card4Title": "Personalización OEM / ODM",
+      "card4Desc": "Número de celdas, dimensiones, formulaciones de material y embalaje personalizados. Aceptamos pedidos de prueba."
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": "¿Son sus charolas compatibles con líneas de siembra manuales y automatizadas?",
+      "a1": "Sí. Nuestras charolas están fabricadas con dimensiones estándar, compatibles tanto con siembra manual como automatizada.",
+      "q2": "¿Cuál es su cantidad mínima de pedido (MOQ)?",
+      "a2": "Nuestro MOQ estándar es de 5,000 piezas por modelo. Para pedidos de prueba o muestras, contacte a nuestro gerente de ventas.",
+      "q3": "¿Admiten número de celdas y tamaños personalizados?",
+      "a3": "Sí. Ofrecemos servicios completos de OEM / ODM. El número de celdas, tamaños y embalajes personalizados están disponibles a pedido."
+    },
+    "trust": {
+      "title": "Garantía de Calidad y Pruebas",
+      "qaTitle": "Control de Calidad Interno",
+      "qaItem1": "Pruebas de resistencia a la flexión y caída para cada lote de producción.",
+      "qaItem2": "Estrictas tolerancias de grosor y peso.",
+      "qaItem3": "Inspección de materia prima entrante para controlar la calidad desde el origen.",
+      "paymentTitle": "Términos de Pago y Envío",
+      "shippingTitle": "Soporte EXW / FOB / DDP",
+      "shippingDesc": "La cotización base es EXW Jining, China. Los servicios logísticos FOB o DDP se pueden organizar bajo petición.",
+      "deposit": "Pago Inicial",
+      "depositDesc": "30% de depósito para confirmar el pedido",
+      "balance": "Pago Final",
+      "balanceDesc": "70% antes del envío"
+    },
+    "form": {
+      "title": "Solicitar Muestra Gratuita y Obtener Cotización",
+      "name": "Nombre",
+      "company": "Empresa",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono / WhatsApp (Con código de país)",
+      "country": "País/Región",
+      "product": "Producto de Interés",
+      "quantity": "Cantidad Estimada (piezas)",
+      "message": "Mensaje Adicional",
+      "submit": "Enviar Solicitud",
+      "countryOptions": [
+        { "value": "", "label": "Seleccione su país/región" },
+        { "value": "us", "label": "Estados Unidos" },
+        { "value": "mx", "label": "México" },
+        { "value": "ca", "label": "Canadá" },
+        { "value": "th", "label": "Tailandia" },
+        { "value": "vn", "label": "Vietnam" },
+        { "value": "br", "label": "Brasil" },
+        { "value": "au", "label": "Australia" },
+        { "value": "in", "label": "India" },
+        { "value": "other", "label": "Otro" }
+      ],
+      "productOptions": [
+        { "value": "", "label": "Seleccione el modelo" },
+        { "value": "50", "label": "Charola 50 celdas (PT-50R)" },
+        { "value": "72", "label": "Charola 72 celdas (PT-72R)" },
+        { "value": "105", "label": "Charola 105 celdas (PT-105R)" },
+        { "value": "128", "label": "Charola 128 celdas (PT-128R)" },
+        { "value": "custom", "label": "Requerimientos personalizados" }
+      ]
+    },
+    "about": {
+      "metaTitle": "Sobre ProTrays | Fábrica de Origen de Charolas Agrícolas",
+      "metaDescription": "ProTrays es una fábrica de origen en Jining, Shandong, dedicada a producir charolas agrícolas de alta calidad. Sirviendo a invernaderos y viveros en todo el mundo.",
+      "heroTitle": "Sobre ProTrays",
+      "heroSubtitle": "Su fábrica de origen de confianza para charolas agrícolas",
+      "companyTitle": "Fábrica de Origen y Cadena de Suministro Local",
+      "companyText1": "Ubicada en Jining, Provincia de Shandong, China, ProTrays se especializa en la fabricación de charolas agrícolas de alta calidad, con enfoque en material rPET, ofreciendo soluciones confiables para invernaderos y viveros.",
+      "companyText2": "Gestionamos directamente nuestras líneas de producción y aplicamos estrictos controles de calidad para asegurar que cada charola cumpla con los estándares. Aprovechando las ventajas de la cadena de suministro local, ofrecemos precios de fábrica de origen, plazos de entrega rápidos y servicio al cliente profesional."
+    },
+    "footer": { "address": "Jining, Provincia de Shandong, China" },
+    "whatsapp": { "bubble": "¡Obtenga una muestra y cotización gratis!" }
+  },
+  "th": {
+    "meta": {
+      "title": "ProTrays | ถาดเพาะกล้าเกษตรเชิงพาณิชย์ - ขายส่งจากโรงงานจีน",
+      "description": "ถาดเพาะกล้าเกษตรเชิงพาณิชย์ วัสดุ rPET / PET / PVC เหมาะสำหรับระบบเพาะอัตโนมัติความเร็วสูง โรงงานต้นทางในจีน รองรับ OEM ขอตัวอย่างฟรี",
+      "keywords": "ถาดเพาะกล้า, ถาดเพาะเมล็ด, ถาดเกษตร, ขายส่งถาดเพาะกล้า, ถาดเพาะในโรงเรือน, ระบบเพาะอัตโนมัติ"
+    },
+    "nav": { "home": "หน้าแรก", "about": "เกี่ยวกับเรา" },
+    "hero": {
+      "title": "ถาดเพาะกล้าเกษตรเชิงพาณิชย์",
+      "subtitle": "ราคาโรงงานโดยตรง · rPET / PET / PVC · เหมาะสำหรับระบบอัตโนมัติความเร็วสูง",
+      "cta": "ขอตัวอย่างฟรีและใบเสนอราคา",
+      "salesCta": "📞 ติดต่อผู้จัดการฝ่ายขาย"
+    },
+    "materials": {
+      "title": "วัสดุที่มีให้เลือก",
+      "rpetTitle": "ถาดเพาะกล้า rPET",
+      "rpetDesc": "วัสดุรีไซเคิล เป็นมิตรกับสิ่งแวดล้อม ทนทาน ใช้ซ้ำได้หลายครั้ง",
+      "petTitle": "ถาดเพาะกล้า PET",
+      "petDesc": "วัสดุบริสุทธิ์ คุ้มค่า มีแบบใสให้เลือก",
+      "pvcTitle": "ถาดเพาะกล้า PVC",
+      "pvcDesc": "ประหยัด นุ่มและยืดหยุ่น เหมาะสำหรับการเพาะด้วยมือ",
+      "learnMore": "เรียนรู้เพิ่มเติม →"
+    },
+    "specs": {
+      "title": "ข้อมูลจำเพาะถาดเพาะกล้า",
+      "cells": "ช่อง",
+      "modelNo": "รุ่น",
+      "cellCount": "จำนวนช่อง",
+      "dimensions": "ขนาด",
+      "material": "วัสดุ",
+      "weight": "น้ำหนักต่อถาด",
+      "thickness": "ความหนาวัสดุ",
+      "cellDepth": "ความลึกของหลุม",
+      "packaging": "ตัวเลือกบรรจุภัณฑ์",
+      "packagingOptions": "มัดรวมหรือบรรจุกล่อง",
+      "moq": "จำนวนขั้นต่ำ: 5,000 ชิ้น",
+      "deliveryTerms": "EXW จีน (สนับสนุนโลจิสติกส์ FOB / DDP ตามคำขอ)",
+      "customNotification": "💡 บริการขึ้นแม่พิมพ์แบบกำหนดเองและ OEM เกษตรกรรม: จำนวนช่องและสูตรวัสดุสามารถปรับแต่งได้ บรรจุภัณฑ์กล่องมีค่าใช้จ่ายเพิ่มเติม โปรดติดต่อผู้จัดการฝ่ายขายสำหรับรายละเอียด",
+      "quickSpecsTitle": "ข้อมูลจำเพาะโดยสรุป",
+      "summaryPrefix": "ซีรีส์ทั้งหมด",
+      "viewFullSpecs": "ดูข้อมูลจำเพาะโดยละเอียด",
+      "viewAllSeries": "ดูรายละเอียดซีรีส์ทั้งหมด →"
+    },
+    "whyUs": {
+      "title": "ทำไมต้องเลือก ProTrays?",
+      "card1Title": "โรงงานผู้ผลิตโดยตรง",
+      "card1Desc": "ฐานการผลิตของเราเองที่เมืองจินนิง มณฑลชานตง ควบคุมทั้งหมดตั้งแต่วัตถุดิบถึงถาดสำเร็จรูป ไม่มีพ่อค้าคนกลาง",
+      "card2Title": "เชี่ยวชาญด้านถาดเพาะกล้าหลายปี",
+      "card2Desc": "ทุ่มเทให้กับถาดเพาะกล้าเกษตรมาหลายปี ส่งออกไปยังอเมริกาเหนือ อเมริกาใต้ และเอเชียตะวันออกเฉียงใต้",
+      "card3Title": "กำลังการผลิตที่มั่นคง ระยะเวลาส่งมอบที่เชื่อถือได้",
+      "card3Desc": "กำลังการผลิตรายเดือนสม่ำเสมอ รุ่นมาตรฐานจัดส่งภายใน 2-3 สัปดาห์ สนับสนุนการจัดหาแบบเป็นกลุ่มระยะยาว",
+      "card4Title": "บริการ OEM / ODM",
+      "card4Desc": "ปรับแต่งจำนวนช่อง ขนาด สูตรวัสดุ และบรรจุภัณฑ์ตามความต้องการ ยินดีรับคำสั่งซื้อทดลอง"
+    },
+    "faq": {
+      "title": "คำถามที่พบบ่อย",
+      "q1": "ถาดเพาะกล้าของคุณเข้ากันได้กับสายการเพาะแบบใช้แรงงานคนและแบบอัตโนมัติหรือไม่?",
+      "a1": "ได้ ถาดของเราผลิตขึ้นตามขนาดมาตรฐาน เข้ากันได้ทั้งการเพาะแบบใช้แรงงานคนและแบบอัตโนมัติ",
+      "q2": "ปริมาณการสั่งซื้อขั้นต่ำ (MOQ) คือเท่าไร?",
+      "a2": "MOQ มาตรฐานคือ 5,000 ชิ้นต่อรุ่น สำหรับคำสั่งซื้อทดลองหรือตัวอย่าง โปรดติดต่อผู้จัดการฝ่ายขาย",
+      "q3": "คุณรองรับจำนวนช่องและขนาดที่กำหนดเองหรือไม่?",
+      "a3": "ได้ เรามีบริการ OEM / ODM ครบวงจร สามารถกำหนดจำนวนช่อง ขนาด และบรรจุภัณฑ์ได้ตามต้องการ"
+    },
+    "trust": {
+      "title": "การประกันคุณภาพและการทดสอบ",
+      "qaTitle": "การควบคุมคุณภาพภายใน",
+      "qaItem1": "การทดสอบความแข็งแรงดัดโค้งและการตกหล่นสำหรับทุกล็อตการผลิต",
+      "qaItem2": "ความคลาดเคลื่อนของความหนาและน้ำหนักที่เข้มงวด",
+      "qaItem3": "การตรวจสอบวัตถุดิบขาเข้าเพื่อควบคุมคุณภาพตั้งแต่ต้นทาง",
+      "paymentTitle": "เงื่อนไขการชำระเงินและการจัดส่ง",
+      "shippingTitle": "สนับสนุน EXW / FOB / DDP",
+      "shippingDesc": "ราคาเสนอพื้นฐานคือ EXW จีน สามารถจัดบริการโลจิสติกส์ FOB หรือ DDP ได้ตามคำขอ",
+      "deposit": "เงินดาวน์",
+      "depositDesc": "มัดจำ 30% เพื่อยืนยันคำสั่งซื้อ",
+      "balance": "ยอดคงเหลือ",
+      "balanceDesc": "ชำระ 70% ก่อนจัดส่ง"
+    },
+    "form": {
+      "title": "ขอตัวอย่างฟรีและรับใบเสนอราคา",
+      "name": "ชื่อ",
+      "company": "บริษัท",
+      "email": "อีเมล",
+      "phone": "โทรศัพท์ / WhatsApp (พร้อมรหัสประเทศ)",
+      "country": "ประเทศ/ภูมิภาค",
+      "product": "ผลิตภัณฑ์ที่สนใจ",
+      "quantity": "ปริมาณประมาณ (ชิ้น)",
+      "message": "ข้อความเพิ่มเติม",
+      "submit": "ส่งคำขอ",
+      "countryOptions": [
+        { "value": "", "label": "เลือกประเทศ/ภูมิภาคของคุณ" },
+        { "value": "us", "label": "สหรัฐอเมริกา" },
+        { "value": "mx", "label": "เม็กซิโก" },
+        { "value": "ca", "label": "แคนาดา" },
+        { "value": "th", "label": "ไทย" },
+        { "value": "vn", "label": "เวียดนาม" },
+        { "value": "br", "label": "บราซิล" },
+        { "value": "au", "label": "ออสเตรเลีย" },
+        { "value": "in", "label": "อินเดีย" },
+        { "value": "other", "label": "อื่นๆ" }
+      ],
+      "productOptions": [
+        { "value": "", "label": "เลือกโมเดลสินค้า" },
+        { "value": "50", "label": "ถาด 50 ช่อง (PT-50R)" },
+        { "value": "72", "label": "ถาด 72 ช่อง (PT-72R)" },
+        { "value": "105", "label": "ถาด 105 ช่อง (PT-105R)" },
+        { "value": "128", "label": "ถาด 128 ช่อง (PT-128R)" },
+        { "value": "custom", "label": "ความต้องการพิเศษ" }
+      ]
+    },
+    "about": {
+      "metaTitle": "เกี่ยวกับ ProTrays | โรงงานต้นทางถาดเพาะกล้าเกษตร",
+      "metaDescription": "ProTrays เป็นโรงงานต้นทางในเมืองจินนิง มณฑลชานตง ทุ่มเทผลิตถาดเพาะกล้าเกษตรคุณภาพสูง บริการโรงเรือนและเรือนเพาะชำทั่วโลก",
+      "heroTitle": "เกี่ยวกับ ProTrays",
+      "heroSubtitle": "โรงงานต้นทางที่คุณไว้วางใจสำหรับถาดเพาะกล้าเกษตร",
+      "companyTitle": "โรงงานต้นทางและห่วงโซ่อุปทานท้องถิ่น",
+      "companyText1": "ProTrays ตั้งอยู่ที่เมืองจินนิง มณฑลชานตง ประเทศจีน เชี่ยวชาญในการผลิตถาดเพาะกล้าเกษตรคุณภาพสูง โดยเน้นวัสดุ rPET นำเสนอโซลูชันที่เชื่อถือได้สำหรับโรงเรือนและเรือนเพาะชำ",
+      "companyText2": "เราจัดการสายการผลิตโดยตรงและควบคุมคุณภาพอย่างเข้มงวดเพื่อให้ทุกถาดได้มาตรฐาน ด้วยข้อได้เปรียบของห่วงโซ่อุปทานท้องถิ่น เราจึงเสนอราคาโรงงานต้นทาง ระยะเวลาจัดส่งที่รวดเร็ว และบริการลูกค้าที่เป็นมืออาชีพ"
+    },
+    "footer": { "address": "เมืองจินนิง มณฑลชานตง ประเทศจีน" },
+    "whatsapp": { "bubble": "รับตัวอย่างฟรีและใบเสนอราคา!" }
+  },
+  "vi": {
+    "meta": {
+      "title": "ProTrays | Khay Cây Giống Nông Nghiệp - Bán Buôn Từ Nhà Máy Trung Quốc",
+      "description": "Khay cây giống nông nghiệp thương mại, vật liệu rPET / PET / PVC. Tối ưu cho dây chuyền gieo hạt tự động tốc độ cao. Nhà máy trực tiếp tại Trung Quốc. Yêu cầu mẫu miễn phí.",
+      "keywords": "khay cây giống, khay ươm cây, khay gieo hạt, khay nông nghiệp, khay nhà kính, bán buôn khay cây giống, tự động hóa gieo hạt"
+    },
+    "nav": { "home": "Trang chủ", "about": "Về chúng tôi" },
+    "hero": {
+      "title": "Khay Cây Giống Nông Nghiệp Thương Mại",
+      "subtitle": "Giá Nhà Máy Trực Tiếp · rPET / PET / PVC · Tối Ưu Cho Tự Động Hóa Tốc Độ Cao",
+      "cta": "Yêu Cầu Mẫu Miễn Phí & Báo Giá",
+      "salesCta": "📞 Liên hệ Quản lý Kinh doanh"
+    },
+    "materials": {
+      "title": "Vật Liệu Có Sẵn",
+      "rpetTitle": "Khay Cây Giống rPET",
+      "rpetDesc": "Vật liệu tái chế. Thân thiện môi trường, bền, tái sử dụng nhiều lần.",
+      "petTitle": "Khay Cây Giống PET",
+      "petDesc": "Vật liệu nguyên sinh. Tiết kiệm, có tùy chọn trong suốt.",
+      "pvcTitle": "Khay Cây Giống PVC",
+      "pvcDesc": "Giá rẻ. Mềm và dẻo, phù hợp gieo hạt thủ công.",
+      "learnMore": "Tìm hiểu thêm →"
+    },
+    "specs": {
+      "title": "Thông Số Kỹ Thuật Khay Cây Giống",
+      "cells": "Ô",
+      "modelNo": "Mã Số Model",
+      "cellCount": "Số Ô",
+      "dimensions": "Kích Thước",
+      "material": "Vật Liệu",
+      "weight": "Trọng Lượng Khay",
+      "thickness": "Độ Dày Vật Liệu",
+      "cellDepth": "Độ Sâu Ô",
+      "packaging": "Tùy Chọn Đóng Gói",
+      "packagingOptions": "Bó hoặc Đóng Thùng",
+      "moq": "MOQ: 5,000 chiếc",
+      "deliveryTerms": "EXW Jining, Trung Quốc (hỗ trợ logistics FOB / DDP theo yêu cầu)",
+      "customNotification": "💡 Gia Công Khuôn Tùy Chỉnh & OEM Nông Nghiệp: Số ô và công thức vật liệu có thể tùy chỉnh. Đóng gói thùng có phụ phí. Vui lòng liên hệ Quản lý Kinh doanh để biết chi tiết.",
+      "quickSpecsTitle": "Thông Số Nhanh",
+      "summaryPrefix": "Toàn Bộ Dòng",
+      "viewFullSpecs": "Xem Thông Số Chi Tiết",
+      "viewAllSeries": "Xem Toàn Bộ Chi Tiết Dòng Sản Phẩm →"
+    },
+    "whyUs": {
+      "title": "Tại sao chọn ProTrays?",
+      "card1Title": "Nhà máy nguồn trực tiếp",
+      "card1Desc": "Cơ sở sản xuất riêng tại Tế Ninh, Sơn Đông. Kiểm soát toàn bộ từ nguyên liệu đến thành phẩm, không qua trung gian.",
+      "card2Title": "Nhiều năm tập trung vào khay cây giống",
+      "card2Desc": "Tận tâm với khay ươm cây nông nghiệp trong nhiều năm. Sản phẩm xuất khẩu sang Bắc Mỹ, Nam Mỹ và Đông Nam Á.",
+      "card3Title": "Công suất ổn định, thời gian giao hàng đáng tin cậy",
+      "card3Desc": "Công suất hàng tháng ổn định. Mẫu tiêu chuẩn giao trong 2-3 tuần. Hỗ trợ cung cấp số lượng lớn dài hạn.",
+      "card4Title": "Tùy chỉnh OEM / ODM",
+      "card4Desc": "Tùy chỉnh số ô, kích thước, công thức vật liệu và bao bì. Chào đón đơn hàng thử nghiệm."
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "q1": "Khay cây giống của bạn có tương thích với cả dây chuyền gieo hạt thủ công và tự động không?",
+      "a1": "Có. Khay của chúng tôi được sản xuất với kích thước tiêu chuẩn, tương thích với cả gieo hạt thủ công và tự động.",
+      "q2": "Số lượng đặt hàng tối thiểu (MOQ) là bao nhiêu?",
+      "a2": "MOQ tiêu chuẩn là 5,000 chiếc mỗi mẫu. Đối với đơn hàng thử nghiệm hoặc mẫu, vui lòng liên hệ quản lý kinh doanh.",
+      "q3": "Bạn có hỗ trợ số ô và kích thước tùy chỉnh không?",
+      "a3": "Có. Chúng tôi cung cấp dịch vụ OEM / ODM toàn diện. Số ô, kích thước và bao bì tùy chỉnh có sẵn theo yêu cầu."
+    },
+    "trust": {
+      "title": "Đảm Bảo Chất Lượng & Kiểm Tra",
+      "qaTitle": "Kiểm Soát Chất Lượng Nội Bộ",
+      "qaItem1": "Kiểm tra độ bền uốn và thả rơi cho mỗi lô sản xuất.",
+      "qaItem2": "Dung sai độ dày và trọng lượng nghiêm ngặt.",
+      "qaItem3": "Kiểm tra nguyên liệu đầu vào để kiểm soát chất lượng từ nguồn.",
+      "paymentTitle": "Điều Khoản Thanh Toán & Vận Chuyển",
+      "shippingTitle": "Hỗ trợ EXW / FOB / DDP",
+      "shippingDesc": "Báo giá cơ bản là EXW Jining, Trung Quốc. Dịch vụ logistics FOB hoặc DDP có thể được sắp xếp theo yêu cầu.",
+      "deposit": "Đặt Cọc",
+      "depositDesc": "Đặt cọc 30% để xác nhận đơn hàng",
+      "balance": "Thanh Toán Còn Lại",
+      "balanceDesc": "Thanh toán 70% trước khi giao hàng"
+    },
+    "form": {
+      "title": "Yêu Cầu Mẫu Miễn Phí & Nhận Báo Giá",
+      "name": "Người liên hệ",
+      "company": "Công Ty",
+      "email": "Email",
+      "phone": "Điện Thoại / WhatsApp (Kèm mã quốc gia)",
+      "country": "Quốc Gia/Khu Vực",
+      "product": "Sản Phẩm Quan Tâm",
+      "quantity": "Lượng Ước Tính (chiếc)",
+      "message": "Thông Bổ Sung",
+      "submit": "Gửi Yêu Cầu",
+      "countryOptions": [
+        { "value": "", "label": "Chọn quốc gia/khu vực" },
+        { "value": "us", "label": "Hoa Kỳ" },
+        { "value": "mx", "label": "Mexico" },
+        { "value": "ca", "label": "Canada" },
+        { "value": "th", "label": "Thái Lan" },
+        { "value": "vn", "label": "Việt Nam" },
+        { "value": "br", "label": "Brazil" },
+        { "value": "au", "label": "Úc" },
+        { "value": "in", "label": "Ấn Độ" },
+        { "value": "other", "label": "Khác" }
+      ],
+      "productOptions": [
+        { "value": "", "label": "Chọn mẫu sản phẩm" },
+        { "value": "50", "label": "Khay 50 ô (PT-50R)" },
+        { "value": "72", "label": "Khay 72 ô (PT-72R)" },
+        { "value": "105", "label": "Khay 105 ô (PT-105R)" },
+        { "value": "128", "label": "Khay 128 ô (PT-128R)" },
+        { "value": "custom", "label": "Yêu cầu tùy chỉnh" }
+      ]
+    },
+    "about": {
+      "metaTitle": "Về ProTrays | Nhà Máy Nguồn Khay Cây Giống Nông Nghiệp",
+      "metaDescription": "ProTrays là nhà máy nguồn tại Tế Ninh, Sơn Đông, chuyên sản xuất khay cây giống nông nghiệp chất lượng cao. Phục vụ nhà kính và vườn ươm trên toàn thế giới.",
+      "heroTitle": "Về ProTrays",
+      "heroSubtitle": "Nhà máy nguồn đáng tin cậy của bạn cho khay cây giống nông nghiệp",
+      "companyTitle": "Nhà Máy Nguồn & Chuỗi Cung Ứng Địa Phương",
+      "companyText1": "Tọa lạc tại Tế Ninh, tỉnh Sơn Đông, Trung Quốc, ProTrays chuyên sản xuất khay cây giống nông nghiệp chất lượng cao, tập trung vào vật liệu rPET, cung cấp giải pháp ươm cây đáng tin cậy cho nhà kính và vườn ươm.",
+      "companyText2": "Chúng tôi trực tiếp quản lý dây chuyền sản xuất và thực hiện kiểm soát chất lượng nghiêm ngặt để đảm bảo mọi khay đều đạt tiêu chuẩn. Tận dụng lợi thế chuỗi cung ứng địa phương, chúng tôi cung cấp giá nhà máy nguồn, thời gian giao hàng nhanh và dịch vụ khách hàng chuyên nghiệp."
+    },
+    "footer": { "address": "Tế Ninh, Tỉnh Sơn Đông, Trung Quốc" },
+    "whatsapp": { "bubble": "Nhận mẫu miễn phí & báo giá!" }
+  }
+}

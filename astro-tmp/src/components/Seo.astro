@@ -1,0 +1,41 @@
+---
+const { lang, currentPath = '' } = Astro.props;
+
+const baseUrl = 'https://mcqwy.github.io/protray';
+
+const locales = [
+  { code: 'en', hreflang: 'en',     path: '' },
+  { code: 'zh', hreflang: 'zh-CN',  path: '/zh' },
+  { code: 'es', hreflang: 'es',     path: '/es' },
+  { code: 'th', hreflang: 'th',     path: '/th' },
+  { code: 'vi', hreflang: 'vi',     path: '/vi' },
+];
+
+const normalized = currentPath
+  ? `/${currentPath.replace(/^\/+|\/+$/g, '')}/`
+  : '/';
+
+function urlFor(code) {
+  const locale = locales.find(l => l.code === code);
+  const prefix = locale?.path || '';
+  if (normalized === '/') {
+    return `${baseUrl}${prefix}/`.replace(/\/{2,}/g, '/');
+  }
+  return `${baseUrl}${prefix}${normalized}`;
+}
+
+const canonical = urlFor(lang);
+const xDefault = urlFor('en');
+
+const alternates = locales.map(l => ({
+  hreflang: l.hreflang,
+  href: urlFor(l.code),
+}));
+---
+
+<link rel="canonical" href={canonical} />
+
+{alternates.map(alt => (
+  <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />
+))}
+<link rel="alternate" hreflang="x-default" href={xDefault} />

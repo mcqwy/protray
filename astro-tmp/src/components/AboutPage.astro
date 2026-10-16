@@ -1,0 +1,104 @@
+---
+import '../styles/global.css';
+import Nav from './Nav.astro';
+import Footer from './Footer.astro';
+import Seo from './Seo.astro';
+import ui from '../data/ui-translations.json';
+
+const { lang, basePath } = Astro.props;
+const t = ui[lang];
+
+const waLink = `https://wa.me/8615864555803?text=${encodeURIComponent("Hello ProTrays, I'd like to know more about your seedling trays.")}`;
+
+const aboutUrl = lang === 'en'
+  ? 'https://mcqwy.github.io/protray/about/'
+  : `https://mcqwy.github.io/protray/${lang}/about/`;
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": t.about.heroTitle,
+  "description": t.about.metaDescription,
+  "url": aboutUrl,
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "ProTrays",
+    "url": "https://mcqwy.github.io/protray",
+    "logo": "https://mcqwy.github.io/protray/assets/images/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "qq925637711@gmail.com",
+      "url": "https://wa.me/8615864555803",
+      "availableLanguage": ["English", "Spanish", "Thai", "Vietnamese", "Chinese"]
+    }
+  }
+};
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="FciYTy6rVndujVljzY2LvS7oreEc7Vx3_zwuI_x1UzM" />
+  <title>{t.about.metaTitle}</title>
+  <meta name="description" content={t.about.metaDescription} />
+
+  <Seo lang={lang} currentPath="about" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W7G7ZQY7Z"></script>
+  <script is:inline>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6W7G7ZQY7Z');</script>
+  <script is:inline type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yxpj0e4iqt");</script>
+
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(aboutSchema)} />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+<Nav lang={lang} currentPath="about" />
+
+<section class="pt-36 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-green-700 to-green-900 text-white">
+  <div class="max-w-[90rem] mx-auto px-4 text-center">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">{t.about.heroTitle}</h1>
+    <p class="text-lg sm:text-xl text-green-100 max-w-2xl mx-auto">{t.about.heroSubtitle}</p>
+  </div>
+</section>
+
+<section class="py-16 bg-white">
+  <div class="max-w-[90rem] mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+      <div>
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">{t.about.companyTitle}</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">{t.about.companyText1}</p>
+        <p class="text-gray-700 leading-relaxed">{t.about.companyText2}</p>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg bg-gray-100">
+        <img src="/protray/assets/images/factory-line.jpg" alt="ProTrays automated seedling tray production line in Jining, Shandong China" class="w-full h-auto object-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/800x600?text=Factory+Line'">
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div class="rounded-lg overflow-hidden shadow-sm bg-gray-100">
+        <img src="/protray/assets/images/factory-warehouse.jpg" alt="ProTrays seedling tray warehouse stock ready for export" class="w-full h-auto" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Warehouse'">
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-sm bg-gray-100">
+        <img src="/protray/assets/images/factory-qc.jpg" alt="ProTrays seedling tray quality control inspection" class="w-full h-auto" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=QC'">
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-sm bg-gray-100">
+        <img src="/protray/assets/images/factory-loading.png" alt="ProTrays seedling tray container loading for international shipping" class="w-full h-auto" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Loading'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<Footer lang={lang} />
+
+<div id="whatsappBubble" class="whatsapp-bubble hidden">
+  <span>{t.whatsapp.bubble}</span>
+  <button id="closeBubble" class="ml-2 text-gray-400 hover:text-white">&times;</button>
+</div>
+<a href={waLink} class="whatsapp-float" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+
+<script is:inline src="/protray/js/main.js"></script>
+</body>
+</html>
