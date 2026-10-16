@@ -18,6 +18,14 @@ const waLink = `https://wa.me/8615864555803?text=${encodeURIComponent(
 
 const heroImgAlt = `${material.shortName} commercial seedling tray 540x280mm for high-speed automated seeding lines`;
 
+// 按材质定义价格区间（用于 Schema）
+const priceRanges = {
+  'rpet-tray': { low: '0.12', high: '0.45' },
+  'pet-tray':  { low: '0.10', high: '0.35' },
+  'pvc-tray':  { low: '0.08', high: '0.25' }
+};
+const priceRange = priceRanges[material.slug] || { low: '0.08', high: '0.45' };
+
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -45,6 +53,17 @@ const productSchema = {
   "description": mt.description,
   "brand": { "@type": "Brand", "name": "ProTrays" },
   "material": material.material,
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": priceRange.low,
+    "highPrice": priceRange.high,
+    "priceCurrency": "USD",
+    "offerCount": "5",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2026-12-31",
+    "url": `https://mcqwy.github.io/protray/${lang === 'en' ? '' : lang + '/'}${material.slug}/`,
+    "seller": { "@type": "Organization", "name": "ProTrays" }
+  },
   "additionalProperty": [
     { "@type": "PropertyValue", "name": "Hole Count", "value": "32, 40, 50, 72, 98, 105, 128" },
     { "@type": "PropertyValue", "name": "Dimensions", "value": "540mm × 280mm" },
