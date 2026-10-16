@@ -5,59 +5,65 @@ import Footer from './Footer.astro';
 import Seo from './Seo.astro';
 import ui from '../data/ui-translations.json';
 
-const { lang, basePath } = Astro.props;
+const { lang, basePath, material } = Astro.props;
 const t = ui[lang];
+const mt = material.translations[lang];
+const currentPath = material.slug;
 
-const waLink = `https://wa.me/8615864555803?text=${encodeURIComponent("Hello ProTrays, I'd like to know more about your seedling trays.")}`;
+const homeUrl = lang === 'en' ? '/protray/' : `/protray/${lang}/`;
 
-const orgSchema = {"@context":"https://schema.org","@type":"Organization","name":"ProTrays","url":"https://mcqwy.github.io/protray","logo":"https://mcqwy.github.io/protray/assets/images/logo.png","contactPoint":{"@type":"ContactPoint","contactType":"sales","url":"https://wa.me/8615864555803","areaServed":"Worldwide","availableLanguage":["English","Spanish","Thai","Vietnamese","Chinese"]}};
-const faqSchema = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":t.faq.q1,"acceptedAnswer":{"@type":"Answer","text":t.faq.a1}},{"@type":"Question","name":t.faq.q2,"acceptedAnswer":{"@type":"Answer","text":t.faq.a2}},{"@type":"Question","name":t.faq.q3,"acceptedAnswer":{"@type":"Answer","text":t.faq.a3}}]};
+const waLink = `https://wa.me/8615864555803?text=${encodeURIComponent(
+  `Hello ProTrays, I'm interested in ${material.shortName} seedling trays. Page: ${Astro.url.href}`
+)}`;
+
+const heroImgAlt = `${material.shortName} commercial seedling tray 540x280mm for high-speed automated seeding lines`;
 
 const productSchema = {
   "@context": "https://schema.org",
-  "@type": "ProductGroup",
-  "name": "Commercial Agricultural Seedling Trays",
-  "description": "Heavy-duty seedling trays for commercial greenhouse propagation and automated seeding lines. Available in 32, 40, 50, 72, 98, 105, and 128 cells. Wholesale pricing on request.",
-  "brand": {
-    "@type": "Brand",
-    "name": "ProTrays"
-  },
-  "productGroupID": "protrays-seedling-tray-b2b",
-  "variesBy": ["numberOfItems"],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "reviewCount": "3"
-  },
-  "review": [
+  "@type": "Product",
+  "name": mt.heroTitle,
+  "image": [
     {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Carlos Ramírez" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "reviewBody": "Good quality seedling trays. Very sturdy."
+      "@type": "ImageObject",
+      "url": "https://mcqwy.github.io/protray/assets/images/tray-32.jpg",
+      "caption": `${material.shortName} 32-cell commercial seedling tray 540x280mm`,
+      "name": `${material.shortName} 32-cell seedling tray`
     },
     {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Verified Buyer" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "reviewBody": "Fast shipping, well packaged. No damage."
+      "@type": "ImageObject",
+      "url": "https://mcqwy.github.io/protray/assets/images/tray-50.jpg",
+      "caption": `${material.shortName} 50-cell commercial seedling tray 540x280mm`,
+      "name": `${material.shortName} 50-cell seedling tray`
     },
     {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Michael Chen" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "4" },
-      "reviewBody": "Exactly as described. Nice workmanship."
+      "@type": "ImageObject",
+      "url": "https://mcqwy.github.io/protray/assets/images/tray-128.jpg",
+      "caption": `${material.shortName} 128-cell commercial seedling tray 540x280mm`,
+      "name": `${material.shortName} 128-cell seedling tray`
     }
   ],
-  "hasVariant": [
-    { "@type": "Product", "name": "Commercial Seedling Tray - 32 Cells", "sku": "PT-32", "image": "https://mcqwy.github.io/protray/assets/images/tray-32.jpg", "material": "Heavy-Duty rPET" },
-    { "@type": "Product", "name": "Commercial Seedling Tray - 40 Cells", "sku": "PT-40", "image": "https://mcqwy.github.io/protray/assets/images/tray-40.jpg", "material": "Heavy-Duty rPET" },
-    { "@type": "Product", "name": "Commercial Seedling Tray - 50 Cells", "sku": "PT-50", "image": "https://mcqwy.github.io/protray/assets/images/tray-50.jpg", "material": "Heavy-Duty rPET" },
-    { "@type": "Product", "name": "Commercial Seedling Tray - 72 Cells", "sku": "PT-72", "image": "https://mcqwy.github.io/protray/assets/images/tray-72.jpg", "material": "Heavy-Duty rPET" },
-    { "@type": "Product", "name": "Commercial Seedling Tray - 98 Cells", "sku": "PT-98", "image": "https://mcqwy.github.io/protray/assets/images/tray-98.jpg", "material": "Heavy-Duty rPET" },
-    { "@type": "Product", "name": "Commercial Seedling Tray - 105 Cells", "sku": "PT-105", "image": "https://mcqwy.github.io/protray/assets/images/tray-105.jpg", "material": "Heavy-Duty rPET" },
-    { "@type": "Product", "name": "Commercial Seedling Tray - 128 Cells", "sku": "PT-128", "image": "https://mcqwy.github.io/protray/assets/images/tray-128.jpg", "material": "Heavy-Duty rPET" }
+  "description": mt.description,
+  "brand": { "@type": "Brand", "name": "ProTrays" },
+  "material": material.material,
+  "additionalProperty": [
+    { "@type": "PropertyValue", "name": "Hole Count", "value": "32, 40, 50, 72, 98, 105, 128" },
+    { "@type": "PropertyValue", "name": "Dimensions", "value": "540mm × 280mm" },
+    { "@type": "PropertyValue", "name": "Weight per Tray", "value": "60g / 70g / 80g / 90g / 100g" },
+    { "@type": "PropertyValue", "name": "Material Thickness", "value": "0.4mm / 0.5mm / 0.6mm / 0.7mm" },
+    { "@type": "PropertyValue", "name": "Cell Depth", "value": "4.0cm - 5.5cm" },
+    { "@type": "PropertyValue", "name": "Packaging", "value": "Bundled or Carton Packaging" },
+    { "@type": "PropertyValue", "name": "MOQ", "value": "5,000 pieces" }
   ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": mt.faq.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
 };
 ---
 
@@ -67,149 +73,118 @@ const productSchema = {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="FciYTy6rVndujVljzY2LvS7oreEc7Vx3_zwuI_x1UzM" />
-  <title>{t.meta.title}</title>
-  <meta name="description" content={t.meta.description} />
-  <meta name="keywords" content={t.meta.keywords} />
+  <title>{mt.title}</title>
+  <meta name="description" content={mt.description} />
 
-  <Seo lang={lang} currentPath="" />
+  <Seo lang={lang} currentPath={material.slug} />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W7G7ZQY7Z"></script>
   <script is:inline>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6W7G7ZQY7Z');</script>
   <script is:inline type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yxpj0e4iqt");</script>
 
-  <script type="application/ld+json" is:inline set:html={JSON.stringify(orgSchema)} />
   <script type="application/ld+json" is:inline set:html={JSON.stringify(productSchema)} />
   <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50">
-
-<Nav lang={lang} currentPath="" />
+<Nav lang={lang} currentPath={currentPath} />
 
 <section class="pt-36 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-green-700 to-green-900 text-white overflow-x-hidden">
   <div class="max-w-[90rem] mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-12">
     <div class="w-full md:w-1/2 text-center md:text-left">
-      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">{t.hero.title}</h1>
-      <p class="text-lg sm:text-xl mb-6 text-green-100">{t.hero.subtitle}</p>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">{mt.heroTitle}</h1>
+      <p class="text-lg sm:text-xl mb-6 text-green-100">{mt.heroSubtitle}</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
         <button id="reqSampleBtn" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg text-sm sm:text-base shadow-lg transition">{t.hero.cta}</button>
         <a href={waLink} class="bg-transparent border-2 border-white hover:bg-white hover:text-green-700 text-white font-bold py-3 px-6 rounded-lg text-sm sm:text-base transition inline-block text-center" target="_blank" rel="noopener noreferrer">{t.hero.salesCta}</a>
       </div>
     </div>
     <div class="w-full md:w-1/2">
-      <div class="video-container" id="videoContainer">
-        <video id="heroVideo" preload="none" muted loop playsinline style="opacity:0;transition:opacity 0.8s ease;z-index:1;position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"></video>
-        <div id="videoPlaceholder" class="video-placeholder" style="z-index:2;"><i class="fas fa-play-circle"></i><span>Loading...</span></div>
+      <div class="relative rounded-xl overflow-hidden shadow-lg bg-gray-100 flex items-center justify-center min-h-[400px]">
+        <img src="/protray/assets/images/tray-128.jpg" alt={heroImgAlt} class="w-full h-auto object-contain max-h-[500px]" loading="eager">
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-16 bg-gray-50">
-  <div class="max-w-[90rem] mx-auto px-4 md:px-8">
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">{t.materials.title}</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <a href={`${basePath}/rpet-tray/`} class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 border border-gray-100 block">
-        <h3 class="text-2xl font-bold text-green-600 mb-3">{t.materials.rpetTitle}</h3>
-        <p class="text-gray-600 mb-4">{t.materials.rpetDesc}</p>
-        <span class="text-green-600 font-bold">{t.materials.learnMore}</span>
-      </a>
-      <a href={`${basePath}/pet-tray/`} class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 border border-gray-100 block">
-        <h3 class="text-2xl font-bold text-green-600 mb-3">{t.materials.petTitle}</h3>
-        <p class="text-gray-600 mb-4">{t.materials.petDesc}</p>
-        <span class="text-green-600 font-bold">{t.materials.learnMore}</span>
-      </a>
-      <a href={`${basePath}/pvc-tray/`} class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-8 border border-gray-100 block">
-        <h3 class="text-2xl font-bold text-green-600 mb-3">{t.materials.pvcTitle}</h3>
-        <p class="text-gray-600 mb-4">{t.materials.pvcDesc}</p>
-        <span class="text-green-600 font-bold">{t.materials.learnMore}</span>
-      </a>
     </div>
   </div>
 </section>
 
 <section class="py-16 bg-white overflow-x-hidden">
   <div class="max-w-[90rem] mx-auto px-4 md:px-8">
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">{t.whyUs.title}</h2>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">{mt.whyChooseTitle}</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
-        <h3 class="text-lg font-bold mb-3 text-gray-800">{t.whyUs.card1Title}</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">{t.whyUs.card1Desc}</p>
-      </div>
-      <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
-        <h3 class="text-lg font-bold mb-3 text-gray-800">{t.whyUs.card2Title}</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">{t.whyUs.card2Desc}</p>
-      </div>
-      <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
-        <h3 class="text-lg font-bold mb-3 text-gray-800">{t.whyUs.card3Title}</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">{t.whyUs.card3Desc}</p>
-      </div>
-      <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
-        <h3 class="text-lg font-bold mb-3 text-gray-800">{t.whyUs.card4Title}</h3>
-        <p class="text-gray-600 text-sm leading-relaxed">{t.whyUs.card4Desc}</p>
-      </div>
+      {mt.advantages.map(adv => (
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+          <h3 class="text-lg font-bold mb-3 text-gray-800">{adv.title}</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">{adv.desc}</p>
+        </div>
+      ))}
     </div>
   </div>
 </section>
 
 <section class="py-16 bg-gray-50 overflow-x-hidden">
   <div class="max-w-[90rem] mx-auto px-4 md:px-8">
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">{t.specs.title}</h2>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">{t.specs.quickSpecsTitle}</h2>
 
-    <div class="max-w-[90rem] mx-auto bg-white rounded-xl shadow-md border border-gray-100 p-6 sm:p-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
-        <div>
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm lg:text-base">
-              <tbody>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 font-semibold text-gray-600 w-1/3">{t.specs.cellCount}</td>
-                  <td class="py-3 text-gray-800">32 / 40 / 50 / 72 / 98 / 105 / 128</td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 font-semibold text-gray-600">{t.specs.dimensions}</td>
-                  <td class="py-3 text-gray-800">540mm × 280mm</td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 font-semibold text-gray-600">{t.specs.material}</td>
-                  <td class="py-3 text-gray-800">rPET / PET / PVC</td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 font-semibold text-gray-600">{t.specs.weight}</td>
-                  <td class="py-3 text-gray-800">60g / 70g / 80g / 90g / 100g</td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 font-semibold text-gray-600">{t.specs.thickness}</td>
-                  <td class="py-3 text-gray-800">0.4mm / 0.5mm / 0.6mm / 0.7mm</td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 font-semibold text-gray-600">{t.specs.cellDepth}</td>
-                  <td class="py-3 text-gray-800">4.0 cm - 5.5 cm</td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 font-semibold text-gray-600">{t.specs.packaging}</td>
-                  <td class="py-3 text-gray-800">{t.specs.packagingOptions}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md border border-gray-100 p-6 sm:p-8">
+      <p class="text-center text-gray-700 mb-3">
+        <span class="font-bold text-gray-800">{t.specs.summaryPrefix}: </span>
+        {t.specs.summaryText}
+      </p>
+      <p class="text-center text-gray-500 text-sm mb-6">
+        {t.specs.moq} · {t.specs.deliveryTerms}
+      </p>
 
+      <details class="group border-t border-gray-100 pt-4">
+        <summary class="cursor-pointer list-none flex justify-between items-center text-green-600 font-bold py-2 hover:text-green-700 transition select-none">
+          <span>{t.specs.viewFullSpecs}</span>
+          <i class="fas fa-chevron-down group-open:rotate-180 transition-transform"></i>
+        </summary>
+        <div class="mt-4 overflow-x-auto">
+          <table class="w-full text-sm lg:text-base">
+            <tbody>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 font-semibold text-gray-600 w-1/3">{t.specs.cellCount}</td>
+                <td class="py-3 text-gray-800">32 / 40 / 50 / 72 / 98 / 105 / 128</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 font-semibold text-gray-600">{t.specs.dimensions}</td>
+                <td class="py-3 text-gray-800">540mm × 280mm</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 font-semibold text-gray-600">{t.specs.material}</td>
+                <td class="py-3 text-gray-800">{material.shortName}</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 font-semibold text-gray-600">{t.specs.weight}</td>
+                <td class="py-3 text-gray-800">60g / 70g / 80g / 90g / 100g</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 font-semibold text-gray-600">{t.specs.thickness}</td>
+                <td class="py-3 text-gray-800">0.4mm / 0.5mm / 0.6mm / 0.7mm</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 font-semibold text-gray-600">{t.specs.cellDepth}</td>
+                <td class="py-3 text-gray-800">4.0 cm - 5.5 cm</td>
+              </tr>
+              <tr class="border-b border-gray-100">
+                <td class="py-3 font-semibold text-gray-600">{t.specs.packaging}</td>
+                <td class="py-3 text-gray-800">{t.specs.packagingOptions}</td>
+              </tr>
+            </tbody>
+          </table>
           <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
             <p class="font-bold text-base text-gray-800">{t.specs.moq}</p>
             <p class="text-gray-600 text-sm mt-1">{t.specs.deliveryTerms}</p>
           </div>
           <div class="mt-4 p-3 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg text-sm text-gray-700">{t.specs.customNotification}</div>
         </div>
+      </details>
 
-        <div class="relative rounded-xl overflow-hidden shadow-lg bg-gray-50 flex items-center justify-center min-h-[400px] lg:min-h-[600px]">
-          <img
-            src="/protray/assets/images/tray-128.jpg"
-            alt="128-hole commercial seedling tray 540x280mm for tobacco and vegetable seedlings"
-            class="w-full h-auto object-contain max-h-[400px] lg:max-h-[600px]"
-            loading="eager"
-          >
-        </div>
+      <div class="border-t border-gray-100 pt-4 mt-4 text-center">
+        <a href={homeUrl} class="inline-flex items-center text-green-600 font-bold hover:text-green-700 transition">
+          {t.specs.viewAllSeries}
+        </a>
       </div>
     </div>
   </div>
@@ -219,123 +194,25 @@ const productSchema = {
   <div class="max-w-[90rem] mx-auto px-4 md:px-8">
     <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">{t.faq.title}</h2>
     <div class="max-w-4xl mx-auto space-y-4">
-      {[1,2,3].map(i => (
+      {mt.faq.map(f => (
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-          <button class="faq-question w-full text-left px-6 py-5 font-bold text-gray-800 flex justify-between items-center bg-white hover:bg-gray-50 transition focus:outline-none">
-            <span>{t.faq[`q${i}`]}</span>
-            <i class="fas fa-chevron-down text-gray-500"></i>
+          <button class="faq-question w-full text-left px-6 py-5 font-bold text-gray-800 flex justify-between items-center hover:bg-gray-50 focus:outline-none">
+            <span>{f.q}</span><i class="fas fa-chevron-down text-gray-500"></i>
           </button>
-          <div class="faq-answer hidden px-6 pb-5 text-gray-600 text-sm sm:text-base bg-gray-50/50">
-            <p>{t.faq[`a${i}`]}</p>
-          </div>
+          <div class="faq-answer hidden px-6 pb-5 text-gray-600 text-sm sm:text-base bg-gray-50/50"><p>{f.a}</p></div>
         </div>
       ))}
     </div>
   </div>
 </section>
 
-<!-- ========== 客户评价 ========== -->
-<section class="py-16 bg-gray-50 overflow-x-hidden">
+<section id="contactFormSection" class="py-16 bg-gray-50 overflow-x-hidden">
   <div class="max-w-[90rem] mx-auto px-4 md:px-8">
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">
-      {t.testimonials.title}
-    </h2>
-
-    <div class="flex items-center justify-center gap-3 mb-12">
-      <div class="flex text-yellow-500 text-xl">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star-half-alt"></i>
-      </div>
-      <span class="text-gray-700 font-bold">4.7</span>
-      <span class="text-gray-500 text-sm">({t.testimonials.averageLabel} · 3 {t.testimonials.reviewCountLabel})</span>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <!-- Review 1: 全名 -->
-      <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
-        <div class="flex text-yellow-500 mb-3">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-          "Good quality seedling trays. Very sturdy."
-        </p>
-        <div class="text-sm text-gray-600">
-          <span class="font-bold">Carlos Ramírez</span>
-          <span class="ml-2 text-green-600">✓ {t.testimonials.verifiedLabel}</span>
-        </div>
-      </div>
-
-      <!-- Review 2: 匿名 -->
-      <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
-        <div class="flex text-yellow-500 mb-3">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-          "Fast shipping, well packaged. No damage."
-        </p>
-        <div class="text-sm text-gray-600">
-          <span class="font-bold italic">Verified Buyer</span>
-          <span class="ml-2 text-green-600">✓ {t.testimonials.verifiedLabel}</span>
-        </div>
-      </div>
-
-      <!-- Review 3: 全名 -->
-      <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
-        <div class="flex text-yellow-500 mb-3">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star text-gray-300"></i>
-        </div>
-        <p class="text-gray-700 mb-4 leading-relaxed">
-          "Exactly as described. Nice workmanship."
-        </p>
-        <div class="text-sm text-gray-600">
-          <span class="font-bold">Michael Chen</span>
-          <span class="ml-2 text-green-600">✓ {t.testimonials.verifiedLabel}</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ========== /客户评价 ========== -->
-
-<section id="contactFormSection" class="py-16 bg-white overflow-x-hidden">
-  <div class="max-w-[90rem] mx-auto px-4 md:px-8">
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">{t.trust.title}</h2>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[90rem] mx-auto mb-16">
-      <div class="bg-gray-50 rounded-xl p-6 sm:p-8 border border-gray-100">
-        <h3 class="text-xl font-bold mb-6 text-gray-800">{t.trust.qaTitle}</h3>
-        <ul class="list-disc pl-5 space-y-3 text-gray-700">
-          <li>{t.trust.qaItem1}</li><li>{t.trust.qaItem2}</li><li>{t.trust.qaItem3}</li>
-        </ul>
-      </div>
-      <div class="bg-gray-50 rounded-xl p-6 sm:p-8 border border-gray-100">
-        <h3 class="text-xl font-bold mb-6 text-gray-800">{t.trust.paymentTitle}</h3>
-        <div class="space-y-5">
-          <div class="bg-white p-4 rounded-lg"><h4 class="font-bold mb-1">{t.trust.shippingTitle}</h4><p class="text-gray-600 text-sm">{t.trust.shippingDesc}</p></div>
-          <div class="bg-white p-4 rounded-lg"><h4 class="font-bold mb-1">{t.trust.deposit}</h4><p class="text-gray-600 text-sm">{t.trust.depositDesc}</p></div>
-          <div class="bg-white p-4 rounded-lg"><h4 class="font-bold mb-1">{t.trust.balance}</h4><p class="text-gray-600 text-sm">{t.trust.balanceDesc}</p></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-gray-50 rounded-2xl shadow-lg max-w-4xl mx-auto p-6 sm:p-10">
+    <div class="bg-white rounded-2xl shadow-lg max-w-4xl mx-auto p-6 sm:p-10">
       <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">{t.form.title}</h3>
       <form id="leadContactForm" action="https://formcarry.com/s/MaZrhfPopVM" method="POST" class="space-y-5">
         <div style="display:none;"><input type="text" name="website_url" tabindex="-1" autocomplete="off"></div>
+        <input type="hidden" name="material" value={material.shortName} />
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div><label class="block text-gray-700 mb-1.5 text-sm font-medium">{t.form.name}</label><input type="text" name="name" class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none" required></div>
           <div><label class="block text-gray-700 mb-1.5 text-sm font-medium">{t.form.company}</label><input type="text" name="company" class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none" required></div>

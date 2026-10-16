@@ -13,7 +13,7 @@ const currentPath = material.slug;
 const homeUrl = lang === 'en' ? '/protray/' : `/protray/${lang}/`;
 
 const waLink = `https://wa.me/8615864555803?text=${encodeURIComponent(
-  `Hello ProTrays, I'm interested in ${material.material} seedling trays. Page: ${Astro.url.href}`
+  `Hello ProTrays, I'm interested in ${material.shortName} seedling trays. Page: ${Astro.url.href}`
 )}`;
 
 const heroImgAlt = `${material.shortName} commercial seedling tray 540x280mm for high-speed automated seeding lines`;
@@ -23,9 +23,24 @@ const productSchema = {
   "@type": "Product",
   "name": mt.heroTitle,
   "image": [
-    "https://mcqwy.github.io/protray/assets/images/tray-32.jpg",
-    "https://mcqwy.github.io/protray/assets/images/tray-50.jpg",
-    "https://mcqwy.github.io/protray/assets/images/tray-128.jpg"
+    {
+      "@type": "ImageObject",
+      "url": "https://mcqwy.github.io/protray/assets/images/tray-32.jpg",
+      "caption": `${material.shortName} 32-cell commercial seedling tray 540x280mm`,
+      "name": `${material.shortName} 32-cell seedling tray`
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://mcqwy.github.io/protray/assets/images/tray-50.jpg",
+      "caption": `${material.shortName} 50-cell commercial seedling tray 540x280mm`,
+      "name": `${material.shortName} 50-cell seedling tray`
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://mcqwy.github.io/protray/assets/images/tray-128.jpg",
+      "caption": `${material.shortName} 128-cell commercial seedling tray 540x280mm`,
+      "name": `${material.shortName} 128-cell seedling tray`
+    }
   ],
   "description": mt.description,
   "brand": { "@type": "Brand", "name": "ProTrays" },
@@ -114,7 +129,7 @@ const faqSchema = {
     <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md border border-gray-100 p-6 sm:p-8">
       <p class="text-center text-gray-700 mb-3">
         <span class="font-bold text-gray-800">{t.specs.summaryPrefix}: </span>
-        32-128 Holes · 540×280mm · 60-100g · Depth 4.0-5.5cm
+        {t.specs.summaryText}
       </p>
       <p class="text-center text-gray-500 text-sm mb-6">
         {t.specs.moq} · {t.specs.deliveryTerms}
@@ -138,7 +153,7 @@ const faqSchema = {
               </tr>
               <tr class="border-b border-gray-100">
                 <td class="py-3 font-semibold text-gray-600">{t.specs.material}</td>
-                <td class="py-3 text-gray-800">{material.material}</td>
+                <td class="py-3 text-gray-800">{material.shortName}</td>
               </tr>
               <tr class="border-b border-gray-100">
                 <td class="py-3 font-semibold text-gray-600">{t.specs.weight}</td>
