@@ -39,6 +39,7 @@
       "customNotification": "💡 Custom Tooling & Agricultural OEM: Custom hole counts and material formulations available. Carton packaging at additional cost. Contact our Sales Manager for details.",
       "quickSpecsTitle": "Quick Specifications",
       "summaryPrefix": "Full Series",
+      "summaryText": "32-128 Holes · 540×280mm · 60-100g · Depth 4.0-5.5cm",
       "viewFullSpecs": "View Detailed Specifications",
       "viewAllSeries": "View All Series Details →"
     },
@@ -160,6 +161,7 @@
       "customNotification": "💡 支持开模定制与农业 OEM：可按需定制孔数与材料配方。纸箱包装需额外计费。详情请联系销售经理。",
       "quickSpecsTitle": "规格速览",
       "summaryPrefix": "全系列规格",
+      "summaryText": "32-128 孔 · 540×280mm · 60-100g · 孔深 4.0-5.5cm",
       "viewFullSpecs": "查看详细规格参数",
       "viewAllSeries": "查看全系列详情 →"
     },
@@ -281,6 +283,7 @@
       "customNotification": "💡 Herramental Personalizado y OEM Agrícola: Número de celdas y formulaciones de material personalizados disponibles. Embalaje en caja con costo adicional. Contacte a nuestro Gerente de Ventas para más detalles.",
       "quickSpecsTitle": "Especificaciones Rápidas",
       "summaryPrefix": "Serie Completa",
+      "summaryText": "32-128 Celdas · 540×280mm · 60-100g · Profundidad 4.0-5.5cm",
       "viewFullSpecs": "Ver Especificaciones Detalladas",
       "viewAllSeries": "Ver Todos los Detalles de la Serie →"
     },
@@ -402,6 +405,7 @@
       "customNotification": "💡 บริการขึ้นแม่พิมพ์แบบกำหนดเองและ OEM เกษตรกรรม: จำนวนช่องและสูตรวัสดุสามารถปรับแต่งได้ บรรจุภัณฑ์กล่องมีค่าใช้จ่ายเพิ่มเติม โปรดติดต่อผู้จัดการฝ่ายขายสำหรับรายละเอียด",
       "quickSpecsTitle": "ข้อมูลจำเพาะโดยสรุป",
       "summaryPrefix": "ซีรีส์ทั้งหมด",
+      "summaryText": "32-128 ช่อง · 540×280mm · 60-100g · ความลึก 4.0-5.5cm",
       "viewFullSpecs": "ดูข้อมูลจำเพาะโดยละเอียด",
       "viewAllSeries": "ดูรายละเอียดซีรีส์ทั้งหมด →"
     },
@@ -523,6 +527,7 @@
       "customNotification": "💡 Gia Công Khuôn Tùy Chỉnh & OEM Nông Nghiệp: Số ô và công thức vật liệu có thể tùy chỉnh. Đóng gói thùng có phụ phí. Vui lòng liên hệ Quản lý Kinh doanh để biết chi tiết.",
       "quickSpecsTitle": "Thông Số Nhanh",
       "summaryPrefix": "Toàn Bộ Dòng",
+      "summaryText": "32-128 Ô · 540×280mm · 60-100g · Độ Sâu 4.0-5.5cm",
       "viewFullSpecs": "Xem Thông Số Chi Tiết",
       "viewAllSeries": "Xem Toàn Bộ Chi Tiết Dòng Sản Phẩm →"
     },
