@@ -1,6 +1,7 @@
 ---
+import ui from '../data/ui-translations.json';
+
 const { lang, currentPath } = Astro.props;
-const ui = (await import('../data/ui-translations.json')).default;
 const t = ui[lang];
 
 const langOptions = [
